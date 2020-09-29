@@ -1,0 +1,13 @@
+.message {
+  display: table;
+  box-shadow: none !important;
+}
+
+.messageIcon {
+  margin-right: 1em !important;
+}
+
+.messageContent {
+  display: table-cell;
+  color: black;
+}

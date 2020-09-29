@@ -1,0 +1,927 @@
+maslow:
+  catalog:
+    sections:
+      SECTION_YOURSELF:
+        resources:
+          zh:
+            title: 请介绍一下您自己
+      SECTION_HOUSEHOLD:
+        resources:
+          zh:
+            title: 请将您的生活情况告诉我们
+      SECTION_SITUATION:
+        resources:
+          zh:
+            title: 请将您的家庭成员情况告诉我们
+
+    questions:
+      HOUSEHOLD_SIZE:
+        resources:
+          zh:
+            text: 有多少人和您一起生活？（包括您自己。）
+            hint: 在回答这些问题时，请算上您自己、其他成年人以及所有被抚养人/被赡养人。
+      HOUSEHOLD_EMPLOYED:
+        resources:
+          zh:
+            text: 您家中有人有工作吗？
+      HOUSEHOLD_INCOME:
+        resources:
+          zh:
+            text: 在过去 30 天内，您家中所有人的总收入（包括税前非劳动收入和税前劳动收入）是多少？
+      ADULTS_60_PLUS:
+        resources:
+          zh:
+            text: 有人年龄不低于 60 周岁吗？
+      CHILDREN_06_17:
+        resources:
+          zh:
+            text: 有人年龄在 6-17 周岁之间吗？
+      CHILDREN_00_05:
+        resources:
+          zh:
+            text: 有人年龄不满 5 周岁吗？
+      IS_EMPLOYMENT_AFFECTED:
+        resources:
+          zh:
+            text: 您失业、被停薪留职或被缩减工作时间了吗？
+      IS_PAY_FOR_DEPENDENT_CARE:
+        resources:
+          zh:
+            text: 您家中有人需要支付被抚养人/被赡养人看护费吗？
+            hint: 被抚养人/被赡养人看护费是指，为了能够工作、找工作或上学，您向看护您家中儿童、残障人士或老年人的其他人员支付的费用。
+      IS_WORRIED_HOUSING:
+        resources:
+          zh:
+            text: 您在支付房租、按揭贷款或房屋维护费方面存在困难吗？
+      IS_WORRIED_FOOD:
+        resources:
+          zh:
+            text: 您在为自己或家人购买日常所需的食物方面存在困难吗？
+      IS_DISABLED:
+        resources:
+          zh:
+            text: 有人是盲人或残障人士吗？
+      IS_MILITARY:
+        resources:
+          zh:
+            text: 有人是美国军队的现役军人或光荣退伍军人吗？
+      IS_STUDENT:
+        resources:
+          zh:
+            text: 有人在参加或打算参加职业学校、学院或大学的线上或线下课程吗？
+      IS_PREGNANT:
+        resources:
+          zh:
+            text: 有人怀孕了吗？
+      IS_COVID:
+        resources:
+          zh:
+            text: 有人被诊断为感染了新型冠状病毒肺炎 (COVID-19) 吗？
+            hint: 在回答这些问题时，请算上您自己和所有被抚养人/被赡养人。
+
+    services:
+      CHILDCARE:
+        resources:
+          zh:
+            name: 育儿补贴计划
+            category: 家庭
+            description: |
+              领取可用于支付部分或全部托儿服务费用的补助金。
+            eligibility: |
+              您必须请人帮忙照看孩子，才能去工作、求职或参加就业培训。
+            instructions: |
+              如需申请该补助金，请与当地的社会服务部门联系
+            preparation:
+      DOL_UA:
+        resources:
+          zh:
+            name: 失业援助
+            category: 就业
+            description: |
+              在非因本人过错而失业时领取临时补助金.
+            eligibility:
+            instructions: |
+              请访问 ny.gov 创建帐号并提交在线申请表。
+            preparation: |
+              - 您的社会保障号
+              - 您的驾照或机动车驾驶证件卡号（如果您持有其中任一证件）
+              - 您的完整邮寄地址和邮政编码
+              - 可在周一至周五上午 8:00 至下午 5:00 联系到您的电话号码
+              - 您的外国人登记卡号（如果您不是美国公民且持有该卡）
+              - 过去 18 个月您的所有雇主（包括位于其他州的雇主）的名称和地址
+              - 最近一个雇主的公司注册号或联邦雇主识别号 (FEIN)（W-2 表单上有 FEIN）
+              - 您的 SF8 和 SF50 表单的副本（如果您是联邦雇员）
+              - 您近期的退役表单 (DD 214)
+      DOL_PUA:
+        resources:
+          zh:
+            name: 疫情失业援助 (PUA)
+            category: 就业
+            description: |
+              该计划为因新冠肺炎疫情而无法工作但又不符合传统失业援助 (UA) 条件的美国人提供支持.
+            eligibility: |
+              - 如果您因新冠肺炎疫情无法工作，可申请该援助
+              - 如果您可以远程办公，或者如果您正在享受带薪病假或其他带薪假期，则不符合申请疫情失业援助的条件
+            instructions: |
+              最好是在线申请。您可参照美国劳工部提供的简洁申请流程，根据自己所符合的条件申请传统的失业保险金或疫情失业援助。您无需填写单独的疫情失业援助申请表。
+            preparation: |
+              - 您的社会保障号
+              - 您的驾照或机动车驾驶证件卡号（如果您持有其中任一证件）
+              - 您的完整邮寄地址和邮政编码
+              - 可在周一至周五上午 8:00 至下午 5:00 联系到您的电话号码
+              - 您的外国人登记卡号（如果您不是美国公民且持有该卡）
+              - 过去 18 个月您的所有雇主（包括位于其他州的雇主）的名称和地址
+              - 最近一个雇主的公司注册号或联邦雇主识别号 (FEIN)（W-2 表单上有 FEIN
+              - 您的 SF8 和 SF50 表单的副本（如果您是联邦雇员）
+              - 您近期的退役表单 (DD 214)
+      EAA:
+        resources:
+          zh:
+            name: 成人紧急援助 (EAA)
+            category: 现金
+            description: |
+              面向符合条件的个人和夫妇的紧急现金援助。
+            eligibility:
+            instructions: |
+              请向您所在县的社会服务部门提交申请。
+            preparation:
+      SNAP:
+        resources:
+          zh:
+            name: 美国补充营养援助计划 (SNAP)
+            category: 食物
+            description: |
+              获取可以用来购买食物的电子福利券。
+            eligibility: |
+              资格条件包括但不限于（如需更多信息，请参阅 [SNAP 页面](https://otda.ny.gov/programs/snap/)）：
+               - 是美国公民或符合条件的非美国公民，符合学生条件，并且符合“无被抚养人/被赡养人的健全成年人”工作要求（如果有工作安排）
+               - 月收入不超过收入下限，并且可计入的资源不超过资源下限（如果适用）
+            instructions: |
+              使用 myBenefits 申请
+            preparation: |
+              - 过去 30 天内的工资单或其他收入证明
+              - 家庭资源列表
+              - 当前租赁/按揭单据
+              - 当前房产税单
+              - 当前房主保险帐单
+              - 每位申请 SNAP 福利的家庭成员的社会保障号或社会保障号申请证明。
+              - 在资格条件面试过后，根据您的个人情况，您可能需要提供其他单据。
+      VICTIM_COMP:
+        resources:
+          zh:
+            name: 受害者赔偿金
+            category: 罪案
+            description: |
+              领取补偿罪案受害者损失的援助金，包括但不限于医疗费、律师费、丧葬费和误工费。
+            eligibility: |
+              - 受害者必须是相关罪案的无辜受害人
+              - 因该罪案导致身体受到伤害的受害者
+              - 虽然身体未受到伤害但未满 18 周岁、已满 60 周岁或属于残障人士的受害者
+            instructions:
+            preparation: |
+              - 警方报告
+              - 医疗帐单
+              - 与保险公司或福利计划的沟通记录，表明其是否会弥补您的损失
+              - 保险卡
+              - 个人基本财产的收据
+              - 死亡证明和丧葬服务合同
+              - 受害者的出生证明
+              - 年龄证明（驾照、出生证明等）
+              - 法定监护关系证明文件
+      SNA:
+        resources:
+          zh:
+            name: 安全保障援助 (SNA)
+            category: 现金
+            description: |
+              不符合家庭援助条件但符合安全保障援助条件的贫困个人和家庭可获得现金援助。
+            eligibility: |
+              - 单身的成年人
+              - 无子女的夫妇
+              - 与所有成年家属分开居住的儿童
+              - 有成员吸毒或酗酒的家庭
+              - 有成员拒绝接受毒品/酒精检查、评估或治疗的家庭
+              - 不符合联邦补偿金条件但符合临时援助条件的外籍人士
+            instructions: |
+              请向您所在县的社会服务部门提交申请。
+            preparation:
+      HEALTH_MARKETPLACE:
+        resources:
+          zh:
+            name: 纽约州健保市场（官方医疗服务市场）
+            category: 健康
+            description: |
+              纽约州的官方健康计划市场。任何需要医疗保险的人都可以申请。
+            eligibility:
+            instructions:
+            preparation:
+      HEAP:
+        resources:
+          zh:
+            name: 家庭能源援助计划 (HEAP)
+            category: 取暖和制冷
+            description: |
+              此计划旨在帮助低收入人员支付家庭取暖费。
+            eligibility: |
+              资格条件包括但不限于（如需更多信息，请参阅 [HEAP 页面](https://otda.ny.gov/programs/heap/)）：
+              - 您和家庭成员是美国公民或[符合条件的非美国公民](https://otda.ny.gov/programs/applications/4998.pdf)；并且
+              - 您要提供每位家庭成员的有效社会保障号或社会保障号申请证明；以及
+              - 您在享受补充营养援助计划 (SNAP) 福利、接受临时援助或会获得某些补充性保障收入；或者
+              - 您的每月家庭收入不高于 HEAP 收入限制。
+            instructions: |
+              使用 myBenefits 申请。
+            preparation: |
+              提供以下任意一项的居住证明：
+              - 包含地址的租金收据
+              - 包含地址的租约复印件
+              - 水费帐单、排污费帐单或税单
+              - 房主的保单
+              - 按揭付款收据
+              - 契据
+              - 公共事业缴费单
+              - 当前的燃料费帐单/公共事业缴费单，或表明您的取暖费和/或公共事业费包含在租金内的房东声明。
+              - 所有家庭成员的近期工资单或其他的当前每月总收入证明。
+              对于每位家庭成员，您都需要提供以下任意一项：
+              - 带照片的身份证件
+              - 驾驶执照
+              - 出生证明或洗礼证明
+              - 每位提出申请的家庭成员的社会保障号或社会保障号申请证明
+              - 学校记录
+              - 护照
+              - 任何家庭成员的残疾证明
+              - 在资格条件面试过后，根据您的个人情况，您可能需要提供其他单据
+      HOUSING_VOUCHER:
+        resources:
+          zh:
+            name: 第 8 条住房选择补助券计划
+            category: 住房
+            description: |
+              借助租赁和房屋所有权方面的援助，获得在私人住房市场上租赁或购买合适安全的住房方面的援助
+            eligibility:
+            instructions: 有意申请住房选择补助券计划的家庭必须从当地公共住房管理局领取申请表。
+            preparation:
+      PAID_LEAVE_BONDING:
+        resources:
+          zh:
+            name: 带薪亲子假
+            category: 家庭
+            description: |
+              在您的孩子出生、领养或寄养后的 12 个月内，您可以享受带薪亲子假，与孩子培养感情.
+            eligibility:
+            instructions: |
+              在向您的雇主提交带薪亲子假申请书（表 PFL-1）之前，请先复印一份。按照 PFL-1 表 B 部分第 13 个问题（该部分由雇主填写）中的地址将填好的表单和证明文件寄到保险公司，如果雇主自己承保，则直接寄给雇主。
+            preparation:
+      MEDICAID:
+        resources:
+          zh:
+            name: 医疗补助
+            category: 健康
+            description: |
+              一项面向无力支付医疗费用的纽约人的计划.
+            eligibility:
+            instructions:
+            preparation:
+      MEDICARE:
+        resources:
+          zh:
+            name: 医疗保险
+            category: 健康
+            description: |
+              一项联邦健康保险计划，面向 65 岁以上人群及特定残障人群（无论其收入如何）。
+            eligibility:
+            instructions:
+            preparation:
+      WIC:
+        resources:
+          zh:
+            name: 妇女、婴儿及儿童营养计划 (WIC)
+            category: 食品
+            description: |
+              领取用于购买母亲和孩子所需的营养食品的援助金。
+            eligibility:
+            instructions:
+            preparation: |
+              - 您和您的孩子的身份证明
+              - 家庭收入证明
+              - 居住证明
+              - 婴儿和儿童免疫记录
+              - 此外，您可能还需要提供以下文件：
+              - 您的医疗服务提供方出具的填写好的纽约州卫生部医疗转诊表单（包括血液检查）。
+      DISABILITY_CLAIM:
+        resources:
+          zh:
+            name: 伤残津贴
+            category: 残障
+            description: |
+              如果您在工作时间之外受伤或患病而导致残疾，或者因怀孕而造成残疾，可领取临时的每周现金福利。
+            eligibility:
+            instructions: |
+              将填写好的 NYSIF DB-450 表寄至以下地址：
+              NYSIF Disability Benefits
+              PO Box 66699
+              Albany, NY 12206
+              或发送传真至：518-437-5201
+            preparation:
+      WORKERS_COMP:
+        resources:
+          zh:
+            name: 纽约州劳工赔偿
+            category: 就业
+            description: |
+              劳工赔偿是一种无过错制度，针对因工作导致的伤病提供工资替代福利和终身医疗服务。
+            eligibility: |
+              - 盈利性企业的所有员工
+              - 大多数非营利性雇主的员工
+              - 服务对象为在纽约州工作的员工
+              - 对居住地点无要求
+            instructions:
+            preparation: |
+              - 您的联系信息
+              - 基本就业信息，例如雇主的名称和地址、您的职位和职务以及毛工资率
+              - 受伤时的情形，当时您身在何处、正在做什么（尽可能详细），以及是否已将受伤情况上报给雇主
+              - 伤害/疾病的性质、受伤的身体部位、是否接受了治疗以及是否误工
+      ACCES_VR:
+        resources:
+          zh:
+            name: 成人职业及继续教育服务 - 职业康复 (ACCES-VR)
+            category: 教育
+            description: |
+              服务对象是无法获得或继续工作，或很难在工作中获得晋升的残障人士。
+            eligibility: |
+              - 身患残疾，难以获得或继续工作；
+              - 能够从职业康复 (VR) 服务中受益；且
+              - 需要借助职业康复服务来获得工作、继续工作或在工作中获得晋升。
+            instructions:
+            preparation:
+      SHARED_WORK:
+        resources:
+          zh:
+            name: 工作共享计划
+            category: 就业
+            description: |
+              该计划的目的是让雇主不裁员，仅缩短员工的工作时间，从而保留熟练员工，而员工则可领取部分失业保险。
+            eligibility: |
+              有资格在纽约州领取普通失业保险福利的员工可以参与该计划。
+            instructions:
+            preparation:
+      ESNA:
+        resources:
+          zh:
+            name: 紧急安全保障援助 (ESNA)
+            category: 现金
+            description: |
+              面向符合条件的单身成年人及无子女的夫妇的紧急现金援助。
+            eligibility: |
+              如需了解您是否有资格获得临时援助（包括在紧急情况下获得帮助），请向您所在县的社会服务部门提交申请。
+            instructions:
+            preparation:
+      EAF:
+        resources:
+          zh:
+            name: 面向贫困家庭的紧急保障计划 (EAF)
+            category: 家庭
+            description: |
+              一种紧急现金援助，面向符合条件的孕妇以及家中至少有一名年龄不满 18 岁或 19 岁且定期就读全日制中学的孩子的家庭。
+            eligibility: |
+              如需了解您是否有资格获得临时援助（包括在紧急情况下获得帮助），请向您所在县的社会服务部门提交申请。
+            instructions:
+            preparation:
+      FAMILY_ASSISTANCE:
+        resources:
+          zh:
+            name: 家庭援助 (FA)
+            category: 家庭
+            description: |
+              获得对您或亲属看护儿童的现金援助。
+            eligibility: |
+              如需了解您是否有资格获得临时援助（包括在紧急情况下获得帮助），请向您所在县的社会服务部门提交申请；如果您居住在纽约市五个区之一，请向当地的职业介绍中心提交申请。
+            instructions: |
+              请向您所在县的社会服务部门提交申请。
+            preparation:
+      CHILD_HEALTH_PLUS:
+        resources:
+          zh:
+            name: 儿童加健康计划
+            category: 健康
+            description: |
+              面向儿童的健康保险计划。需要通过 New York State of Health Marketplace（纽约州健康市场）提交申请。
+            eligibility: |
+              儿童是否符合条件取决于家庭总收入。查找[资格条件表格](https://www.health.ny.gov/health_care/child_health_plus/eligibility_and_cost.htm)。
+            instructions:
+            preparation:
+      PAID_LEAVE_FAMILY:
+        resources:
+          zh:
+            name: 家人看护带薪家庭假
+            category: 家庭
+            description: |
+              为了方便人们照顾患有严重健康问题的近亲家庭成员（包括纽约州之外的家庭成员）而设立的带薪假期。
+            eligibility: |
+              - 在纽约州私营企业就业的大多数员工都能享受带薪家庭假
+              - 对于工会未代表的公职人员，如果其雇主自愿选择提供该福利，这些人员可以享受该福利。对于工会代表的公职人员，只有通过集体谈判协商获取该福利时，这些人员才能享受该福利。
+            instructions: |
+              - 您可享有工作有保障的带薪休假，照顾存在严重健康问题的家庭成员。
+              - 您可以休假照顾的家庭成员包括：您的配偶、配偶的父母、同居伴侣、祖父母/
+            preparation:
+      PAID_LEAVE_MILITARY:
+        resources:
+          zh:
+            name: 军人家属的带薪家事假
+            category: 军人
+            description: |
+              如果您的配偶、家庭伴侣、子女或父母正在国外服役、已接到征召入伍通知书或到国外服役的命令，您在需要协助处理家庭事务的情况下可以享受带薪家事假。
+            eligibility:
+            instructions:
+            preparation: |
+              您需要提供下列材料之一来证明您的家庭成员正在服役：
+              - 相关服役命令，
+              - 部队出具的征召入伍通知书或相关服役命令文件，或
+              - 由军人修养审批机构签署的休假文件。
+              如果请假目的是与第三方（例如学校官员、顾问或律师）会面，您必须提供包含以下会面信息的文件：
+              - 您要会见的个人的姓名或实体的名称、会面地址及对方的联系信息
+              - 会面交谈内容
+      STAR:
+        resources:
+          zh:
+            name: 学校房产税减免
+            category: 住房
+            description: |
+              减免符合条件的纽约州房屋所有者的房产税.
+            eligibility: |
+              如果您最近刚购买房产，或从未为现有房产申请过 STAR 福利，您每年或许可节省数百美元。
+            instructions:
+            preparation: |
+              - 房产的全部所有者及其配偶的姓名和社会保障号（您可能需要多次输入此信息以证明所有者之间的关系）
+              - 所有者及其配偶的主要住所
+              - 所有者购买相应房产的大致日期以及卖方的名称（此信息并非必须提供，但有助于我们顺利处理您的房产登记事宜）
+              - 最新的学校税单（如果当前所有者已收到），请查看示例。
+              - 在其他州拥有的所有住宅的地址
+              - 信托业务的法定名称（如果有）
+              - 全部所有者在 2018 年的联邦或州所得税申报表（如果您不需要提交 2018 年所得税申报表，则需提供其他信息）
+      TAP:
+        resources:
+          zh:
+            name: 学费援助计划 (TAP)
+            category: 教育
+            description: |
+              此计划旨在帮助符合条件的居民支付纽约州获批学校的学费。
+            eligibility: |
+              - 是美国公民或符合条件的非美国公民，并且是纽约州的居民
+              - 已从美国高中毕业，或已取得高中同等文凭
+              - 是纽约州获批高等教育机构的全日制本科生（每学期至少获得 12 学分），就读的是获批的学科，并且学习成绩优秀，在第 4 学期交学费之前的累积平均分至少为“C”
+              - 每年至少需要交 200 美元的学费
+              - 没有任何到期未还的州/联邦学生贷款，并且在偿还州援助款项方面没有逾期行为
+              - 满足收入要求
+            instructions:
+            preparation:
+      VETERANS_BLINDNESS:
+        resources:
+          zh:
+            name: 纽约州退伍军人盲人年金计划
+            category: 退伍军人
+            description: |
+              面向属于法定盲人的已退伍战时军人或其健在的未再婚配偶提供的年金，申请人需健在并且居住在纽约州。
+            eligibility: |
+              - 必须已被宣布为法定盲人。
+              - 必须是曾在特定战争时期服全役或者曾因某些冲突事件而荣获远征奖章的已退伍战时军人；或者是符合以下描述的退伍军人的未再婚健在配偶：符合条件、属于法定盲人且在去世时已在享受或有资格享受该福利的退伍军人。
+              - 服全役时间必须至少为 90 天，训练时间除外。如果退伍军人因为服役造成的残疾而退伍，那么服全役时间少于 90 天也可以享受该福利。
+              - 必须是纽约州的居民，并且居住在纽约州
+            instructions:
+            preparation: |
+              - 证明您是纽约州居民的文件。
+              - 显示入伍和退伍日期的退伍证明或役历表。
+              - 结婚证书或死亡证明（如果您是以配偶的身份进行申请）。
+              - 法定盲人证明文件
+      MEMORIAL_SCHOLARSHIP:
+        resources:
+          zh:
+            name: 纽约州纪念奖学金
+            category: 教育
+            description: |
+              该计划为已故消防员、志愿消防员、警务人员、治安人员（包括纽约州狱警）以及在为纽约州工作期间因伤死亡的紧急医疗服务人员的子女、配偶和受养人提供经济援助。
+            eligibility: |
+              - 美国公民或符合条件的非公民；
+              - 已故消防员、志愿消防员、警务人员、治安人员（包括纽约州狱警）以及在为纽约州工作期间因伤死亡的紧急医疗服务人员的子女、配偶和受养人；
+              - 已从美国高中毕业、具有同等学历或已通过联邦政府批准的由国家教育部专员规定的“受益资格”测试；
+              - 在纽约州获批准的高等教育机构学习；
+              - 攻读获批准的本科课程；
+              - 以全日制学生身份入学，每学期修满不少于 12 学分的课程；
+              - 学习成绩良好；
+              - 未拖欠纽约州或联邦教育贷款计划提供的贷款或纽约州助学金的任何款项；且
+              - 遵守与纽约州助学金相关的所有服务条件的条款。
+            instructions: |
+              填写并提交纽约州纪念奖学金网络补充材料。请务必按照说明打印网络补充材料确认函、签名、注明日期，然后连同所需的材料一同提交。如果家中有多名成员申请纪念奖学金，所有成员都必须单独提交补充材料。
+            preparation:
+      NURSING_SCHOLARSHIP:
+        resources:
+          zh:
+            name: 参议员 Patricia K. McGee 护理教师奖学金计划
+            category: 教育
+            description: |
+              为增加纽约州护理教师和兼职临床教师的数量而设立的奖学金。
+            eligibility: |
+              - 是纽约州居民且在申请前已在纽约州连续居住 12 个月；
+              - 是美国公民或符合条件的非公民；
+              - 是在纽约州获得执业资格的注册护士；
+              - 在纽约州官方认可的学校攻读护理学硕士或博士课程，或使申请人有资格在纽约州任职护理教师或兼职临床教师的相关课程；
+              - 如果申请人已完成一个学期的研究生课程，平均学分绩点 (GPA) 不低于 3.0，则该申请人有资格成为护理教师或兼职临床教师；
+              - 未拖欠纽约州或联邦教育贷款计划提供的贷款或纽约州助学金的任何款项；
+              - 遵守与纽约州助学金相关的所有服务条件的条款，以及
+              - 签订服务合同，同意在纽约州任职护理教师或兼职临床教师 4 年。
+            instructions:
+            preparation:
+      VETERANS_DISABILITY:
+        resources:
+          zh:
+            name: 退伍军人残疾补偿金
+            category: 退伍军人
+            description: |
+              T美国退伍军人事务部提供的每月免税伤残补偿金。
+            eligibility: |
+              您是否是在服役期间受伤？服役是否导致您原有的情况加重？如果以上问题的回答均为“是”，您也许符合条件。
+            instructions: |
+              退伍军人福利顾问都是退伍军人，他们很乐意帮您准备并提交伤残补偿申请。
+            preparation:
+      HOMES_VETERANS:
+        resources:
+          zh:
+            name: 退伍军人住房计划
+            category: 住房
+            description: |
+              固定利率的抵押贷款，其利率比纽约州抵押贷款机构较低的利率仍低 0.375%。
+            eligibility: |
+              必须曾在现役军队中服役，且未因不光彩行为而退役。 此外，如果符合以下条件，首次购房的任何现役军人（光荣退伍的国民警卫队队员或光荣退役的预备役军人）可享受该计划的补助：
+              - 驻纽约州的美国军事人员（包括目前正在服预备役的军事人员），无论是否退役
+              - 现役或光荣退伍的国民警卫队队员
+              - 现役或光荣退役的预备役军人
+            instructions:
+            preparation: |
+              - 连续两年有可靠的固定收入的记录
+              - 证明您主动按时还款的信用记录
+              - 有足够的收入来支付购房费用且仍可承担其他债务
+              - 有足够的银行存款来支付首付和手续费。
+      PART_TIME_STUDY:
+        resources:
+          zh:
+            name: 非全日制学生助学金
+            category: 教育
+            description: |
+              面向就读于获批准的本科院校且符合条件的非全日制学生的援助。
+            eligibility: |
+              - 是纽约州的合法居民，且在就读之前在纽约州连续居住至少 12 个月；
+              - 是美国公民或符合条件的非公民；
+              - 已从美国高中毕业，通过中学毕业考试评估 (TASC)（以前称为“普通教育发展证书”考试）、获得同等高中学历或通过联邦政府批准的由国家教育部专员规定的"受益资格"测试
+              - 以非全日制学生的身份入学；
+              - 学习纽约州高等教育机构获批准的课程；
+              - 学习成绩良好；
+              - 每年学费不低于 100 美元；
+              - 收入水平符合条件；
+              - 仍有资格享受学费援助计划 (TAP)；
+              - 未拖欠任何纽约州或联邦教育贷款计划提供的贷款，亦未拖欠任何纽约州助学金的还款；且
+              - 遵守所有条款
+            instructions: |
+              如需申请该助学金，学生应向即将就读的大学领取 APTS 申请表。
+            preparation:
+      VETERANS_TUITION:
+        resources:
+          zh:
+            name: 退伍军人奖学金
+            category: 教育
+            description: |
+              向以全日制或非全日制形式攻读纽约州本科或研究生学位授予机构获批准的课程或攻读纽约州获批准的职业培训课程且符合条件的退伍军人提供的奖学金。
+            eligibility: |
+              - 必须是纽约州合法居民且在就读之前已在纽约州连续居住 12 个月
+              - 必须就读于纽约州全日制或非全日制本科或研究生学位授予机构或攻读获批准的职业培训课程
+              - 必须从美国军队光荣退役，或者是在 1961 年 2 月 28 日至 1975 年 5 月 7 日期间在印度支那服役的越南退伍军人；在 1990 年 8 月 2 日当天或之后在波斯湾服役的波斯湾退伍军人；在 2001 年 9 月 11 日当天或之后在敌对行动期间在阿富汗服役的阿富汗退伍军人；在 1961 年 2 月 28 日之后的敌对行动中服役的美国军队退伍军人，以武装部队远征勋章、海军远征勋章或海军陆战队远征勋章为依据。
+            instructions:
+            preparation:
+      SOCIAL_WORKER_LOAN:
+        resources:
+          zh:
+            name: 持牌社工贷款豁免计划 (LSWLF)
+            category: 教育
+            description: |
+              该计划旨在增加关键公共事业领域的持牌社工的数量，包括但不限于以下领域：家庭护理、健康、心理健康、药物滥用、老龄化、艾滋病以及儿童福利或有多语言需求的社区。
+            eligibility:
+            instructions:
+            preparation:
+      MERIT_SCHOLARSHIP:
+        resources:
+          zh:
+            name: 军人再表彰激励和致敬 (MERIT) 奖学金
+            category: 教育
+            description: |
+              面向美国军队或州民兵组织成员的符合条件的子女、配偶或受养人的经济援助。
+            eligibility: |
+              - 美国军队或州民兵组织成员为纽约州居民，在1990 年 8 月 2 日当天或之后的任何时间，在执行军队任务时死亡或落下严重终身残疾（无论是否在战斗中），您是其子女、配偶或受养人。
+              - 就读于纽约州获批准的高等教育机构。
+              - 已从美国高中毕业，或通过中学毕业考试评估 (TASC)（以前称为“普通教育发展证书”考试）获得同等高中学历，或通过联邦政府批准的由国家教育部专员规定的“受益资格”测试。
+              - 以全日制学生身份入学，每学期修满至少 12 个学分。
+              - 攻读获批准的课程。
+              - 学习成绩良好。
+              - 未拖欠任何州或联邦学生贷款，也未拖欠任何国家助学金的还款。
+            instructions: |
+              填写并提交军人再表彰激励和致敬 (MERIT) 奖学金网络补充材料。请务必根据说明打印网络补充材料确认书，签名，然后连同所需的材料一同提交
+            preparation:
+      STEM:
+        resources:
+          zh:
+            name: STEM 奖学金计划m
+            category: 教育
+            description: |
+              为就读于纽约州公立或私立学位授予学院或大学且是纽约州居民的学生提供的奖学金。
+            eligibility: |
+              - 在纽约州高中毕业班成绩排名前 10%；
+              - 攻读纽约州公立或私立大学获批准的科学、技术、工程或数学学位本科课程；
+              - 累计平均学分绩点不低于 2.5；
+              - 签订服务合同，同意在纽约州居住并在科学、技术、工程或数学领域工作 5 年。阅读服务合同条款和条件。
+              - 是纽约州居民且在大学秋季学期开始之前已经在纽约州连续居住 12 个月；
+              - 是美国公民或符合条件的非公民；
+              - 是将在高中毕业之后的秋季学期开始时就读于纽约州全日制公立或私立大学的高中毕业班学生/刚毕业的高中生
+            instructions: |
+              填写并提交纽约州科学、技术、工程及数学 (STEM) 奖学金计划申请。请务必根据说明打印申请确认书，签名，然后连同所需材料一同提交。您还必须提交 FAFSA 和纽约州学生助学金申请。
+            preparation:
+      REGENTS:
+        resources:
+          zh:
+            name: 面向已故或伤残退伍军人子女的纽约州本地学生助学金
+            category: 教育
+            description: |
+              面向父母曾在指定的国家紧急状态时期在美国军队服役的学生的经济援助。
+            eligibility: |
+              如果父母在指定的战争或国家紧急状态期间在美国军队服役，并因服役而死亡、伤残面积 40% 以上、在行动中被列为失踪人员或成为战俘，则学生有资格申请。退伍军人目前必须是纽约州居民或死亡时是纽约州居民。申请人必须在纽约州获批准的学院或大学攻读本科学位。
+            instructions: |
+              填写退伍军人子女助学金网络补充材料。请务必根据说明打印网络补充材料确认书，签名，然后连同所需材料一同寄回。
+              您必须填写联邦学生资助免费申请表 (FAFSA) 并申请学费补助计划 (TAP)，或在您申请补助的每个学年的 6 月 30 日之前致电 1-888-697-4372 与 HESC 联系，领取奖学金及助学金申请表。
+            preparation:
+      ACADEMIC_EXCELLENCE:
+        resources:
+          zh:
+            name: 纽约州卓越学术奖学金
+            category: 教育
+            description: |
+              获得高达 1500 美元的入读大学奖学金。
+            eligibility: |
+              - 已从纽约州的高中毕业
+              - 全日制学生，并且就读纽约州高等教育机构的获批本科学科
+              - 学习成绩优秀
+              - 没有任何到期未还的州/联邦学生贷款，并且在偿还州援助款项方面没有逾期行为
+              - 是美国公民或符合条件的非美国公民
+              - 是纽约州的居民
+            instructions: |
+              如需申请，请联系您的高中指导老师。
+            preparation:
+      EXCELSIOR:
+        resources:
+          zh:
+            name: 精益奖学金计划
+            category: 教育
+            description: |
+              精益奖学金及面向学生的其他资助计划，让学生能够免费就读纽约州立大学或纽约市立大学。
+            eligibility: |
+              - 是纽约州居民且在学期开始之前已在纽约州连续居住 12 个月；
+              - 是美国公民或符合条件的非公民；
+              - 已从美国高中毕业或具有同等学历，或已通过联邦政府批准的由国家教育部专员规定的“受益资格”测试；
+              - 根据联邦政府调整后的标准，总收入不超过 125000 美元
+              - 在纽约州立大学或纽约市立大学攻读本科学位，包括社区学院以及康奈尔大学和艾尔弗雷德大学的法定学院
+              - 每学期至少修满 12 个学分，且每年连续修满至少 30 学分，除某些有据可查的原因外，在入学期间通过连续学习完成学位课程；
+              - 如果是在 2019-2020 学年之前入学，且每年连续获得至少 30 学分，在申请精益奖学金之前应完成学位课程；
+              - 未拖欠纽约州或联邦教育贷款计划提供的贷款或纽约州奖学金的任何款项；
+              - 遵守您先前领取的任何纽约州奖学金规定的服务条件的条款；并
+              - 签订合同，同意在领取奖学金期间居住在纽约州，如果在此期间被聘用，需在纽约州就业。
+            instructions: |
+              如需申请该奖学金，请咨询您高中学校的指导顾问。
+            preparation:
+      COVID_TEST:
+        resources:
+          zh:
+            name: 查找您附近的新冠肺炎 (COVID-19) 检测点
+            category: COVID-19
+            description: |
+              所有纽约人都有资格接受 COVID-19 检测。COVID-19 检测点查找工具可提供您附近的新冠肺炎检测点。
+            eligibility:
+            instructions:
+            preparation:
+      COVID_QUARANTINE_LEAVE:
+        resources:
+          zh:
+            name: COVID-19 隔离休假
+            category: 健康
+            description: |
+              如果员工因为 COVID-19 方面的强制或预防性隔离命令而需要休假，纽约州的某些雇主必须为这些员工提供至少 5 天且工作有保障的带薪病假。
+            eligibility: |
+              - 如果您自行隔离
+              - 如果您要抚养的未成年子女被隔离
+              - 如果您要照顾感染了 COVID-19 的家庭成员
+            instructions:
+            preparation:
+      VIOLENCE_HOTLINE:
+        resources:
+          zh:
+            name: 纽约州家庭暴力及性暴力热线
+            category: 公共安全
+            description: |
+              纽约州家庭暴力及性暴力热线 以文字、电话或聊天的形式保证沟通的私密性和安全性。
+            eligibility:
+            instructions:
+            preparation:
+      FIND_A_JOB:
+        resources:
+          zh:
+            name: 求职
+            category: 就业
+            description: |
+              寻找本地私营企业的就业机会。上 Jobs Express 网站， 从数千个本地就业机会中， 查找适合您的新职位.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_HOUSING:
+        resources:
+          zh:
+            name: 新冠肺炎 (COVID-19) 疫情期间的住房资源
+            category: 住房
+            description: |
+              查找受 COVID-19 影响的租户、房东和 房屋所有者的相关信息
+            eligibility:
+            instructions:
+            preparation:
+      FOOD_BANK:
+        resources:
+          zh:
+            name: 查找您附近的食物救济所
+            category: 食品
+            description: |
+              查找纽约州各县的食物救济所和食品储藏室 清单。
+            eligibility:
+            instructions:
+            preparation:
+      COVID_EMOTIONAL_MENTAL_SUPPORT:
+        resources:
+          zh:
+            name: COVID-19 情感支持热线和其他精神健康资源
+            category: 健康
+            description: |
+              拨打 1-844-863-9314 热线，获得免费且保密的支持服务。此外，您还可以查找相关资源，了解如何在新型冠状病毒 (COVID-19) 导致的危急健康情况下应对焦虑和悲伤情绪。
+            eligibility:
+            instructions:
+            preparation:
+      DMV_ONLINE:
+        resources:
+          zh:
+            name: 查看机动车辆管理局提供的所有线上服务
+            category: 交通
+            description: |
+              详细了解可在线完成而无需 前往办理地点的多项 DMV 交易。
+            eligibility:
+            instructions:
+            preparation:
+      COVID_CHILD_SUPPORT:
+        resources:
+          zh:
+            name: 纽约州 COVID-19 儿童支持服务
+            category: 家庭
+            description: |
+              纽约儿童支持计划致力于 在这次公共卫生危机期间尽最大可能 提供支持。许多本地办事处的人力有限或时间安排 交错。
+            eligibility:
+            instructions:
+            preparation:
+      FIND_A_JOB_OMH:
+        resources:
+          zh:
+            name: 在心理健康办公室 (OMH) 找份工作
+            category: 就业
+            description: |
+              OMH 就业机会包括高需求职位， 例如精神科医生、注册护士和心理健康 治疗助理。
+            eligibility: |
+              - 公务员考试成绩
+              - 专业执照或证书
+              - 教育背景
+              - 可无条件参加医疗补助和
+              医疗保险计划；
+              - 能够通过背景调查
+              - 能够通过身体及/或健康检查
+              - 能够通过药检
+            instructions:
+            preparation:
+      CHECK_EBC_BALANCE:
+        resources:
+          zh:
+            name: 查看您的疫情电子福利卡的余额
+            category: 食品
+            description: |
+              您可以随时通过以下方式查看您的帐户余额： 致电 1-888-328-6399；在任何合作食品店的 收银处让收银员查看您的帐户余额；或在网上查看您的帐户余额。
+            eligibility:
+            instructions:
+            preparation:
+      COVID_HEALTH_INSURANCE_RIGHTS:
+        resources:
+          zh:
+            name: 与 COVID 相关的健康保险信息和资源
+            category: 健康
+            description: |
+              了解您的权利和健康保险险种因 COVID-19 发生了哪些方面 的变化。
+            eligibility:
+            instructions:
+            preparation:
+      MEALS_FOR_KIDS:
+        resources:
+          zh:
+            name: 在学校关闭后为儿童寻找餐食
+            category: 食品
+            description: |
+              输入您的地址，查找在学校关闭后 为儿童提供餐食的最近地点。
+            eligibility:
+            instructions:
+            preparation:
+      COVID_ADDICTION_SERVICES:
+        resources:
+          zh:
+            name: 在 COVID 期间寻求戒瘾服务
+            category: COVID-19
+            description: |
+              在 COVID-19 疫情期间仍继续提供 戒瘾和康复服务。无论您是需要交流， 还是担心自己会退缩或复发， 都可以通过电话/视频与纽约州经 OASAS 认证或资助的服务提供方 联系或在安全距离内亲自与其会面。
+            eligibility:
+            instructions:
+            preparation:
+      COVID_NEW_AMERICANS:
+        resources:
+          zh:
+            name: 针对美国新移民的 COVID-19 相关资源
+            category: COVID-19
+            description: |
+              获取多语言宣传单，详细了解美国新移民办公室 及其合作伙伴提供的服务，包括 与 COVID-19 相关的移民信息。
+            eligibility:
+            instructions:
+            preparation:
+      DIAPER_ASSISTANCE:
+        resources:
+          zh:
+            name: 查找您所在地区的尿布援助服务
+            category: 家庭
+            description: |
+              查找您所在地区的代理机构是否为有需要的家庭提供 免费尿布。尿布救济所类似于食物救济所， 区别在于分发的是尿布而不是食物。
+            eligibility:
+            instructions:
+            preparation:
+      TEMP_ASSISTANCE:
+        resources:
+          zh:
+            name: 临时援助
+            category: 公共援助
+            description: |
+              临时援助是指为有需求的男女人士和儿童提供的临时帮助。如果您 无法工作、找不到工作或工资无法满足您的基本生活需求， 临时援助或许可以帮助您支付基本开支。 临时援助或许还能够帮助您解决紧急需求， 例如向面临被驱逐或只有少量/没有取暖燃料 且符合条件的家庭提供临时援助。
+            eligibility: |
+              资格条件包括但不限于（如需更多信息，请参阅[临时援助页面](https://otda.ny.gov/programs/temporary-assistance/)）：
+               - 是美国公民或符合条件的非美国公民
+               - 月收入不超过收入下限
+               - 可计入的资源不超过资源下限
+               - 遵从工作活动安排（如果适用）
+            instructions: |
+              使用 myBenefits 申请
+            preparation: |
+              - 过去 30 天内的工资单或其他收入证明
+              - 家庭资源列表
+              - 当前租赁/按揭单据
+              - 当前房产税单
+              - 当前房主保险帐单
+              - 每位提出申请的家庭成员的社会保障号或社会保障号申请证明
+              - 在资格条件面试过后，根据您的个人情况，您可能需要提供其他单据
+              如需更多信息，请参阅[临时援助](https://otda.ny.gov/programs/temporary-assistance/)页面上的列表。
+      FILE_TAXES_FREE:
+        resources:
+          zh:
+            name: 免费在线报税
+            category: 税务
+            description: |
+              在截止期限（2020 年 7 月 15 日）过后尚未报税或申请延期的人员可以在 2020 年 10 月 15 日之前使用免费报税软件。
+            eligibility:
+            instructions: |
+              如果您在 2019 年的收入不高于 69000 美元，那么您有资格使用免费报税软件。
+            preparation: |
+              - 有效的电子邮件帐号（您可以通过该帐号跟踪退税状态）
+              - 去年的退税副本，或上一年的联邦调整后总收入 (FAGI)
+              - 驾驶执照或州政府颁发的其他身份证件（如果您和您的配偶一起申请的话，需要提供你们双方的证件）
+              - 您自己、配偶和被抚养人/被赡养人的出生日期及社会保障号
+              - 收入证明（工资、利息和股息对帐单）：表单 W-2、1098、1099 以及显示额外收入的其他单据
+              - 表单 1095-A、1095-B 或 1095-C，与您要申报的任何抵税额相关的平价医疗保健声明信息
+              - 您的银行信息（账号和相应银行的汇款路线号码，可以在空白支票上找到）
+              - NY529 大学储蓄账号信息（如果申请退税）
+      VETERANS_PENSION:
+        resources:
+          zh:
+            name: 与服役无关的退伍军人养老金
+            category: 退伍军人
+            description: |
+              看看您是否有资格享受美国退伍军人事务部 (VA) 向某些退伍军人提供的免税福利。注意：此服务不适用于向退休人员支付的退休金。
+            eligibility: |
+              - 服全役时间必须至少为 24 个月（如果您是在 1980 年 9 月 7 日之前开始在军队服全役，服全役时间必须至少为 90 天），并且必须在战争时期服过至少 1 天的全役。
+              - 年满 65 周岁，或者
+              - 享受社会保障残疾 (SSD) 补助金，或者
+              - 享受补充性保障收入 (SSI) 补助金，或者
+              - 是在疗养院疗养的患者，或者
+              - 被诊断为“完全永久”残疾
+              - 名下财产不超过 129094 美元
+              - 年收入低于收入阈值
+              - 注意：此服务不适用于向退休人员支付的退休金
+            instructions:
+            preparation:

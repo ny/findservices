@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "name": "vscode-jest-tests",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/craco",
+      "args": ["test", "--env=jest-environment-jsdom-sixteen", "--runInBand"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "protocol": "inspector",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true
+    },
+    {
+      "name": "Maslow Access Client",
+      "type": "chrome",
+      "request": "launch",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      },
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/client/access/src"
+    },
+    {
+      "name": "Maslow Access Server",
+      "type": "java",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/server/access",
+      "console": "internalConsole",
+      "mainClass": "gov.ny.its.hs.maslow.access.MaslowAccessApplication"
+    },
+    {
+      "name": "Maslow Author Server",
+      "type": "java",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/server/author",
+      "console": "internalConsole",
+      "mainClass": "gov.ny.its.hs.maslow.author.MaslowAuthorApplication"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: maslow
+  data:
+    mongodb:
+      database: FIND_SERVICES
+  profiles:
+    active: "@spring.profiles.active@"
+    include: survey
+  mongodb:
+    embedded:
+      version: 4.0.12
+      features: NO_HTTP_INTERFACE_ARG,ONLY_WITH_SSL
+
+server:
+  forward-headers-strategy: native
+  tomcat:
+    accesslog:
+      buffered: false
+      enabled: true
+      file-date-format: .yyyy-MM-dd
+      pattern: common
+      prefix: access_log
+      rotate: true
+      suffix: .log
+    basedir: target/tomcat
+
+jasypt:
+  encryptor:
+    password: ${JASYPT_ENCRYPTOR_PASSWORD:}
+
+maslow:
+  access:
+    services-location: /tmp/maslow/services.json
+
+    
+### OKTA Spring Security Config ######
+okta:
+  oauth2:
+    issuer: https://login-qa.ny.gov/oauth2/default
+    clientId: 0oa4q3u5qr7BWh8yU297
+    groupsClaim: nyfindservicesauthor
+### OKTA Spring Security Config ######

@@ -1,0 +1,48 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.radio.checkbox {
+  width: 100%;
+  border: solid 1px @nysBorderColor;
+  border-radius: @absoluteBorderRadius;
+}
+
+.ui.radio.checkbox.checked {
+  background-color: fade(@nysBlue, 12%);
+  border-color: @selectedBorderColor;
+}
+
+.ui.checkbox input.hidden + label {
+  line-height: 3.5rem;
+}
+
+/*--------------
+     Hover
+---------------*/
+
+.ui.radio.checkbox:hover {
+  color: @nysBorderColor;
+  background-color: #f6f8f8;
+}
+
+.ui.radio.checkbox.checked:hover {
+  color: @nysBorderColor;
+  background-color: fade(@nysBlue, 12%);
+}
+
+/*--------------
+     Focus
+---------------*/
+
+.ui.radio.checkbox:focus-within {
+  box-shadow: 0 0 0 1px @checkboxFocusBorderColor;
+}
+.ui.checkbox input:focus ~ .box:before,
+.ui.checkbox input:focus ~ label:before {
+  border-width: 2px;
+}
+.ui.checkbox input:focus ~ .box:after,
+.ui.checkbox input:focus ~ label:after {
+  transform: scale(10/18);
+}

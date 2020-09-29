@@ -1,0 +1,44 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+/* Button */
+@backgroundColor: fade(@nysTextLinkColor, 12%);
+@toggleButtonBorder: @1px solid @nysBlue;
+
+/* Button defaults to using same height as input globally */
+@verticalPadding: 1.375rem;
+@horizontalPadding: 1.25rem;
+
+/* Text */
+@textTransform: uppercase;
+@textColor: rgba(0, 0, 0, 1);
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hovered */
+@hoverBackgroundColor: fade(@nysTextLinkColor, 24%);
+
+/* Pressed Down */
+@downBackgroundColor: fade(@nysTextLinkColor, 48%);
+
+/* Active */
+@activeBackgroundColor: fade(@nysTextLinkColor, 36%);
+
+/* Active + Hovered */
+@activeHoverBoxShadow: 0 @1px @2px rgba(60,64,67,0.3), 
+    0 @2px @6px @2px rgba(60,64,67,0.15);
+
+/*-------------------
+        Types
+--------------------*/ 
+
+/* Inverted */
+@positiveColor: #0f739d1f;
+@positiveColorHover: @positiveColor;

@@ -1,0 +1,4 @@
+.translationField input[type="text"]:read-only,
+textarea.translationField:read-only {
+  background-color: #f6f8f8 !important;
+}

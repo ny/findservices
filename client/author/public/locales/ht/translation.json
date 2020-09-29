@@ -1,0 +1,20 @@
+{
+  "report": {
+    "apply": {
+      "criteria": "Lòt kritè anplis:",
+      "howTo": "Gade kòman pou aplike",
+      "need": "Kèk bagay ou kapab gen bezwen:",
+      "ready": "Lè ou prè pou ou aplike:"
+    },
+    "learnMore": "Aprann plis"
+  },
+  "services": {
+    "actions": {
+      "seeLess": "Gade mwens",
+      "seeMore": "Gade plis"
+    },
+    "info": {
+      "category": "Kategori"
+    }
+  }
+}

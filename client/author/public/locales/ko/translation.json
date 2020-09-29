@@ -1,0 +1,20 @@
+{
+  "report": {
+    "apply": {
+      "criteria": "추가 기준:",
+      "howTo": "신청 방법 보기",
+      "need": "필요한 항목:",
+      "ready": "신청하실 준비가 된 경우:"
+    },
+    "learnMore": "자세히 알아보기"
+  },
+  "services": {
+    "actions": {
+      "seeLess": "간략히 보기",
+      "seeMore": "자세히 보기"
+    },
+    "info": {
+      "category": "카테고리"
+    }
+  }
+}

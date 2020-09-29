@@ -1,0 +1,934 @@
+maslow:
+  catalog:
+    sections:
+      SECTION_YOURSELF:
+        resources:
+          ht:
+            title: Pale nou de ou
+      SECTION_HOUSEHOLD:
+        resources:
+          ht:
+            title: Pale nou sou kòman w ap viv
+      SECTION_SITUATION:
+        resources:
+          ht:
+            title: Pale nou sou moun w ap viv avèk yo an
+
+    questions:
+      HOUSEHOLD_SIZE:
+        resources:
+          ht:
+            text: Konbyen moun k ap viv avèk ou? Ajoute tèt ou.
+            hint: Konte tèt ou, lòt adilt yo ak lòt moun ki sou kont ou lè w ap reponn
+      HOUSEHOLD_EMPLOYED:
+        resources:
+          ht:
+            text: Èske genyen nenpòt moun lakay ou k ap travay?
+      HOUSEHOLD_INCOME:
+        resources:
+          ht:
+            text: Konbyen kòb antou (salè non merite oswa salè merite avan enpo) tout moun?
+      ADULTS_60_PLUS:
+        resources:
+          ht:
+            text: Èske gen moun 60 lane oswa plis?
+      CHILDREN_06_17:
+        resources:
+          ht:
+            text: Èske gen moun ki genyen 6-17 lane?
+      CHILDREN_00_05:
+        resources:
+          ht:
+            text: Èske gen moun ki genyen 5 lane oswa ki pi piti?
+      IS_EMPLOYMENT_AFFECTED:
+        resources:
+          ht:
+            text: Èske w nan chomaj, nan konje oswa nan travay ki genyen lè redwi?
+      IS_PAY_FOR_DEPENDENT_CARE:
+        resources:
+          ht:
+            text: Èske nenpòt moun lakay ou peye pou swen pou depandan?
+            hint: Swen pou depandan se lajan ou peye yon moun pou pran swen timoun oswa lòt moun ki nan kay la ki andikape oswa ki granmoun, pou ou ka travay, oswa ale lekòl.
+      IS_WORRIED_HOUSING:
+        resources:
+          ht:
+            text: Èske ou gen sousi pou peye lwaye, ipotèk oswa frè antretyen pou lakay ou?
+      IS_WORRIED_FOOD:
+        resources:
+          ht:
+            text: Èske ou genyen sousi pou achte ase manje pou nouri tèt ou ak fanmi ou?
+      IS_DISABLED:
+        resources:
+          ht:
+            text: Èske genyen moun ki avèg oswa ki andikape?
+      IS_MILITARY:
+        resources:
+          ht:
+            text: Èske genyen moun ki se manm sèvis aktif oswa ansyen veteran ki te libere ak lonè nan Fòs Lame Etazini an?
+      IS_STUDENT:
+        resources:
+          ht:
+            text: Èske genyen moun ki lekòl oswa ki planifye pou ale nan yon lekòl pwofesyonèl, yon fakilte oswa yon inivèsite sou entènèt oswa an pèsòn?
+      IS_PREGNANT:
+        resources:
+          ht:
+            text: Èske genyen fanm ansent?
+      IS_COVID:
+        resources:
+          ht:
+            text: Èske genyen moun ki te dyagnostike pou COVID-19 lan?
+            hint: Konte tèt ou ak nenpòt moun ki sou kont ou pou reponn kesyon sa yo.
+
+    services:
+      CHILDCARE:
+        resources:
+          ht:
+            name: Pwogram Sibvansyon pou Gadri
+            category: Fanmi
+            description: |
+              Resevwa asistans pou peye pou kèk oswa tout frè sèvis gadri yo.
+            eligibility: |
+              Ou bezwen gadri pou travay, pou chèche travay, oswa asiste fòmasyon pou jwenn travay.
+            instructions: |
+              Pou aplike, kontakte Depatman Sèvis Sosyal lokal ou an
+            preparation:
+      DOL_UA:
+        resources:
+          ht:
+            name: Asistans Chomaj
+            category: Anplwa
+            description: |
+              Resevwa revni tanporè si ou te pèdi travay ou san se pa fot ou.
+            eligibility:
+            instructions: |
+              Vizite ny.gov pou kreye yon kont epi soumèt aplikasyon sou entènèt la.
+            preparation: |
+              - Nimewo Sekirite Sosyal ou
+              - Lisans chofè oswa nimewo kat ID Machin ou an (si ou genyen youn nan yo)
+              - Tout adrès lapòs ak kòd postal ou an
+              - Yon nimewo telefòn kote nou ka jwenn ou soti 8 am - 5 pm, Lendi–Vandredi
+              - Nimewo kat Enskripsyon Etranje ou an (si ou pa yon Sitwayen Ameriken epi ou genyen yon kat)
+              - Non ak adrès tout patwon ou yo pou 18 dènye mwa yo, ansanm ak sila yo ki nan lòt eta
+              - Nimewo Anrejistreman Patwon oswa Nimewo Idantifikasyon Federal pou Patwon (Federal Employer Identification Number, FEIN) dènye patwon ou an (FEIN nan sou fòmilè W-2 yo)
+              - Kopi fòmilè SF8 ak SF50 ou yo, si ou te yon anplwaye federal
+              - Fòmilè dènye separasyon ou an (DD 214), pou sèvis militè
+      DOL_PUA:
+        resources:
+          ht:
+            name: Asistans Chomaj pou Pandemi an (PUA)
+            category: Anplwa
+            description: |
+              Pwogram nan bay sipò pou ameriken ki pa anmezi pou travay akoz pandemi Kowonaviris la, men ki pa kalifye pou Asistans Chomaj tradisyonèl la (UA).
+            eligibility: |
+              - Ou ta dwe aplike si ou pa anmezi pou travay akoz pandemi kowonaviris la
+              - Ou p ap elijib pou PUA si ou ka travay adistans, oswa si w ap resevwa konje maladi ki peye oswa lòt konje ki peye
+            instructions: |
+              Pi bon fason pou aplike se sou entènèt. DOL genyen yon aplikasyon senplifye ki pral pèmèt ou aplike pou swa UI tradisyonèl oswa PUA, selon elijiblite yo. Ou pa bezwen ranpli yon aplikasyon separe pou PUA.
+            preparation: |
+              - Nimewo Sekirite Sosyal ou
+              - Lisans chofè oswa nimewo kat ID Machin ou an (si ou genyen youn nan yo)
+              - Tout adrès lapòs ak kòd postal ou an
+              - Yon nimewo telefòn kote nou ka jwenn ou soti 8 am - 5 pm, Lendi–Vandredi
+              - Nimewo kat Enskripsyon Etranje ou an (si ou pa yon Sitwayen Ameriken epi ou genyen yon kat) 
+              - Non ak adrès tout patwon ou yo pou 18 dènye mwa yo, ansanm ak sila yo ki nan lòt eta
+              - Nimewo Anrejistreman Patwon oswa Nimewo Idantifikasyon Federal pou Patwon (Federal Employer Identification Number, FEIN) dènye patwon ou an (FEIN nan sou fòmilè W-2 yo) 
+              - Kopi fòmilè SF8 ak SF50 ou yo, si ou te yon anplwaye federal
+              - Fòmilè dènye separasyon ou an (DD 214), pou sèvis militè
+      EAA:
+        resources:
+          ht:
+            name: Asistans Ijans pou Adilt (EAA)
+            category: Lajan Kach
+            description: |
+              Asistans lajan kach pou endividi ak koup yo te detèmine ki elijib.
+            eligibility:
+            instructions: |
+              Depoze yon aplikasyon nan Depatman Sèvis Sosyal konte ou an.
+            preparation:
+      SNAP:
+        resources:
+          ht:
+            name: Pwogram Asistans Anplis pou Nitrisyon (Supplemental Nutrition Assistance Program, SNAP)
+            category: Manje
+            description: |
+              Resevwa avantaj elektwonik yo ki kapab itilize pou achte manje.
+            eligibility: |
+              Kritè elijiblite yo genyen ladan yo, men yo pa limite ak (gade [paj SNAP](https://otda.ny.gov/programs/snap/) pou jwenn enfòmasyon anplis):
+              - Sitwayen oswa ki pa sitwayen ameriken men ki elijib, kritè rankont etidyan nan konfòmite avèk adilt valid ki pa gen okenn moun sou kont yo/kondisyon anplwa, lè li afekte
+              - Salè chak mwa pa depase limit salè yo, resous kontab yo pa depase resous limit yo, lè sa aplikab
+            instructions: |
+              Aplike pandan w ap itilize myBenefits
+            preparation: |
+              - Souch chèk oswa lòt prèv salè pandan 30 dènye jou sa yo. 
+              - Lis resous pou fwaye
+              - Lokasyon aktyèl/bilan ipotèk
+              - Fakti aktyèl enpo sou pwopriyete
+              - Fakti aktyèl asirans sou pwopriyete
+              - Nimewo Sekirite Sosyal oswa prèv aplikasyon pou yon Nimewo Sèvis Sosyal pou chak manm nan kay la ki aplike pou avantaj SNAP. yo.
+              - Yo kapab egzije w bay lòt dokimantasyon selon sitiyasyon pèsonèl ou aprè antretyen elijiblite ou an.
+      VICTIM_COMP:
+        resources:
+          ht:
+            name: Konpansasyon pou Viktim
+            category: Krim
+            description: |
+              Resevwa asistans ki peye pou – ki genyen ladan l men pa limite ak fakti medikal, depans pou oryantasyon, frè pou fineray oswa antèman, ak pèt salè – ki fèt akoz ou viktim krim.
+            eligibility: |
+              - Viktim nan dwe yon inosan nan krim nan
+              - Viktim krim ki te fizikman blese nan yon krim
+              - Viktim krim ki genyen mwens pase 18 lane, 60 lane epi plis, oswa ki andikape, ki te fizikman blese
+            instructions:
+            preparation: |
+              - Rapò lapolis
+              - Fakti medikal
+              - Korespondans ak antrepriz asirans oswa plan avantaj yo ki deklare si yo pral kouvri pèt ou an
+              - Kat asirans
+              - Resi pou byen pèsonèl
+              - Sètifika desè ak kontra finerè
+              - Sètifika nesans viktim nan
+              - Prèv laj (lisans chofè, sètifika nesans elatriye.)
+              - Dokiman pou gad legal
+      SNA:
+        resources:
+          ht:
+            name: Asistans Nèt pou Sekirite (SNA)
+            category: Lajan Kach
+            description: |
+              Moun ki elijib ki nan bezwen ak fanmi ki resevwa lajan kach yo pa elijib pou Asistans Familyal.
+            eligibility: |
+              - Adilt ki selibatè
+              - Koup ki pa genyen timoun
+              - Timoun k ap viv separe ak nenpòt pwòch adilt=
+              - Fanmi moun yo twouve k ap konsome dwòg oswa alkòl
+              - Fanmi moun ki refize depistaj dwòg/alkòl, evalyasyon oswa tretman=
+              - Etranje ki elijib pou asistans tanporè, men ki pa elijib pou ranbousman federal
+            instructions: |
+              Depoze yon aplikasyon nan Depatman Sèvis Sosyal konte ou an.
+            preparation:
+      HEALTH_MARKETPLACE:
+        resources:
+          ht:
+            name: NY State of Health (Mache Ofisyèl pou Swen Sante)
+            category: Sante
+            description: |
+              Mache ofisyèl Eta NY pou plan sante yo. Tout moun ki bezwen asirans sante ka aplike.
+            eligibility:
+            instructions:
+            preparation:
+      HEAP:
+        resources:
+          ht:
+            name: Pwogram Asistans Enèji pou Fwaye (Home Energy Assistance Program, HEAP)
+            category: Chofaj ak Klimatizasyon
+            description: |
+              Pwogram sa a ede moun fèb revni yo peye pri chofaj kay yo.
+            eligibility: |
+              Kritè elijiblite yo genyen ladan yo, men yo pa limite ak (gade [paj HEAP](https://otda.ny.gov/programs/heap/) pou jwenn enfòmasyon anplis:
+              - Ou menm ak manm yo k ap viv nan kay la ki sitwayen ameriken oswa [elijib ki pa sitwayen](https://otda.ny.gov/programs/applications/4998.pdf); ak
+              - Ou bay yon nimewo Sekirite Sosyal ki valid oswa prèv aplikasyon pou yon nimewo Sekirite Sosyal pou chak manm nan fwaye a; epi
+              - Ou resevwa avantaj (SNAP) Pwogram Asistans Nitrisyon Siplimantè) oswa kèk Revni Sekirite Siplemantè, oswa;
+              - Revni mansyèl fwaye ou egal oswa pi piti pase revni HEAP rekòmande a.
+            instructions: |
+              Aplike pandan w ap itilize myBenefits.
+            preparation: |
+              Prèv rezidans ak youn nan bagay sa yo:
+              - Resi lwaye ak adrès
+              - Kopi kontra lokasyon ak adrès
+              - Dlo, egou oswa fakti enpo
+              - Polis asirans pou pwopriyetè kay
+              - Resi pèman ipotèk
+              - Tit pwopriyete
+              - Fakti sèvis
+              - Yon fakti aktyèl pou kabiran oswa sèvis piblik, oswa yon deklarasyon nan men pwopriyetè ou an ki endike chofaj ou an ak/oswa sèvis piblik yo antre nan lwaye a.
+              - Souch chèk resan oswa lòt prèv revni mansyèl total aktyèl pou tout manm nan fwaye a.
+              Pou chak manm nan fwaye w, ou pral bezwen youn nan bagay sa yo:
+              - Foto Idantite
+              - Lisans chofè
+              - Sètifika nesans oswa sètifika batèm
+              - Nimewo Sekirite Sosyal oswa lòt prèv aplikasyon pou yon Nimewo Sekirite Sosyal pou chak manm nan fwaye a k ap aplike
+              - Dosye lekòl
+              - Paspò
+              - Dokiman ki montre yon andikap pou nenpòt moun nan fwaye ou
+              - Yo kapab egzije w bay lòt dokimantasyon selon sitiyasyon pèsonèl ou aprè antretyen elijiblite ou an
+      HOUSING_VOUCHER:
+        resources:
+          ht:
+            name: Seksyon 8 Pwogram Koupon pou Chwa Lojman
+            category: Lojman
+            description: |
+              Resevwa asistans pou lwe oswa pou achte lojman ki an sekirite, lojman ki desann nan mache lojman prive a pandan y ap bay asistans pou mèt kay ak asistans pou lokasyon
+            eligibility:
+            instructions: Fanmi ki enterese pou aplike pou Pwogram HCV a dwe jwenn yon fòmilè aplikasyon nan men Otorite Lojman Piblik lokal la.
+            preparation:
+      PAID_LEAVE_BONDING:
+        resources:
+          ht:
+            name: Konje Familyal ki Peye pou Rapwòchman
+            category: Fanmi
+            description: |
+              Pran konje ki peye pou rapwoche ak timoun ou an nan delè ki pa depase 12 mwa aprè nesans, adopsyon oswa plasman timoun ou an nan fanmi akèy.
+            eligibility:
+            instructions: |
+              Fè yon kopi Demann pou Konje Familyal ki Peye (Fòmilè PFL-1) anvan ou soumèt li bay patwon ou an. Voye fomilè ranpli yo ak dokimantasyon sipò a bay founisè asirans lan nan adrès yo bay nan Fòmilè PFL Pati B a, Kesyon 13 (seksyon patwon ou an te ranpli a), oswa voye l dirèkteman bay patwon ou an si yo asire tèt yo pou kont yo.
+            preparation:
+      MEDICAID:
+        resources:
+          ht:
+            name: Medicaid
+            category: Sante
+            description: |
+              Yon pwogram pou Nouyòkè ki pa ka peye swen medikal.
+            eligibility:
+            instructions:
+            preparation:
+      MEDICARE:
+        resources:
+          ht:
+            name: Medicare
+            category: Sante
+            description: |
+              Yon pwogram asirans sante federal la pou moun ki genyen plis pase 65 lane epi pou kèk moun ki genyen andikap san konsidere revni yo.
+            eligibility:
+            instructions:
+            preparation:
+      WIC:
+        resources:
+          ht:
+            name: Pwogram pou Fanm, Nourison, ak pou Timoun (WIC)
+            category: Manje
+            description: |
+              Resevwa asistans pou achte manje ki genyen nitriman pou manman ak timoun.
+            eligibility:
+            instructions:
+            preparation: |
+              - Prèv idantite pou oumenm ak timoun ou an
+              - Prèv revni fwaye a
+              - Prèv rezidans
+              - Dosye vaksinasyon pou nourison ak timoun
+              - Anplis, yo gendwa mande w pou pote:
+              - Yon Fòmilè Ranvwa Medikal Depatman Sante New York la nan men founisè swen sante ou an (ki genyen ladan l analiz san)
+      DISABILITY_CLAIM:
+        resources:
+          ht:
+            name: Demann Avantaj pou Andikap
+            category: Andikap
+            description: |
+              Resevwa avantaj lajan kach tanporè, avantaj chak semèn si ou genyen andikap akoz blesi oswa domaj andeyò travay la, ak pou andikap ki soti nan gwosès.
+            eligibility:
+            instructions: |
+              Voye fòmilè NYSIF DB-450 ki ranpli yo nan lapòs bay:
+              NYSIF Disability Benefits
+              PO Box 66699=
+              Albany, NY 12206
+              Oswa voye yon faks bay: 518-437-5201
+            preparation:
+      WORKERS_COMP:
+        resources:
+          ht:
+            name: Konpansasyon pou Travayè nan Eta New York
+            category: Anplwa
+            description: |
+              Konpansasyon travayè a se yon sistèm san fay ki bay avantaj pou ranplasman salè ak swen medikal pou tout tan pou domaj ak maladi ki lye ak travay.
+            eligibility: |
+              - Tout anplwaye ki nan yon biznis ki pou fè pwofi
+              - Anplwaye pifò patwon ki pa la pou fè pwofi yo
+              - Anplwaye k ap travay nan eta New York ki asire
+              - Pa genyen egzijans pou ou ap viv la
+            instructions:
+            preparation: |
+              - Enfòmasyon kontak ou
+              - Enfòmasyon sou debaz sou travayan  ou tankou non ak adrès patwon an, tit ak obligasyon travay la, ak tarif salè brit ou
+              - Kijan domaj la te rive, ki kote ou te ye ak sa ou t ap fè lè li te rive a (ak otan detay posib), epi si ou te deklare l bay patwon ou an=
+              - nati domaj/maladi a, pati nan kò a ki afekte, èske ou te resevwa tretman epi si ou te pèdi tan nan travay la
+      ACCES_VR:
+        resources:
+          ht:
+            name: Sèvis pou Karyè Adilt ak Edikasyon k ap Kontinye – Reyabilitasyon Pwofesyonèl (ACCES-VR)
+            category: Edikasyon
+            description: |
+              Sèvis sa yo se pou moun ki genyen andikap ki kanpe an kwa pou pa jwenn oswa pou pa kenbe yon travay oswa moun ki genyen difikilte pou vanse nan travay yo.
+            eligibility: |
+              - Genyen yon andikap ki kanpe an kwa pou pa jwenn yon travay oswa pou pa kenbe yon travay;
+              - Anmezi pou benefisye sèvis Reyabilitasyon Pwofesyonèl (VR) la; epi
+              - Ki Bezwen sèvis VR pou jwenn, kenbe oswa avanse nan travay ou.
+            instructions:
+            preparation:
+      SHARED_WORK:
+        resources:
+          ht:
+            name: Pwogram Travay ki Pataje
+            category: Anplwa
+            description: |
+              Pwogram nan pèmèt patwon yo kenbe anplwaye ki fòme epi evite revokasyon pandan y ap pèmèt manm pèsonèl yo resevwa avantaj Chomaj pasyèl pandan y ap travay èdtan redwi.
+            eligibility: |
+              Anplwaye yo patisipe nan plan an si yo kalifye pou resevwa avantaj UI regilye nan Eta New York.
+            instructions:
+            preparation:
+      ESNA:
+        resources:
+          ht:
+            name: Asistans Nèt pou Sekirite An Ijans (ESNA)
+            category: Lajan Kach
+            description: |
+              Asistans lajan kach pou adilt ki selibatè ak koup ki pa genyen timoun yo te detèmine ki elijib.
+            eligibility: |
+              Pou detèmine si ou elijib pou resevwa Asistans Tanporè, ki genyen ladan l èd pou yon ijans, ou dwe depoze yon aplikasyon nan Depatman Sèvis Sosyal konte ou an.
+            instructions:
+            preparation:
+      EAF:
+        resources:
+          ht:
+            name: Sekirite An Ijans pou Fanmi ki nan Bezwen yo (EAF)
+            category: Fanmi
+            description: |
+              Asistans lajan kach pou fanm ansent ak fanm ki genyen omwen yon timoun ki genyen mwens pase 18 lane, oswa ki genyen mwens pase 19 lane epi ki regilyèman ale nan lekòl segondè tan plen, yo te detèmine ki elijib..
+            eligibility: |
+              Pou detèmine si ou elijib pou resevwa Asistans Tanporè, ki genyen ladan l èd pou yon ijans, ou dwe depoze yon aplikasyon nan Depatman Sèvis Sosyal konte ou an.
+            instructions:
+            preparation:
+      FAMILY_ASSISTANCE:
+        resources:
+          ht:
+            name: Asistans Familyal (FA)
+            category: Familyal
+            description: |
+              Resevwa asistans lajan kach pou pran swen yon timoun k ap viv avèk ou oswa avèk yon pwòch k ap ba l swen.
+            eligibility: |
+              Pou detèmine si ou elijib pou resevwa Asistans Tanporè, ki genyen ladan èd pou yon ijans, ou dwe depoze yon aplikasyon nan Depatman Sèvis Sosyal konte ou an oswa, si w ap viv nan youn nan awondisman Vil New York yo, depoze l nan Sant Travay lokal ou an.
+            instructions: |
+              Depoze yon aplikasyon nan Depatman Sèvis Sosyal konte ou an.
+            preparation:
+      CHILD_HEALTH_PLUS:
+        resources:
+          ht:
+            name: Child Health Plus
+            category: Sante
+            description: |
+              Plan asirans sante pou timoun. Yo asepte aplikasyon yo nan mache sanitè Eta New York la.
+            eligibility: |
+              Yon elijiblite pou timoun depann ak revni brit fanmi an. Jwenn li [eligibility tables](https://www.health.ny.gov/health_care/child_health_plus/eligibility_and_cost.htm).
+            instructions:
+            preparation:
+      PAID_LEAVE_FAMILY:
+        resources:
+          ht:
+            name: Konje Familyal Peye pou pran Swen Fanmi
+            category: Fanmi
+            description: |
+              Konje peye pou pran swen yon manm nan fanmi pwòch ki soufri yon pwoblèm sante grav, ansanm ak manm nan fanmi an k ap viv andeyò Eta New York
+            eligibility: |
+              - Pifò anplwaye k ap travay nan Eta New York pou anplwayè prive yo benefisye kouvèti yon Konje Familyal Peye 
+              - Yo kapab kouvri anplwaye sektè piblik ki pa reprezante yo si anplwayè sa a te chwazi ak volonte l pou li bay yon avanaj. Anplwaye sektè piblik yo yon sendika reprezante ap sèlman benefisye kouvèti si avantaj la te negosye nan yon negosiyasyon kolektif.
+            instructions: |
+              - Ou kapab pran konje peye ak pwoteksyon anplwa pou pran swen yon manm fanmi ou ki soufri yon kondisyon sante grav.
+              - Manm fanmi ou ka pran konje pou pran swen yo se konjwen, boparan, patnè domestik, granparan, bofis, bèlfiy, pitit pitit, paran ak boparan.
+            preparation:
+      PAID_LEAVE_MILITARY:
+        resources:
+          ht:
+            name: Konje Familyal ki Peye pou Fanmi Militè
+            category: Military
+            description: |
+              Konje familyal ki peye lè ou bezwen tan pou ede ak sitiyasyon k ap prezante lè madanm/mari, patnè domestik, timoun, oswa paran ou ki nan sèvis aktif nan yon peyi etranje oswa li te enfòme sou yon apèl pou yon potansyèl sèvis aktif nan yon peyi etranje.
+            eligibility:
+            instructions:
+            preparation: |
+              W ap bezwen verifye sèvis manm fanmi ou an ak youn nan bagay sa yo:]
+              - Lòd pou sèvis aktif ki asire,
+              - Lèt bò kote inite militè a ki dokimante apèl potansyèl oswa lòd pou sèvis ki asire a, oswa=
+              - Dokimantasyon konje militè ki siyen bò kote otorite ki bay apwobasyon pou Repo ak Rekiperasyon manm militè a.
+
+              i konje a mande pou rankontre ak yon tyès pati, tankou yon responsab eskolè, konseye, oswa yon avoka, ou dwe bay dokimantasyon rankont lan ki genyen ladan:
+              - Non, adrès ak enfòmasyon kontak moun nan oswa antite w ap rankontre avèk li a
+              - Yon deskripsyon rankont lan
+      STAR:
+        resources:
+          ht:
+            name: Soulajman Fiskal pou Byen Lekòl
+            category: Lojman
+            description: |
+              Soulajman fiskal pou byen pou mèt kay Eta New York ki elijib yo.
+            eligibility: |
+              Si ou fenk achte kay ou an oswa ou pa te janm aplike pou avantaj STAR la pou aktyèl kay ou an, ou gendwa anmezi pou ekonomize plizyè santèn dola chak lane.
+            instructions:
+            preparation: |
+              - Non ak nimewo Sekirite Sosyal pou tout pwopriyetè byen ak madanm/mari yo (yo gendwa mande w pou antre enfòmasyon sa yo plizyè fwa pou montre relasyon ant pwopriyetè yo)
+              -  T) premye rezidans pwopriyetè yo ak madanm/mari yo
+              - Dat apwoksimatif pwopriyetè yo te achte byen an ak non vandè yo (enfòmasyon sa yo pa obligatwa, men yo ka ede nou byen trete pwosesis anrejistreman ou an)
+              - Dènye fakti fiskal lekòl la, si aktyèl pwopriyetè yo te resevwa youn (Gade egzanp yo.)
+              - Adrès nenpòt pwopriyete ou posede nan yon lòt eta
+              - Non legal fidisi a, si sa aplikab
+              - deklarasyon fiskal revni 2018 eta oswa federal la pou tout pwopriyetè yo (yo mande lòt enfòmasyon anplis si yo pa te egzije w depoze yon deklarasyon fiskal 2018 la)
+      TAP:
+        resources:
+          ht:
+            name: Pwogram Asistans pou Frè Eskolè (Tuition Assistance Program, TAP)
+            category: Edikasyon
+            description: |
+              Program sa a ede rezidan elijib yo peye frè eskolè nan lekòl Eta New York la apwouve
+            eligibility: |
+              - Ou dwe yon sitwayen ameriken oswa yon moun ki pa sitwayen ameriken men ki elijib epi yon rezidan Eta New York.
+              - Dwe te gradye nan yon lekòl segondè Ozetazini oswa te genyen yon diplòm ekivalan lekòl segondè.
+              - Dwe yon etidyan tan plen nan premye sik (fini ak 12 kredi chak sesyon) nan yon enstitisyon aprè segondè ki apwouve nan New York, dwe enskri nan yon pwogram etid ki apwouve epi dwe gen yon bon randman eskolè ak omwen yon C kimilatif nan moman pèman 4èm sesyon an. 
+              - Dwe peye omwen $200 frè eskolè chak ane 
+              - Pa dwe gen defo peman sou okenn prè etidyan leta oswa federal yo ni pa dwe gen mank sou peman bous Eta yo
+              - Dwe reponn ak egzijans revni yo
+            instructions:
+            preparation:
+      VETERANS_BLINDNESS:
+        resources:
+          ht:
+            name: Pwogram pansyon pou veteran ki avèg nan Eta New York
+            category: Veteran
+            description: |
+              Pansyon pou veteran ki vin avèg legalman nan tan lagè, oswa konjwen veteran ki vin avèg legalman nan tan lagè ki pa remarye, k ap viv epi rete nan Eta New York la.
+            eligibility: |
+              - Yo dwe deklare l avèg legalman.
+              - Dwe yon veteran nan tan lagè ki t ap sèvi pandan yon peryòd lagè espesifik, oswa te resevwa yon meday ekspedisyonè pou kèk konfli; oswa konjwen yon veteran kalifye ki pa remarye epi yo te deklare avèg legalman ki t ap resevwa yon alokasyon nan moman li mouri an oubyen ki te elijib pou te resevwa li lè l mouri.
+              - Dwe sèvi omwen 90 jou sèvis aktif pou lòt rezon ki pa fòmasyon. Mwens pase 90 jou sèvis aktif akseptab si yo te libere veteran an pou yon andikap ki lye ak sèvis la.
+              - Dwe rezidan epi domisilye nan Eta New York
+            instructions:
+            preparation: |
+              - Prèv ou se yon rezidan nan Eta New York.
+              - Yon dokiman dechaj oswa ki montre yo leve ou nan yon sèvis ki bay alafwa dat anwolman ak liberasyon an .
+              - Sètifika maryaj ak lanmò (si ou se yon konjwen ki ap aplike).
+              - Dokimantasyon pou sesite legal
+      MEMORIAL_SCHOLARSHIP:
+        resources:
+          ht:
+            name: Bousdetid  Komemoratif NYS
+            category: Edikasyon
+            description: |
+              Pwogram sa a bay èd finansye ak timoun, madanm/mari ak depandan ki sou responsablite ponpye ki desede a finansyèman, ponpye volontè, ofisye lapolis, ofisye lapè (ki gen ladan Gadyen Prizon NYS yo), ak travayè sèvis medikal ijans ki te mouri akoz domaj ki rive pandan yo te nan sèvis yo nan Eta New York la.
+            eligibility: |
+              - Dwe yon sitwayen Ameriken oswa moun ki pa sitwayen men ki elijib;
+              - Dwe yon timoun, madanm/mari oswa depandan ki sou responsablite ponpye ki desede a finansyèman, ponpye volontè, ofisye lapolis (ki genyen ladan Gadyen Prizon yo), oswa travayè sèvis medikal ijans ki te mouri akoz domaj ki rive pandan yo te nan sèvis yo nan Eta New York la;
+              - Te gradye nan lekòl segondè Ozetazini, te genyen yon diplòm ekivalans lekòl segondè, oswa te pase yon tès "Kapasite pou Avantaj" gouvènman federal la apwouve jan Komisè Depatman Edikasyon Eta a defini sa a ;
+              - Etid nan yon enstitisyon aprè lekòl segondè ki apwouve nan Eta New York;
+              - Dwe imatrikile nan yon pwogram etid premye sik;
+              - Dwe enskri antanke elèv tan plen k ap pran 12 oswa plis kredi chak semès epi ki aplikab ak pwogram diplòm nan;
+              - Dwe nan bon kondisyon akademik;
+              - Dwe nan yon estati ki san defo peman nan yon prè etidyan ki te fèt selon pwogram prè pou edikasyon federal la oswa NYS a oswa ranbousman tout distenksyon NYS la; epi
+              - Dwe konfòm ak tèm tout kondisyon sèvis yon sibvansyon NYS te enpoze
+            instructions: |
+              Ranpli epi soumèt sipleman Wèb pou Bous detid Memoryal NYS a. Dwe asire w ou enprime Konfimasyon Sipleman Wèb la, siyen l, mete dat sou li, epi soumèt li, ansanm ak dokimantasyon ki egzije yo, selon enstriksyon yo.
+              Si plis pase yon manm fanmi aplike pou yon sibvansyon Bous detid Memoryal la, chak manm fanmi an dwe soumèt yon sipleman separe.
+            preparation:
+      NURSING_SCHOLARSHIP:
+        resources:
+          ht:
+            name: Pwogram bousdetid nan Fakilte Syans Senatè Patricia K. McGee Enfimyè
+            category: Edikasyon
+            description: |
+              Yon bousdetid ki te ofri pou ogmante kantite pwofesè syans enfimyè ak fakilte klinik oksilyè nan Eta New York.
+            eligibility: |
+              - Dwe yon rezidan NYS epi dwe te rezide nan NYS pandan omwen 12 mwa suivi anvan kòmansman trimès la;
+              - Dwe yon sitwayen Ameriken oswa sitwayen ki pa Ameriken men ki elijib;
+              - Dwe yon enfimyè lisansye pou pratike nan NYS;
+              - Enskri nan yon lekòl ki akredite nan NYS nan yon pwogram nivo metriz oswa doktora nan syans enfimyè oswa yon pwogram ki lye ki bay aplikan an kalifikasyon pou travay nan fakilte syans enfimyè oswa fakilte klinik oksilyè nan NYS;
+              - Fè yon mwayèn jeneral (GPA) ki se 3.0 oswa plis si aplikan an te deja fini yon semès nan yon pwogram metriz ki pral bay li kalifikasyon nan fakilte syans enfimyè oswa fakilte klinik oksilyè;=
+              - Dwe nan yon sitiyasyon ki san defo peman nan yon prè etidyan ki te fèt selon pwogram prè pou edikasyon federal la oswa ranbousman pou tout sibvansyon NYS la;
+              - Dwe nan konfòmite ak tèm tout sèvis yon sibvansyon NYS enpoze ;
+              - Egzekite yon Kontra Sèvis ki dakò pou travay nan fakilte syans enfimyè oswa fakilte klinik oksilyè nan Eta New York pandan kat lane.
+            instructions:
+            preparation:
+      VETERANS_DISABILITY:
+        resources:
+          ht:
+            name: Konpansasyon Andikap pou Veteran
+            category: Veteran
+            description: |
+              Peman konpansasyon mansyèl san taks pou andikap nan Depatman Zafè Veteran Etazini an.
+            eligibility: |
+              Èske ou te resevwa domaj pandan sèvis militè aktif ou? Èske sèvis aktif ou an te agrave andikap ou te genyen deja a? Si repons pou youn nan kesyon sa yo se “wi,” alò ou gendwa elijib.
+            instructions: |
+              Konseye pou Avantaj Veteran yo, tout Veteran yo pou kont yo, pral prepare pou depoze demann pou andikap ou an pou konpansasyon andikap.
+            preparation:
+      HOMES_VETERANS:
+        resources:
+          ht:
+            name: Kay pou Pwogram Veteran yo
+            category: Lojman
+            description: |
+              Ipotèk ki genyen to fiks ak to enterè 0.375% enferyè a to enterè ki deja fèb nan Ajans pou Ipotèk Eta New York la.
+            eligibility: |
+              Dwe te sèvi aktivman nan lame epi te ranvwaye selon kondisyon ki pa pou rezon dezonorab.
+
+              Anplis, tout manm sèvis aktif, Gad Nasyonal ki te ranvwaye ak lonè, Rezèvis ki te ranvwaye ak lonè, k ap achte kay yo premye fwa gendwa pwofite avantaj pwogram nan si yo se:
+              - Yon manm pèsonèl militè Etazini (ki genyen ladan sila yo ki aktyèlman ap sèvi nan larezèv) ki twouve yo nan Eta New York, san konsidere estati yo)
+              - Yon Gad Nasyonal ki ranvwaye ak lonè
+              - Yon Rezèvis ki aktif oswa ki ranvwaye ak lonè
+            instructions:
+            preparation: |
+              - Yon istorisite de lane sou revni ki suivi, ki fyab epi ki ka verifye
+              - Yon istorisite kredi ki montre volonte pou fè peman ou yo atan
+              - Ase revni pou kouvri frè pwopriyete a pandan li toujou ap respekte lòt obligasyon dèt yo
+              - Ase lajan nan bank lan pou peye premye peman ou an ak frè kloti yo.
+      PART_TIME_STUDY:
+        resources:
+          ht:
+            name: Èd pou Etid Tan Pasyèl
+            category: Edikasyon
+            description: |
+              Asistans sibvansyon pou etidyan tan pasyèl ki enskri nan etid premye sik ki apwouve yo.
+            eligibility: |
+              - Dwe yon rezidan Eta New York epi dwe te rezide nan NYS pandan omwen 12 mwa suivi anvan kòmansman trimès la;
+              - Dwe yon sitwayen Ameriken oswa sitwayen ki pa Ameriken men ki elijib;
+              - Te gradye nan yon lekòl segondè Ozetazini, te genyen yon diplòm ekivalans lekòl segondè pandan l ap pase yon tès ki Evalye Reyisit Segondè li (TASC) yo konnen fòmèlman sou non GED, oswa te pase yon tès "Kapasite pou Avantaj" federal la apwouve jan sa defini Komisè Depatman Edikasyon Eta a;
+              - Dwe enskri kòm yon etidyan tan pasyèl
+              - Dwe imatrikile nan yon pwogram etid ki apwouve nan yon enstitisyon aprè lekòl segondè Eta New York;
+              - Dwe nan bon kondisyon akademik;
+              - Dwe te faktire omwen $100 pa ane;
+              - Dwe reponn ak limitaston revni yo;
+              - Pa te epwize elijiblite nan Pwogram Asistans pou Frè Eskolè a;
+              -  Dwe nan yon estati ki san defo nan yon prè etidyan ki te fèt selon tout pwogram prè pou edikasyon federal la oswa ranbousman pou tout sibvansyon NYS la ak
+              - Dwe respekte tout tèm yo
+            instructions: |
+              Pou aplike, etidyan yo ta dwe jwenn yon aplikasyon APTS nan inivèsite etidyan an pral swiv kou a.
+            preparation:
+      VETERANS_TUITION:
+        resources:
+          ht:
+            name: Sibvansyon Frè Eskolè pou Veteran
+            category: Edikasyon
+            description: |
+              Sibvansyon finansye pou etid tan plen ak tan pasyèl pou veteran ki elijib ki imatrikile nan yon pwogram ki apwouve nan yon enstitisyon ki bay diplòm premye sik ak diplòm dezyèm sik oswa nan yon pwogram fòmasyon pwofesyonèl ki apwouve nan Eta New York.
+            eligibility: |
+              - Dwe yon rezidan legal NYS epi ki te rezide nan NYS pandan 12 mwa suivi anvan dat kòmansman an trimès la
+              - Dwe imatrikile tan plen oswa tan pasyèl nan yon enstitisyon ki bay diplòm premye sik oswa diplòm dezyèm sik nan Eta New York oswa nan yon pwogram fòmasyon pwofesyonèl ki apwouve nan Eta New York
+              - Dwe ranvwaye ak lonè nan Fòs Lame Etazini an epi swa yon Veteran Vietnam ki te sèvi nan Indochina ant 28 fevriye 1961 ak 7 me 1975; oswa yon Veteran Gòf Pèsik ki te sèvi nan Gòl Pèsik la pandan oswa aprè 2 dawout 1990; oswa yon Veteran Afganistan ki te sèvi nan Afganistan pandan konfli yo pandan oswa aprè 11 septanm 2001; oswa yon Veteran Fòs Lame Ameriken ki te sèvi nan konfli ki te rive aprè 28 fevriye 1961, jan sa pwouve pa yon resi Meday Ekspedisyonèl Fòs Lame yo, Meday Ekspedisyonè Lamarin oswa yon Meday Ekspedisyonè Kò Lamarin.
+            instructions:
+            preparation:
+      SOCIAL_WORKER_LOAN:
+        resources:
+          ht:
+            name: Pwogram Remiz Prè pou Travayè Sosyal ki Lisansye (LSWLF)
+            category: Edikasyon
+            description: |
+              Yo ofri pwogram sa a pou ogmante kantite travayè sosyal ki lisansye k ap travay nan domèn sèvis sosyal ki grav anpil, sa genyen ladan men pa limite ak chan sa yo: swen adomisil, sante, sante mantal, konsomasyon dwòg, vyeyisman, VIH/SIDA ak byennèt timoun oswa kominote ki genyen bezwen nan plizyè lang.
+            eligibility:
+            instructions:
+            preparation:
+      MERIT_SCHOLARSHIP:
+        resources:
+          ht:
+            name: Bousdetid Amelyore pou Ensitatif ak Omaj Rekonesans Militè (MERIT)
+            category: Edikasyon
+            description: |
+              Èd edikatif pou yon timoun ki elijib, madanm/mari oswa depandan ki repoze finansyèman sou manm Fòs Lame Etazini an oswa milis eta a ki òganize an.
+            eligibility: |
+              - Ou se yon timoun, madanm/mari oswa depandan ki repoze finansyèman sou manm Fòs Lame Etazini an oswa milis eta a òganize ki, nan nenpòt moman pandan oswa aprè 2 dawout 1990, malgre li se rezidan New York, te mouri oswa te vin andikape gravman epi nèt oswa andikape pou tout tan pandan li t ap akonpli obligasyon militè li yo, kit se nan konba oswa se pa nan konba.
+              - Etid nan yon enstitisyon aprè lekòl segondè ki apwouve nan New York.
+              - Te gradye nan lekòl segondè Ozetazini, oswa genyen yon diplòm ekivalans nan tès ki Evalye Reyisit Segondè li (TASC), moun konnen l fòmèlman sou non GED, oswa te pase yon tès "Kapasite pou Avantaj" federal la apwouve jan dKomisè Depatman Edikasyon Eta a defini sa .
+              - Dwe enskri kòm yon etidyan tan plen k ap pran 12 oswa plis kredi chak semès.
+              - Dwe imatrikile nan yon pwogram etid ki apwouve.
+              - Dwe nan bon kondisyon akademik. 
+              - Dwe nan yon sitiyasyon ki san defo peman nan nenpòt prè etidyan Eta a oswa federal la oswa ranbousman pou tout sibvansyon eta a.
+            instructions: |
+              Ranpli epi soumèt Sipleman Wèb pou Bous detid Amelyore pou Ensitatif ak Omaj Rekonesans Militè (MERIT) Asire w ou enprime konfimasyon Sipleman Wèb la, siyen l, epi soumèt li, ansanm ak dokimantasyon ki egzije yo, selon esntriksyon yo.
+            preparation:
+      STEM:
+        resources:
+          ht:
+            name: Pwogram Ensitatif STEM
+            category: Edikasyon
+            description: |
+              Sibvansyon frè eskolè pou etidyan ki se rezidan New York ki ale nan yon inivèsite prive ki bay diplòm oswa inivèsite ki tabli nan Eta New York.
+            eligibility: |
+              - Dwe klase nan premye 10 pousan nan klas k ap gradye nan lekòl segondè li a nan yon lekòl segondè NYS;
+              - Dwe imatrikile nan yon pwogram premye sik ki apwouve ki mennen nan yon diplòm nan Syans, Teknoloji, Jeni oswa Matematik nan yon inivèsite piblik oswa prive ki tabli nan NYS;
+              - Mentni yon mwayèn jeneral (GPA) ki se 2.5 oswa plis;
+              - Egzekite yon Kontra Sèvis ki dakò pou rezide epi travay nan domèn Syans, Teknoloji, Jeni oswa Matematik nan NYS pandan senk lane.  Gade tèm ak kondisyon kontra sèvis la.
+              - Dwe yon rezidan NYS epi dwe te rezide nan NYS pandan 12 mwa suivi anvan kòmansman trimès otòn nan inivèsite a;
+              - Dwe yon sitwayen Ameriken oswa sitwayen ki pa Ameriken men ki elijib;
+              - Dwe yon elèv lekòl segondè/ki gradye dènyèman ki pral enskri tan plen nan yon inivèsite piblik oswa prive ki tabli nan NYS, k ap kòmanse nan trimès otòn nan aprè gradyasyon li nan lekòl segondè
+            instructions: |
+              Ranpli epi soumèt Aplikasyon Pwogram Ensitatif Syans, Teknoloji, Jeni ak Matematik (STEAM) NYS la. Asire w ou enprime konfimasyon Aplikasyon an, siyen l, epi soumèt li, ansanm ak dokimantasyon ki egzije yo, selon esntriksyon yo. Epitou ou dwe soumèt Aplikasyon pou Peman Èd Etidyan FAFSA ak NYS la.
+            preparation:
+      REGENTS:
+        resources:
+          ht:
+            name: NYS Regents Awards pou Timoun Veteran ki Desede epi ki Andikape
+            category: Edikasyon
+            description: |
+              Èd finansye pou etidyan ki genyen paran yo ki te sèvi nan Fòs lame Etazini pandan moman ijans nasyonal ki presize yo.
+            eligibility: |
+              Etidyan ki genyen paran yo ki te sèvi nan Fòs Lame Etazini pandan peryòd lagè oswa ijans nasyonal ki presize a epi, akoz sèvis yo, yo te mouri, te soufri 40% andikap oswa plis, te klasifye kòm moun ki disparèt nan sèvis yo, oswa ki te yon prizonye lagè, yo elijib pou aplike. Veteran an dwe aktyèlman yon rezidan Eta New York oswa te yon rezidan Eta New York nan moman lanmò l. Aplikan an dwe ap pouswiv yon diplòm premye sik nan yon fakilte oswa inivèsite ki tabli nan NYS.
+            instructions: |
+              Ranpli Sipleman Wèb Sibvansyon pou Veteran an. Asire w ou enprime Konfimasyon Sipleman Wèb la, siyen l epi retounen l ansanm ak dokimantasyon ki obligatwa selon enstriksyon yo.
+              Yon fwa ou te etabli elijiblite w, ou dwe ranpli Aplikasyon Gratis pou Èd Federal pou Etidyan an (FAFSA) epi aplike pou Pwogram Asistans Frè Eskolè (TAP), oswa rele HESC nan 1-888-697-4372 pou mande yon Aplikasyon pou Peman Sibvansyon ak pou Bous Detid anvan dat 30 jen nan chak ane akademik w ap chèche peman pou li.
+            preparation:
+      ACADEMIC_EXCELLENCE:
+        resources:
+          ht:
+            name: Bous etid NYS pou Ekselans Akademik
+            category: Edikasyon
+            description: |
+              Resevwa plis pase $1,500 bous etid pou al an fakilte.
+            eligibility: |
+              - Dwe gradye nan yon lekòl segondè nan Eta New York
+              - Dwe yon etidyan tan plen epi enskri nan yon pwogram etid ki apwouve nan yon enstitisyon apre segondè nan Eta New York
+              - Dwe bay bon randman akademik
+              - Pa dwe gen defo peman sou prè etidyan leta oswa federal yo ni pa dwe gen mank sou peman bous leta yo
+              - Ou dwe yon sitwayen ameriken oswa yon moun ki pa sitwayen ameriken men ki elijib
+              - Dwe yon rezidan Eta New York
+            instructions: |
+              Pou aplike, wè ak konseye oryantasyon ou an.
+            preparation:
+      EXCELSIOR:
+        resources:
+          ht:
+            name: Pwogram Bousdetid Excelsior
+            category: Edikasyon
+            description: |
+              Pwogram Bousdetid Excelsior a, nan kolaborasyon ak lòt pwogram èd finansye èd pou etidyan yo, pèmèt etidyan yo ale nan inivèsite SUNY oswa CUNY san okenn frè eskolè.
+            eligibility: |
+              - Dwe yon rezidan NYS epi te rezide nan NYS pandan 12 mwa suivi anvan kòmansman trimès la;
+              - Dwe yon sitwayen Ameriken oswa yon sitwayen ki pa ameriken men ki elijib;
+              - Te swa gradye nan lekòl segondè Ozetazini, te genyen yon diplòm ekivalans lekòl segondè, oswa te pase yon tès "Kapasite pou Avantaj", jan sa defini bò kote Komisè Depatman Edikasyon Eta a;
+              - Genyen yon revni brit federal la ki ajiste ki se $125,000 oswa mwens;
+              - Dwe ap pouswiv yon diplòm premye sik nan inivèsite SUNY oswa CUNY, ki genyen ladan fakilte kominotè ak inivèsite jiridik nan Cornell University ak Alfred University;
+              - Dwe enskri nan omwen 12 kredi chak  trimès epi fini omwen 30 kredi chak ane (youn aprè lòt), ki aplikab pou pwogram li a atravè etid suivi san poz nan enskripsyon an sof pou kèk rezon ki jistifye;
+              - Si ou te ale nan inivèsite anvan ane akademik 2019-20 an, ou te genyen omwen 30 kredi chak ane (youn aprè lòt), ki aplikab pou pwogram diplòm ou an anvan ou aplike pou yon bous detid Eksèlsyò;
+              - Dwe nan yon estati ki san defo peman nan okenn prè etidyan NYS la oswa federal la oswa ranbousman pou tout sibvansyon NYS la;
+              - Dwe respekte tèm kondisyon sèvis la (yo) nenpòt sibvansyon NYS ou te deja resevwa enpoze; epi 
+              - Egzekite yon Kontra ki dakò pou rezide nan NYS pou tout dire ou te resevwa sibvansyon pou li a, epi, si w ap travay pandan moman sa a, ou dwe ap travay nan NYS.
+            instructions: |
+              Pou aplike, al jwenn konseye oryantasyon lekòl segondè ou an.
+            preparation:
+      COVID_TEST:
+        resources:
+          ht:
+            name: Jwenn yon Sit pou Fè Tès pou COVID-19 ki Toupre W
+            category: COVID-19
+            description: |
+              Tout Nouyòkè elijib pou fè yon tès pou COVID-19 Lokalizatè pou jwenn Sit Tès COVID-19 la bay kote yo ap fè tès kowonaviris toupre w la.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_QUARANTINE_LEAVE:
+        resources:
+          ht:
+            name: Konje nan karantèn pou COVID-19 lan
+            category: Sante
+            description: |
+              Kèk anplwayè nan Eta New York te twouve nesesè pou ofri omwen 5 jou travay pwoteje, konje maladi peye pou anplwaye ki bezwen pran konje paske yo bay yo lòd pou fè karantèn oswa pran prekosyon oswa izole pou COVID-19 lan.
+            eligibility: |
+              - Si ou mete tèt ou nan karantèn ou menm sèl
+              - Si timoun ou responsab yo te nan karantèn
+              - Si ou dwe okipe yon manm nan fanmi ou ak COVID-19 lan
+            instructions:
+            preparation:
+      VIOLENCE_HOTLINE:
+        resources:
+          ht:
+            name: Liy Asistans Eta New York la sou Vyolans Seksyèl ak Vyolans Domestik
+            category: Sekirite Piblik
+            description: |
+              Liy Asistans Eta New York la sou Vyolans Seksyèl ak Vyolans Domestik bay\kominikasyon prive epi ki sekirize lè ou ap tèks, fè apèl oswa tchat.
+            eligibility:
+            instructions:
+            preparation:
+      FIND_A_JOB:
+        resources:
+          ht:
+            name: Jwenn yon Travay
+            category: Anplwa
+            description: |
+              Rete konekte ak travay lokal ak travay sektè prive a. Kòmanse chèche nouvo karyè ou an jodia pandan w ap pakouri plizyè milye opòtinite travay lokal sou sit entènèt Jobs Express la.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_HOUSING:
+        resources:
+          ht:
+            name: Resous pou Lojman Pandan COVID-19 la
+            category: Lojman
+            description: |
+              Jwenn enfòmasyon pou lokatè, mèt kay, ak pwopriyetè kay COVID-19 la te fè enpak sou yo.
+            eligibility:
+            instructions:
+            preparation:
+      FOOD_BANK:
+        resources:
+          ht:
+            name: Jwenn yon Bank Alimantè Toupre W
+            category: Manje
+            description: |
+              Jwenn yon lis bank alimantè ak biwo pou chak konte nan Eta New York.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_EMOTIONAL_MENTAL_SUPPORT:
+        resources:
+          ht:
+            name: Liy asistans pou Soutyen pou COVID-19 lan ak Lòt Resous nan Sante Mantal
+            category: Sante
+            description: |
+              Rele nan 1-844-863-9314 pou soutyen gratis epi konfidansyèl. Jwenn resous tou sou fason pou jere kè sote epi fè fas ak dèy pandan ijans sanitè koronaviris la.
+            eligibility:
+            instructions:
+            preparation:
+      DMV_ONLINE:
+        resources:
+          ht:
+            name: Gade Tout Sèvis sou Entènèt DMV yo
+            category: Transpò
+            description: |
+              Aprann plis sou anpil tranzaksyon DMV ki ka fèt sou entènet san ou pa bezwen ale nan yon biwo.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_CHILD_SUPPORT:
+        resources:
+          ht:
+            name: COVID-19 ak Sèvis Sipò pou Timoun nan New York
+            category: Fanmi
+            description: |
+              Pwogram Sipò pou Timoun New York la angaje pou bay sèvis nan mezi sa posib nan kriz sante piblik sa a. Anpil nan biwo lokal yo genyen manm pèsonèl limite oswa orè ki repati.
+              schedules.
+            eligibility:
+            instructions:
+            preparation:
+      FIND_A_JOB_OMH:
+        resources:
+          ht:
+            name: Jwenn yon Travay nan Biwo Sante Mantal la (OMH)
+            category: Anplwa
+            description: |
+              Opòtinite pou jwenn travay nan OMH la ki genyen ladan travay yo plis mande yo tankou sikyat, enfimyè ki akredite, ak èd terapi ak èd pou sante mantal.
+            eligibility: |
+              - Rezilta Egzamen Sèvis Sivil
+              - Lisans oswa Sètifikasyon Pwofesyonèl
+              - Edikasyon
+              - Elijiblite pou patisipasyon san kondisyon nan pwogram Medicaid
+              Medicare yo
+              - Kapasite pou fè verifikasyon antesedan
+              - Kapasite pou fè egzamen medikal ak/oswa egzamen medikal
+              - Kapasite pou fè depistaj dwòg
+            instructions:
+            preparation:
+      CHECK_EBC_BALANCE:
+        resources:
+          ht:
+            name: Verifye Balans Kat Avantaj Elektwonik Pandemi Ou an
+            category: Manje
+            description: |
+              Ou ka verifye balans kont ou an nenpòt lè pandan w ap rele 1-888-328-6399, pandan w ap fè kesye a verifye balans ou an nan  rejis la nan nenpòt magazen alimantè ki patisipe oswa sou entènèt.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_HEALTH_INSURANCE_RIGHTS:
+        resources:
+          ht:
+            name: Enfòmasyon Asirans Sante ak Resous ki Lye ak COVID la
+            category: Sante
+            description: |
+              Konnen dwa ou yo ak chanjman nan kouvèti asirans sante a akoz COVID-19 la.
+            eligibility:
+            instructions:
+            preparation:
+      MEALS_FOR_KIDS:
+        resources:
+          ht:
+            name: Jwenn Pla pou Timoun Lè Lekòl yo Fèmen
+            category: Manje
+            description: |
+              Antre adrès ou an pou jwenn lokalizasyon ki pi pre w la ki bay pla pou timoun yo pandan lekòl yo fèmen.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_ADDICTION_SERVICES:
+        resources:
+          ht:
+            name: Jwenn Aksè ak Sèvis Depandans yo pandan COVID la
+            category: COVID-19
+            description: |
+              Tretman pou depandans ak sèvis retablisman yo kontinye disponib pandan pandemi COVID-19 la. Kit ou bezwen pale oswa ou enkyè paske ou repliye sou ou menm oswa ou efondre, founisè OASAS-ki sètifye oswa ki finanse nan Eta New York yo disponib atravè telefòn/videyo oswa an pèsòn nan yon distans ki sekirize.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_NEW_AMERICANS:
+        resources:
+          ht:
+            name: Resous COVID-19 pou New Americans yo
+            category: COVID-19
+            description: |
+              Jwenn aksè ak depliyan nan plizyè lang ki detaye sèvis ki founi yo bò kote Biwo pou New Americans ak patnè li yo, ansanm ak enfòmasyon ki lye ak COVID-19 pou imigran yo.
+            eligibility:
+            instructions:
+            preparation:
+      DIAPER_ASSISTANCE:
+        resources:
+          ht:
+            name: Jwenn Asistans pou Kouchèt nan Zòn Ou an
+            category: Fanmi
+            description: |
+              Dekouvri yon ajans nan zòn ou an ki bay fanmi ki nan bezwen yo kouchèt gratis. Yon bank kouchèt sanble ak yon bank alimantè, sèl diferans sèke se kouchèt yo distribye men se pa manje.
+            eligibility:
+            instructions:
+            preparation:
+      TEMP_ASSISTANCE:
+        resources:
+          ht:
+            name: Asistans Tanporè
+            category: Asistans Piblik
+            description: |
+              TA se èd tanporè pou gason, fanm ak timoun ki nan bezwen. Si ou pa kapab travay oubyen pa jwenn travay oswa travay ou pa peye ase, TA kapab ede w peye depans debaz yo. TA kapab ba ou tou èd pou rezoud yon ijans oswa yon bezwen tousuit, tankou yon esplikasyon annatant oswa lwil chofaj ki fèb/okenn luil chofaj pou fwaye ki elijib.
+            eligibility: |
+              Kritè elijiblite yo gen ladan yo, men yo pa limite ak (gade [paj Asistans Tanpore](https://otda.ny.gov/programs/temporary-assistance/) pou plis enfòmasyon):
+               - Sitwayen ameriken oswa moun ki pa sitwayen men ki gen yon sitiyasyon ki elijib
+               - Yon revni mansyèl ki pa depase limit revni yo
+               - Resous ki ka konte ki pa depase limit resous yo
+               - Konfòmite ak atribisyon travay yo, lè sa aplikab
+            instructions: |
+              Aplike pandan w ap itilize myBenefits
+            preparation: |
+              - Souch chèk oswa lòt prèv revni pandan 30 dènye jou yo
+              - Lis resous pou fwaye
+              - Lokasyon aktyèl/bilan ipotèk
+              - Fakti aktyèl enpo sou pwopriyete
+              - Fakti aktyèl asirans pou pwopriyetè kay
+              - Nimewo Sekirite Sosyal oswa lòt prèv aplikasyon pou yon Nimewo Sekirite Sosyal pou chak manm nan fwaye a k ap aplike
+              - Yo kapab egzije w bay lòt dokimantasyon selon sitiyasyon pèsonèl ou aprè antretyen elijiblite ou an
+
+              Tanpri gade lis yo bay yo sou [Temporary Assistance](https://otda.ny.gov/programs/temporary-assistance/) pou plis enfòmasyon
+              enfòmasyon.
+      FILE_TAXES_FREE:
+        resources:
+          ht:
+            name: Ranpli Enpo ou yo Gratis sou Entènèt
+            category: Enpo
+            description: |
+              Lojisyèl Free File disponib jiska 15 oktòb 2020 pou moun ki poko ranpli oswa ki te mande yon pwolongasyon aprè dat limit 15 jiyè a.
+            eligibility:
+            instructions: |
+              Si revni 2019 ou te $69,000 oswa pi piti , ou elijib pou itilize lojisyèl free file.
+            preparation: |
+              - yon kont mesajri ki aktif (ap pèmèt ou swiv estati retou ou an )
+              - yon kopi deklarasyon revni ane pase a oswa revni brit gouvènman an te ajiste pandan ane ki vini anvan an.(FAGI)
+              - yon lisans chofè oswa pyès idantite moun ki pa chofè leta bay (pou ou ak konjwen ou, si n ap fè depozisyon an ansanm)
+              - dat nesans ak Nimewo Sekirite Sosyal ou, konjwen ou, ak moun ki sou kont ou
+              - prèv revni (deklarasyon salè, enterè ak dividand): Fòmilè W-2, 1098, 1099 ak tout lòt dokiman ki endike ou gen yon lòt revni anplis
+              - Fòmilè 1095-A, B, oswa C, Enfòmasyon sou Deklarasyon Swen Sante ki Abòdab ki lye ak tout kredi ou ap reklame
+              - enfòmasyon labank ou yo (nimewo kont ak nimewo acheminman bank ou an, ou kapab jwenn sou yon chèk vyèj )
+              - NY529 Enfòmasyon sou kont epay pou inivèsite (si ou mande yon ranbousman ki pral distribiye)
+      VETERANS_PENSION:
+        resources:
+          ht:
+            name: Pansyon pou Veteran ki pa nan sèvis
+            category: Veteran
+            description: |
+              Dekouvri si ou kalifye pou jwenn yon avantaj fiskal gratis pou kèk veteran nan Depatman Ameriken pou Veteran yo (VA). Nòt: Sèvis sa PA aplike pou peye pansyon retrete yo.
+            eligibility: |
+              - Ou te dwe sèvi nan sèvis aktif pandan omwen 24 mwa (oswa omwen 90 jou si ou te rantre nan sèvis militè pou sèvis aktif avan 7 septanm 1980) epi te sèvi nan sèvis aktif pandan omwen yon jou nan tan lagè.
+              - Genyen 65 lane oswa pi plis OSWA
+              - Ap Resevwa Pèman Envalidite Sekirite Sosyal (SSD), OSWA
+              - Ap Resevwa peman Revni Sekirite Sosyal Siplemantè (SSI), OSWA
+              - Yon pasyan nan yon fwaye retrèt, OSWA
+              - Te dyagnostike ak yon pwoblèm andikap ki "total epi pèmanan”
+              - Genyen byen sou non w ki vo mwens pase $129,094?
+              - Genyen yon revni anyèl ki tonbe pi ba limit revni an 
+              - NÒT: Sèvis sa a PA aplike ak peman pansyon retrete yo
+            instructions:
+            preparation:

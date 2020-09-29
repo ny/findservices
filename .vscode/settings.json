@@ -1,0 +1,30 @@
+{
+  "[java]": {
+    "editor.rulers": [100],
+    "rewrap.wrappingColumn": 100
+  },
+  "css.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.renderFinalNewline": true,
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "eslint.lintTask.options": "--ignore-path ../.gitignore .",
+  "eslint.workingDirectories": ["./client"],
+  "files.associations": {
+    "*.overrides": "less",
+    "*.variables": "less"
+  },
+  "java.completion.importOrder": ["#", ""],
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "jest.pathToJest": "yarn workspaces run test",
+  "maven.executable.preferMavenWrapper": true,
+  "prettier.useEditorConfig": false,
+  "rewrap.wrappingColumn": 80
+}

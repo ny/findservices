@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "clinyong.vscode-css-modules",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "gabrielbb.vscode-lombok",
+    "humao.rest-client",
+    "msjsdiag.debugger-for-chrome",
+    "ryanluker.vscode-coverage-gutters",
+    "orta.vscode-jest",
+    "pivotal.vscode-spring-boot",
+    "stylelint.vscode-stylelint",
+    "vscjava.vscode-java-pack"
+  ]
+}

@@ -1,0 +1,88 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.buttons button,
+.ui.button {
+  font-weight: @bold;
+  font-size: @13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ui.buttons .disabled.button,
+.ui.disabled.button,
+.ui.button:disabled,
+.ui.disabled.button:hover,
+.ui.disabled.active.button {
+  color: #6f6f6f !important;
+  background-color: #f6f8f8 !important;
+  background-image: none;
+  border: none !important;
+  opacity: none;
+}
+
+/*--------------
+    Icon Only
+---------------*/
+
+.ui.icon.button > .icon.spacing,
+.ui.icon.buttons .button > .icon.spacing {
+  margin-right: 0.5em !important;
+}
+
+/*--------------
+     Toggle
+---------------*/
+
+.ui.toggle.buttons .button,
+.ui.buttons .button.toggle,
+.ui.button.toggle {
+  color: @nysBlue;
+  background-color: white;
+  border: @toggleButtonBorder;
+}
+
+.ui.toggle.buttons .button:focus,
+.ui.buttons .button.toggle:focus ,
+.ui.button.toggle:focus {
+  border: @2px solid @nysBlue;
+}
+
+.ui.toggle.buttons .button:hover,
+.ui.buttons .button.toggle:hover ,
+.ui.button.toggle:hover {
+  background: @positiveColorHover;
+  border: @1px solid @selectedBorderColor;
+}
+
+.ui.toggle.buttons .active.button,
+.ui.buttons .button.toggle.active,
+.ui.button.toggle.active {
+  color: @nysBlue !important;
+  border: @toggleButtonBorder;
+}
+.ui.button.toggle.active:hover {
+  color: @nysBlue !important;
+}
+
+
+/*-------------------
+       Primary
+--------------------*/
+
+.ui.primary.buttons .button:focus,
+.ui.primary.button:focus {
+  box-shadow: 0 0 0 @3px @nysOrange;
+}
+
+.ui.primary.buttons .button:hover,
+.ui.primary.button:hover {
+  background-color: #182654;
+  box-shadow: @activeHoverBoxShadow;
+}
+
+.ui.primary.buttons .button:active,
+.ui.primary.button:active {
+  box-shadow: @activeHoverBoxShadow;
+}

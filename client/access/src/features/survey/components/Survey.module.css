@@ -1,0 +1,57 @@
+/* stylelint-disable selector-pseudo-class-no-unknown */
+
+.nav {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.error {
+  text-align: left;
+}
+
+.anchor {
+  display: inline-block;
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.anchorError {
+  composes: anchor;
+  margin-top: 0;
+}
+
+.checklist {
+  position: relative;
+  width: auto;
+  height: 10em;
+  margin-top: 0.5em;
+}
+
+.divider {
+  color: #e5e5e5;
+}
+
+.numbers {
+  list-style-type: none;
+}
+
+.numbers ol {
+  margin-left: 2em;
+}
+
+.numbers li {
+  margin-bottom: 1em;
+  counter-increment: count-me;
+}
+
+.numbers li::before {
+  position: relative;
+  left: -1.1em;
+  display: block;
+  max-width: 0;
+  max-height: 0;
+  color: #0f739d;
+  font-weight: 600;
+  content: counter(count-me) ". ";
+  counter-increment: item;
+}

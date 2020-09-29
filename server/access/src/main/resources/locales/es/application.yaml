@@ -1,0 +1,936 @@
+maslow:
+  catalog:
+    sections:
+      SECTION_YOURSELF:
+        resources:
+          es:
+            title: Háblanos de ti
+      SECTION_HOUSEHOLD:
+        resources:
+          es:
+            title: Háblanos de tu situación de convivencia
+      SECTION_SITUATION:
+        resources:
+          es:
+            title: Háblanos de las personas con las que vives
+
+    questions:
+      HOUSEHOLD_SIZE:
+        resources:
+          es:
+            text: ¿Con cuántas personas vives? Inclúyete a ti.
+            hint: Cuéntate a ti, a otros adultos y a cualquier persona dependiente a la hora de responder a estas preguntas.
+      HOUSEHOLD_EMPLOYED:
+        resources:
+          es:
+            text: ¿Alguna persona con la que vives trabaja?
+      HOUSEHOLD_INCOME:
+        resources:
+          es:
+            text: ¿Cuál es la cantidad total de dinero (tanto rentas como ingresos salariales antes de impuestos) que habéis ingresado entre todas las personas de tu hogar en los últimos 30 días?
+      ADULTS_60_PLUS:
+        resources:
+          es:
+            text: ¿Vives con alguien que tenga 60 años o más?
+      CHILDREN_06_17:
+        resources:
+          es:
+            text: ¿Vives con alguien que tenga entre 6 y 17 años?
+      CHILDREN_00_05:
+        resources:
+          es:
+            text: ¿Vives con alguien que tenga 5 años o menos?
+      IS_EMPLOYMENT_AFFECTED:
+        resources:
+          es:
+            text: ¿Estás en el paro, tu empresa ha hecho un ERTE o te han reducido la jornada laboral?
+            hint:
+      IS_PAY_FOR_DEPENDENT_CARE:
+        resources:
+          es:
+            text: ¿Vives con alguien que pague por cuidados de personas dependientes?
+            hint: La ayuda para personas dependientes es el dinero que pagas a alguien para el cuidado de los hijos u otros miembros de la unidad familiar que tengan alguna discapacidad o sean ancianos, con el objetivo de que puedas trabajar, buscar trabajo o asistir a clase.
+      IS_WORRIED_HOUSING:
+        resources:
+          es:
+            text: ¿Tienes problemas para pagar el alquiler, la hipoteca o los gastos de mantenimiento de la casa?
+      IS_WORRIED_FOOD:
+        resources:
+          es:
+            text: ¿Tienes problemas para poder cubrir tus gastos de alimentación o los de tu familia?
+      IS_DISABLED:
+        resources:
+          es:
+            text: ¿Convives con alguna persona invidente o que tenga alguna discapacidad?
+      IS_MILITARY:
+        resources:
+          es:
+            text: ¿Convives con alguien que sea miembro activo o veterano/a retirado/a con honores de las Fuerzas Armadas de Estados Unidos?
+      IS_STUDENT:
+        resources:
+          es:
+            text: ¿Convives con alguien que vaya o tenga pensado ir a un centro de estudios superiores, un centro de formación profesional o la universidad (de forma presencial o a distancia)?
+      IS_PREGNANT:
+        resources:
+          es:
+            text: ¿Alguna de las personas con las que convives está embarazada?
+      IS_COVID:
+        resources:
+          es:
+            text: ¿Vives con alguien a quien le hayan diagnosticado el COVID-19?
+            hint: Cuéntate a ti y a cualquier persona dependiente a la hora de responder a estas
+
+    services:
+      CHILDCARE:
+        resources:
+          es:
+            name: Programa Child Care Subsidy de subsidios para el cuidado infantil
+            category: Familia
+            description: |
+              Recibe ayuda para pagar el coste de servicios de cuidado infantil parcialmente o en su totalidad.
+            eligibility: |
+              Necesitar servicios de cuidado infantil para poder trabajar, buscar empleo o asistir a sesiones formativas para el trabajo.
+            instructions: |
+              Para solicitar esta ayuda, ponte en contacto con el Departamento de Servicios Sociales de tu zona.
+            preparation:
+      DOL_UA:
+        resources:
+          es:
+            name: Unemployment Assistance (subsidio de desempleo)
+            category: Empleo
+            description: |
+              Recibe una renta temporal si pierdes tu trabajo por causas ajenas a tu responsabilidad.
+            eligibility:
+            instructions: |
+              Ve a ny.gov para crear una cuenta y enviar tu solicitud online.
+            preparation: |
+              - Tu número de la Seguridad Social
+              - El número de tu carné de conducir o el de la tarjeta de identificación de vehículo de motor (si tienes alguno de ellos)
+              - Tu dirección postal completa, incluido el código postal
+              - Un número de teléfono con el que podamos contactar contigo de lunes a viernes, de 8:00 a 17:00
+              - El número de tu tarjeta de registro de ciudadanos extranjeros (si no eres ciudadano/a de Estados Unidos y tienes dicha tarjeta)
+              - Los nombres y las direcciones de todas las empresas en las que has trabajado en los últimos 18 meses, incluso si están en otro estado
+              - El número Employer Registration (registro del empleador) o Federal Employer Identification Number (número de identificación del empleador federal, FEIN) de tu último empleador (el FEIN aparece en tus formularios W-2)
+              - Tus copias de los formularios SF8 y SF50, si trabajaste para el Gobierno federal
+              - Tu formulario DD 214 más reciente, si eras militar
+      DOL_PUA:
+        resources:
+          es:
+            name: Pandemic Unemployment Assistance (subsidio de desempleo por la pandemia, PUA)
+            category: Empleo
+            description: |
+              Este programa ayuda a los estadounidenses que no pueden trabajar debido a la pandemia del coronavirus, pero no cumplen los requisitos para recibir el Unemployment Assistance (subsidio de desempleo, UA).
+            eligibility: |
+              - Deberías solicitar esta ayuda si no puedes trabajar como consecuencia de la pandemia del coronavirus.
+              - No se te concederá si puedes teletrabajar o si estás cobrando una baja por enfermedad o por otro motivo.
+            instructions: |
+              La mejor manera de solicitar esta ayuda es online. En el sitio web del Departamento de Trabajo de Nueva York puedes solicitar de forma sencilla el UA o el PUA, en función de los requisitos. No tienes que enviar una solicitud aparte para pedir el PUA.
+            preparation: |
+              - Tu número de la Seguridad Social
+              - El número de tu carné de conducir o de la tarjeta de identificación de vehículo de motor (si tienes alguno de ellos)
+              - Tu dirección postal completa, incluido el código postal
+              - Un número de teléfono con el que podamos contactar contigo de lunes a viernes, de 8:00 a 17:00
+              - El número de tu tarjeta de registro de ciudadanos extranjeros (si no eres ciudadano/a de Estados Unidos y tienes dicha tarjeta)
+              - Los nombres y las direcciones de todas las empresas en las que has trabajado en los últimos 18 meses, incluso si están en otro estado
+              - El número Employer Registration (registro del empleador) o Federal Employer Identification Number (número de identificación del empleador federal, FEIN) de tu último empleador (el FEIN aparece en tus formularios W-2)
+              - Tus copias de los formularios SF8 y SF50, si trabajaste para el Gobierno federal
+              - Tu formulario DD 214 más reciente, si eras militar
+      EAA:
+        resources:
+          es:
+            name: Emergency Assistance to Adults (asistencia de emergencia para adultos, EAA)
+            category: Efectivo
+            description: |
+              Asistencia de emergencia en efectivo para personas y parejas que cumplen los requisitos.
+            eligibility:
+            instructions: |
+              Envía una solicitud al Departamento de Servicios Sociales de tu condado.
+            preparation:
+      SNAP:
+        resources:
+          es:
+            name: Supplemental Nutrition Assistance Program (programa complementario de asistencia a la nutrición, SNAP)
+            category: Alimentación
+            description: |
+              Recibe subsidios electrónicos que puedes utilizar para comprar comida.
+            eligibility: |
+              Los criterios de participación incluyen, entre otros (consulta la [página del SNAP][https://otda.ny.gov/programs/snap/] para obtener más información):
+              - Ser ciudadano de Estados Unidos o residente que cumpla los requisitos aunque no tenga la ciudadanía, cumplir los criterios para estudiantes y los requisitos de adultos sanos sin empleo ni personas dependientes a su cargo, cuando se asignen.
+              - Los ingresos mensuales no deben superar los límites de ingresos y los recursos computables no deben superar los límites de recursos, si procede.
+            instructions: |
+              Envía una solicitud a través de myBenefits.
+            preparation: |
+              - Resguardos de pagos u otro justificante de ingresos de los últimos 30 días
+              - Lista de recursos de tu unidad familiar
+              - Extracto actual de la hipoteca o el alquiler
+              - Factura actual del impuesto sobre bienes inmuebles
+              - Factura actual del seguro de propietario de la vivienda
+              - Número de la Seguridad Social o justificante de la solicitud del número de la Seguridad Social de cada miembro de la unidad familiar que solicita las ayudas del SNAP
+              - Es posible que tengas que facilitar otros documentos según tus circunstancias individuales tras la entrevista de elegibilidad
+      VICTIM_COMP:
+        resources:
+          es:
+            name: Victim Compensation (indemnización a las víctimas)
+            category: Delitos
+            description: |
+              Recibe apoyo económico si has sido víctima de un delito. Esta ayuda sirve para pagar facturas médicas, servicios de asesoramiento, costes funerarios y otros gastos, así como para compensar nóminas que no se hayan recibido.
+            eligibility: |
+              - Las víctimas tienen que ser inocentes
+              - Las víctimas tienen que haber sufrido daños físicos como consecuencia del delito
+              - Si las víctimas son menores de edad o mayores de 60 años, o tienen alguna discapacidad, no hace falta que hayan sufrido daños físicos
+            instructions:
+            preparation: |
+              - Informes policiales
+              - Facturas médicas
+              - Comunicaciones con compañías de seguros o un plan de subsidios que confirmen si se harán cargo de las pérdidas
+              - Tarjetas de seguros
+              - Recibos de bienes personales esenciales
+              - Certificado de defunción y contrato de servicios funerarios
+              - Certificado de nacimiento de la víctima
+              - Documento que acredite la edad (carné de conducir, certificado de nacimiento, etc.)
+              - Documentos que acrediten la tutoría legal
+      SNA:
+        resources:
+          es:
+            name: Safety Net Assistance (red de seguridad social, SNA)
+            category: Efectivo
+            description: |
+              Pueden recibir esta ayuda en efectivo las personas o las familias necesitadas que no cumplan los requisitos para recibir la ayuda Family Assistance (asistencia familiar, FA).
+            eligibility: |
+              - Adultos solteros
+              - Parejas sin hijos
+              - Menores que no viven con ningún familiar adulto
+              - Familiares de personas alcohólicas o drogodependientes
+              - Familiares de personas que no quieren someterse a un control, prueba o tratamiento antidroga o alcohol
+              - Extranjeros que cumplen los requisitos para recibir ayuda temporal, pero no para recibir reembolsos federales
+            instructions: |
+              Envía una solicitud al Departamento de Servicios Sociales de tu condado.
+            preparation:
+      HEALTH_MARKETPLACE:
+        resources:
+          es:
+            name: NY State of Health (Mercado oficial del sector sanitario de Nueva York)
+            category: Salud
+            description: |
+              Mercado oficial del estado de Nueva York para comprar seguros sanitarios. Pueden enviar solicitudes todas aquellas personas que necesiten cobertura sanitaria.
+            eligibility:
+            instructions:
+            preparation:
+      HEAP:
+        resources:
+          es:
+            name: Home Energy Assistance Program (programa de asistencia financiera para gastos de energía del hogar, HEAP)
+            category: Calefacción y aire acondicionado
+            description: |
+              Este programa ayuda a personas con pocos recursos a pagar los gastos de la calefacción de sus hogares.
+            eligibility: |
+              os criterios de participación incluyen, entre otros (consulta la [página del HEAP][https://otda.ny.gov/programs/heap/] para obtener más información):
+              - Ser ciudadano/a de los Estados Unidos o [residente que cumpla los requisitos aunque no tenga la ciudadanía](https://otda.ny.gov/programs/applications/4998.pdf).
+              - Debes facilitar un número de la Seguridad Social válido o un justificante de la solicitud del número de la Seguridad Social de cada miembro de la unidad familiar, así como
+              - Recibir ayuda del Supplemental Nutrition Assistance Program (programa complementario de asistencia a la nutrición, SNAP), de Temporary Assistance (asistencia temporal, TA) o de Supplemental Security Income (ingreso suplementario de seguridad, SSI).
+              - Tener unos ingresos mensuales totales iguales o inferiores a los que se contemplan en las directrices de ingresos del HEAP.
+            instructions: |
+              Envía una solicitud a través de myBenefits.
+            preparation: |
+              Debes facilitar una prueba de residencia con uno de los siguientes documentos:
+              - Recibo de alquiler que incluya la dirección
+              - Copia del contrato de arrendamiento que incluya la dirección
+              - Factura del agua, de alcantarillado o de otros impuestos
+              - Póliza de seguro de propietario
+              - Recibo de pago de la hipoteca
+              - Escritura
+              - Factura de suministros
+              - Factura actual de suministros o de combustible, o declaración del propietario que confirme que los gastos de la calefacción o de otros suministros están incluidos en el alquiler
+              - Nóminas recientes u otros documentos que sirvan de comprobante de los ingresos mensuales de todos los miembros de la unidad familiar
+
+              Además, tienes que presentar uno de los siguientes documentos de cada miembro de tu unidad familiar:
+              - Documento de identificación oficial con foto
+              - Carné de conducir
+              - Certificado de nacimiento o de bautismo
+              - El número de la Seguridad Social o un justificante de la solicitud del número de la Seguridad Social de cada miembro de la unidad familiar
+              - Registros escolares
+              - Pasaporte
+              - Documentación que acredite la discapacidad de algún miembro de la unidad familiar
+              - Es posible que tengas que facilitar otros documentos según tus circunstancias individuales tras la entrevista de elegibilidad
+      HOUSING_VOUCHER:
+        resources:
+          es:
+            name: "Sección 8: Programa Housing Choice Voucher (vales de elección de vivienda, HCV)"
+            category: Vivienda
+            description: |
+              Recibe ayuda para alquilar o comprar una vivienda digna y segura en el mercado inmobiliario privado.
+            eligibility:
+            instructions: Las familias interesadas en el programa HCV deben obtener una solicitud de la Public Housing Authority (autoridad de vivienda pública) de su zona.
+            preparation:
+      PAID_LEAVE_BONDING:
+        resources:
+          es:
+            name: Paid Family Leave (permiso familiar remunerado, PFL) para establecer vínculos
+            category: Familia
+            description: |
+              Consigue un permiso remunerado para establecer vínculos afectivos con tu hijo/a. Puede solicitarse durante los 12 meses posteriores a su nacimiento, adopción o acogida.
+            eligibility:
+            instructions: |
+              Haz una copia de la solicitud del PFL (Formulario PFL-1) antes de enviárselo a tu empleador. Envía a la aseguradora los formularios rellenados y la documentación oportuna a la dirección que aparece en la pregunta 13 de la parte B del formulario PFL-1 (la sección que tiene que haber rellenado tu empleador), o envíaselos directamente a tu empleador si está asegurado por su propia cuenta.
+            preparation:
+      MEDICAID:
+        resources:
+          es:
+            name: Medicaid
+            category: Salud
+            description: |
+              Programa para los neoyorquinos que no se pueden permitir la atención sanitaria.
+            eligibility:
+            instructions:
+            preparation:
+      MEDICARE:
+        resources:
+          es:
+            name: Medicare
+            category: Salud
+            description: |
+              Programa federal de seguro médico para personas mayores de 65 años y para personas con ciertas discapacidades, independientemente de sus ingresos.
+            eligibility:
+            instructions:
+            preparation:
+      WIC:
+        resources:
+          es:
+            name: Programa Women, Infants, and Children (mujeres, bebés y niños, WIC)
+            category: Alimentación
+            description: |
+              Recibe ayuda para comprar alimentos nutritivos para madres e hijos.
+            eligibility:
+            instructions:
+            preparation: |
+              - Comprobante de identidad tuya y de tu hijo/a
+              - Comprobante de los ingresos de tu unidad familiar
+              - Comprobante de residencia
+              - Registro de inmunización de los hijos
+              - Además, se te puede pedir que envíes:
+              - Un Medical Referral Form (Formulario de referencia médica) del Departamento de Salud del estado de Nueva York rellenado por tu médico (incluido un análisis de sangre)
+      DISABILITY_CLAIM:
+        resources:
+          es:
+            name: Solicitud de subsidios por discapacidad
+            category: Incapacidad
+            description: |
+              Recibe subsidios en efectivo cada semana durante un tiempo si tienes una discapacidad por enfermedad o lesiones ocasionadas fuera del trabajo, así como por embarazo.
+            eligibility:
+            instructions: |
+              Envía los formularios DB-450 del New York State Insurance Fund (fondo de seguros del estado de Nueva York, NYSIF) a:
+
+              NYSIF Disability Benefits
+              PO Box 66699
+              Albany, NY 12206
+
+              o por fax al: 518-437-5201
+            preparation:
+      WORKERS_COMP:
+        resources:
+          es:
+            name: New York State Workers' Compensation (compensación de trabajadores del estado de Nueva York)
+            category: Empleo
+            description: |
+              Este programa es un sistema sin culpa que ofrece subsidios para compensar la pérdida de salario y atención sanitaria de por vida por enfermedades o lesiones relacionadas con el trabajo.
+            eligibility: |
+              - Todos los empleados de empresas con ánimo de lucro
+              - Empleados de la mayoría de las organizaciones sin ánimo de lucro
+              - Empleados que trabajan en el estado de Nueva York
+              - No hay requisitos de residencia
+            instructions:
+            preparation: |
+              - Tu información de contacto
+              - Información básica de tu empleo, como el nombre y la dirección del empleador, tu cargo, tus responsabilidades y tu salario bruto
+              - Cómo se produjo la lesión, dónde estabas y qué estabas haciendo cuando se produjo (con todos los detalles posibles), y si se lo comunicaste a tu empleador
+              - El tipo de enfermedad o lesión, las partes de tu cuerpo afectadas, si has recibido tratamiento y el tiempo de trabajo que has perdido
+      ACCES_VR:
+        resources:
+          es:
+            name: Adult Career and Continuing Education Services - Vocational Rehabilitation (servicios de carrera profesional y de educación continuada - rehabilitación vocacional, ACCES-VR)
+            category: Educación
+            description: |
+              Estos servicios están dirigidos a personas con discapacidades que les dificultan conseguir o mantener un trabajo, o avanzar en su carrera profesional.
+            eligibility: |
+              - Tener una discapacidad que te dificulte conseguir o mantener un trabajo.
+              - Poder recibir los servicios de Vocational Rehabilitation (rehabilitación vocacional, VR).
+              - Necesitar los servicios de VR para conseguir o mantener un trabajo, o avanzar en tu carrera profesional.
+            instructions:
+            preparation:
+      SHARED_WORK:
+        resources:
+          es:
+            name: Shared Work Program (programa de trabajo compartido)
+            category: Empleo
+            description: |
+              Este programa permite que los empleadores reduzcan la jornada de su plantilla para conservar a empleados cualificados y evitar despidos. Los empleados con reducción de jornada recibirán un subsidio de desempleo parcial.
+            eligibility: |
+              Pueden recibir este subsidio los empleados que cumplan los requisitos para recibir la prestación de desempleo normal del estado de Nueva York.
+            instructions:
+            preparation:
+      ESNA:
+        resources:
+          es:
+            name: Emergency Safety Net Assistance (red de seguridad social de emergencia, ESNA)
+            category: Efectivo
+            description: |
+              Ayuda en efectivo de emergencia para adultos solteros y parejas sin hijos que cumplen los requisitos.
+            eligibility: |
+              Para saber si cumples los requisitos de esta ayuda temporal, incluida ayuda en caso de emergencia, tienes que enviar una solicitud al Departamento de Servicios Sociales de tu condado.
+            instructions:
+            preparation:
+      EAF:
+        resources:
+          es:
+            name: Emergency Safety to Needy Families (asistencia de emergencia para familias necesitada, EAF)
+            category: Familia
+            description: |
+              Ayuda en efectivo de emergencia para mujeres embarazadas y familias con al menos un hijo menor de 18 años, o menor de 19 años que asista regularmente a un centro de educación secundaria, que cumplan los requisitos.
+            eligibility: |
+              Para saber si cumples los requisitos de esta ayuda temporal, incluida ayuda en caso de emergencia, tienes que enviar una solicitud al Departamento de Servicios Sociales de tu condado.
+            instructions:
+            preparation:
+      FAMILY_ASSISTANCE:
+        resources:
+          es:
+            name: Family Assistance (asistencia familiar, FA)
+            category: Familia
+            description: |
+              Recibe ayuda en efectivo para cuidar de niños que viven contigo o con un familiar cercano.
+            eligibility: |
+              Para saber si cumples los requisitos de esta ayuda temporal, incluida ayuda en caso de emergencia, tienes que enviar una solicitud al Departamento de Servicios Sociales de tu condado o, si vives en uno de los cinco distritos de Nueva York, en la oficina de empleo correspondiente.
+            instructions: |
+              Envía una solicitud al Departamento de Servicios Sociales de tu condado.
+            preparation:
+      CHILD_HEALTH_PLUS:
+        resources:
+          es:
+            name: Child Health Plus
+            category: Salud
+            description: |
+              Seguros médicos para niños. Las solicitudes se aceptan a través del New York State of Health Marketplace.
+            eligibility: |
+              La elegibilidad de los niños depende de los ingresos brutos de la familia. Consulta las [tablas de elegibilidad](https://www.health.ny.gov/health_care/child_health_plus/eligibility_and_cost.htm).
+            instructions:
+            preparation:
+      PAID_LEAVE_FAMILY:
+        resources:
+          es:
+            name: Paid Family Leave (permiso familiar remunerado) para cuidar de familiares
+            category: Familia
+            description: |
+              Permiso remunerado para cuidar de un familiar cercano con problemas graves de salud, aunque no viva en el estado de Nueva York.
+            eligibility: |
+              - La mayoría de los empleados del sector privado que trabajan en el estado de Nueva York están cubiertos por el permiso familiar remunerado.
+              - Los funcionarios públicos sin representación pueden estar cubiertos si sus empleadores han decidido formar parte de este programa. Los funcionarios públicos representados por un sindicato solo están cubiertos si el permiso se acuerda bajo negociación colectiva.
+            instructions: |
+              - Puedes disfrutar de un permiso remunerado para cuidar de familiares con problemas graves de salud y reincorporarte a tu puesto de trabajo cuando termine.
+              - Para que se te conceda el permiso, tienes que cuidar a tu cónyuge, suegros, pareja de hecho, abuelos, hijos, hijastros, nietos, padres o padrastros.
+            preparation:
+      PAID_LEAVE_MILITARY:
+        resources:
+          es:
+            name: Paid Family Leave (permiso familiar remunerado, PFL) para familias de militares
+            category: Militar
+            description: |
+              Permiso familiar remunerado que puede solicitarse si tienes que ayudar en situaciones familiares en las que tu cónyuge, pareja de hecho, hijos o padres estén de servicio en un país extranjero, o reciban una llamada perentoria u orden de servicio activo para ir a un país extranjero.
+            eligibility:
+            instructions:
+            preparation: |
+              Tendrás que demostrar que tu familiar está de servicio con alguno de los siguientes documentos:
+              - Órdenes de servicio activo cubiertas
+              - Carta de la unidad militar que certifique la llamada perentoria o la orden de servicio activo
+              - Documentación del permiso militar firmado por la autoridad de aprobación del descanso y recuperación del familiar
+
+              Si el permiso se solicita para reunirse con un tercero, como un funcionario escolar, asesor o abogado, tienes que aportar información de esa reunión que incluya:
+              - El nombre, la dirección y la información de contacto de la persona o entidad con la que te estás reuniendo
+              - Una descripción de la reunión
+      STAR:
+        resources:
+          es:
+            name: School Property Tax Relief (desgravación fiscal escolar, STAR)
+            category: Vivienda
+            description: |
+              Desgravación fiscal para propietarios del estado de Nueva York que cumplan los requisitos.
+            eligibility: |
+              Si has comprado una casa recientemente o nunca has solicitado el subsidio STAR para recibir ayuda con tu vivienda actual, podrías ahorrar cientos de dólares al año.
+            instructions:
+            preparation: |
+              - Nombres y números de la Seguridad Social de todos los titulares de la propiedad y sus cónyuges (puede que se te solicite que introduzcas esta información más de una vez para mostrar las relaciones entre los titulares)
+              - Residencia principal de los propietarios y sus cónyuges
+              - Fecha aproximada en la que los titulares compraron la propiedad y nombre de los vendedores (esta información no es obligatoria, pero puede ayudarnos a procesar tu registro más rápidamente)
+              - Factura más reciente del impuesto escolar, si los propietarios actuales han recibido una (ver ejemplos)
+              - Dirección de cualquier propiedad residencial que se tenga en otro estado
+              - Nombre legal del fideicomiso, si procede
+              - Declaraciones del impuesto sobre la renta federal o estatal del 2018 de todos los propietarios (se solicitará información adicional si no tuviste que presentar la declaración del impuesto sobre la renta del 2018)
+      TAP:
+        resources:
+          es:
+            name: Tuition Assistance Program (programa de asistencia a la matrícula, TAP)
+            category: Educación
+            description: |
+              Este programa ayuda a los residentes que cumplen los requisitos con el pago de la matrícula de escuelas autorizadas en el estado de Nueva York.
+            eligibility: |
+              - Ser ciudadano/a de Estados Unidos o residente en Nueva York que cumpla los requisitos aunque no tenga la ciudadanía.
+              - Haber obtenido el título de educación secundaria en Estados Unidos o disponer de un diploma equivalente.
+              - Estudiar un grado a tiempo completo (al menos 12 créditos por semestre) en una institución autorizada de enseñanza superior en Nueva York, estar matriculado/a en un programa de estudios aprobado y tener un buen rendimiento académico con, al menos, una nota media acumulada de "C" en la fecha de pago del cuarto semestre.
+              - Haber pagado al menos 200 $ de matrícula al año.
+              - No tener pendiente ningún préstamo estatal ni federal para estudiantes, ni deber ningún reembolso de ayudas estatales.
+              - Cumplir los requisitos de ingresos.
+            instructions:
+            preparation:
+      VETERANS_BLINDNESS:
+        resources:
+          es:
+            name: New York State Veterans Blind Annuity Program (programa de anualidades para veteranos ciegos del estado de Nueva York)
+            category: Veteranos
+            description: |
+              Anualidad destinada a veteranos de guerra ciegos o a sus viudos o viudas si no se han vuelto a casar, que vivan y estén empadronados en el estado de Nueva York.
+            eligibility: |
+              - Tener certificación oficial de pérdida de visión.
+              - Ser veterano/a de guerra, haber estado en activo durante periodos de guerra específicos o haber recibido una condecoración por determinados conflictos; o bien ser viudo/a de un/a veterano/a que tuviera certificación oficial de pérdida de visión y estuviera recibiendo el subsidio en el momento de su muerte o cumpliera los requisitos para recibirlo, siempre que no se haya vuelto a casar.
+              - Haber estado en activo durante al menos 90 días para fines que no sean de formación. Puede aceptarse un periodo inferior a 90 días si se había eximido a la persona por una incapacidad relacionada con el servicio.
+              - Ser residente y estar empadronado/a en el estado de Nueva York.
+            instructions:
+            preparation: |
+              - Prueba de que resides en el estado de Nueva York
+              - Una licencia o declaración de servicio que muestre las fechas de alistamiento y de baja
+              - Certificados de matrimonio y fallecimiento (si es la persona viuda quien realiza la solicitud)
+              - Documentación que acredite oficialmente la pérdida de visión
+      MEMORIAL_SCHOLARSHIP:
+        resources:
+          es:
+            name: NYS Memorial Scholarship (beca del estado de Nueva York para conmemorar funcionarios muertos en servicio
+            category: Educación
+            description: |
+              Este programa ofrece ayuda financiera a los hijos, los cónyuges y las personas económicamente dependientes de bomberos o voluntarios de bomberos, agentes de policía, agentes del orden (incluidos los funcionarios de prisiones del estado de Nueva York) y trabajadores de los servicios de emergencias que hayan fallecido como resultado de las heridas sufridas en cumplimiento de su deber con el estado de Nueva York.
+            eligibility: |
+              - Ser ciudadano/a de Estados Unidos o residente que cumpla los requisitos aunque no tenga la ciudadanía.
+              - Ser hijo/a, cónyuge o persona económicamente dependiente de bomberos o voluntarios de bomberos, agentes de policía (incluidos los funcionarios de prisiones del estado de Nueva York) o trabajadores de los servicios de emergencias que hayan fallecido como resultado de las heridas sufridas en cumplimiento de su deber con el estado de Nueva York.
+              - Haber obtenido el título de educación secundaria en Estados Unidos o un diploma equivalente, o haber superado un examen "Ability to Benefit" (ATB) con aprobación federal, tal como lo define el comisionado del Departamento de Educación del estado.
+              - Estudiar en una institución autorizada de educación superior del estado de Nueva York.
+              - Estar matriculado/a en uno de los programas de grado autorizados.
+              - Estar matriculado/a como estudiante a tiempo completo y cursar al menos 12 créditos por semestre para completar el programa de la titulación correspondiente.
+              - Tener un buen rendimiento académico.
+              - No tener pendiente ningún préstamo para estudiantes de ningún programa de préstamos educativos federal o del estado de Nueva York, ni deber ningún reembolso de ayudas del estado de Nueva York.
+              - Cumplir los términos de cualquier condición de servicio impuesta por una ayuda del estado de Nueva York.
+            instructions: |
+              Completa y envía la solicitud online de la NYS Memorial Scholarship. No olvides imprimir la confirmación de la solicitud online, firmarla, incluir la fecha y enviarla junto con la documentación requerida tal como se indica en las instrucciones.
+
+              Si más de un miembro de la misma familia solicita una ayuda de la beca Memorial Scholarships, cada uno de ellos tiene que enviar su propia solicitud.
+            preparation:
+      NURSING_SCHOLARSHIP:
+        resources:
+          es:
+            name: Senator Patricia K. McGee Nursing Faculty Scholarship Program (programa de becas para docentes de enfermería de la senadora Patricia K. McGee)
+            category: Educación
+            description: |
+              Se ofrecen becas para aumentar el número de profesores de enfermería y personal clínico adjunto del estado de Nueva York.
+            eligibility: |
+              - Ser residente en el estado de Nueva York y haber vivido en él durante 12 meses seguidos antes del inicio del semestre.
+              - Ser ciudadano/a de Estados Unidos o ser residente que cumpla los requisitos aunque no tenga la ciudadanía.
+              - Ser enfermero/a registrado/a con licencia para ejercer en el estado de Nueva York.
+              - Matricularse en un centro acreditado del estado de Nueva York para hacer un máster o programa equivalente a un doctorado en enfermería o una especialización relacionada, que proporcione a la persona solicitante la cualificación necesaria para trabajar como enfermero/a o personal clínico adjunto en el estado de Nueva York.
+              - Tener una nota media de 3 o superior si la persona solicitante ya ha completado un semestre en un programa de grado que le proporcione la cualificación de enfermero/a o personal clínico adjunto.
+              - No tener pendiente ningún préstamo para estudiantes de ningún programa de préstamos educativos federal o del estado de Nueva York, ni deber ningún reembolso de ayudas del estado de Nueva York.
+              - Cumplir los términos de cualquier condición de servicio impuesta por una ayuda del estado de Nueva York.
+              - Formalizar un contrato de servicio en el que se acepte trabajar como enfermero/a o personal clínico adjunto en el estado de Nueva York durante cuatro años.
+            instructions:
+            preparation:
+      VETERANS_DISABILITY:
+        resources:
+          es:
+            name: Veteran Disability Compensation (compensación por discapacidad para veteranos)
+            category: Veteranos
+            description: |
+              Indemnización mensual libre de impuestos por discapacidad procedente del Departamento de Asuntos de los Veteranos de Estados Unidos.
+            eligibility: |
+              ¿Te hirieron mientras estabas en activo en tu servicio militar? ¿Alguna discapacidad que ya tenías empeoró a causa del servicio? Si has respondido afirmativamente a alguna de estas preguntas, quizá cumplas los requisitos para recibir esta ayuda.
+            instructions: |
+              Los asesores de prestaciones a los veteranos, todos ellos también veteranos, se encargarán de preparar y enviar tu solicitud de indemnización por discapacidad.
+            preparation:
+      HOMES_VETERANS:
+        resources:
+          es:
+            name: Homes for Veterans Program (Programa Hogares para Veteranos)
+            category: Vivienda
+            description: |
+              Hipotecas de tipo fijo con tipos de interés un 0,375 % por debajo de los tipos más reducidos de la State of New York Mortgage Agency (agencia de hipotecas del estado de Nueva York).
+            eligibility: |
+              Haber prestado servicio militar activo y haber recibido la baja por motivos que no sean deshonrosos.
+
+              También pueden beneficiarse de estas ayudas los miembros del servicio en activo y los guardias nacionales o reservistas relevados con honores que compren una vivienda por primera vez y sean:
+              - Personal militar de los Estados Unidos, incluidos los que estén en reserva, destinado en el estado de Nueva York, independientemente del estado de la baja
+              - Miembros de la guardia nacional en activo o relevados con honores
+              - Reservistas en activo o relevados con honores
+            instructions:
+            preparation: |
+              - Historial de dos años de ingresos continuados, fiables y demostrables
+              - Historial de crédito que demuestre que los pagos se harán en plazo
+              - Ingresos suficientes para cubrir los costes de propiedad sin dejar de cumplir otras obligaciones de deuda
+              - Liquidez suficiente en el banco para asumir el pago inicial y los costes de cierre
+      PART_TIME_STUDY:
+        resources:
+          es:
+            name: Aid for Part-time Study (ayuda para estudios a tiempo parcial)
+            category: Educación
+            description: |
+              Subvención para los estudiantes a tiempo parcial que cumplan los requisitos y estén matriculados en estudios de grado autorizados.
+            eligibility: |
+              - Ser residente legal del estado de Nueva York y haber residido en él durante al menos 12 meses continuados antes del inicio del semestre.
+              - Ser ciudadano/a de Estados Unidos o residente que cumpla los requisitos aunque no tenga la ciudadanía.
+              - Haber obtenido el título de educación secundaria en Estados Unidos o un diploma equivalente aprobando el examen Test Assessing Secondary Completion (TASC), que formalmente se denomina GED, o haber superado un examen "Ability to Benefit" (ATB) con aprobación federal, tal como define el comisionado Departamento de Educación del estado.
+              - Estar matriculado/a como estudiante a tiempo parcial.
+              - Estar matriculado/a en un programa de estudio autorizado de una institución de educación superior del estado de Nueva York que participe en el programa.
+              - Tener un buen rendimiento académico.
+              - Haber pagado al menos 100 $ de matrícula al año.
+              - No superar los límites de ingresos fijados en los requisitos.
+              - Seguir cumpliendo los requisitos del Tuition Assistance Program (programa de asistencia a la matrícula, TAP).
+              - No tener pendiente ningún préstamo para estudiantes federal ni del estado de Nueva York, ni deber ningún reembolso de ayudas estatales.
+              - Cumplir las condiciones que correspondan.
+            instructions: |
+              Para hacer la solicitud, los estudiantes deben obtener el formulario de esta ayuda en la facultad a la que asistirán.
+            preparation:
+      VETERANS_TUITION:
+        resources:
+          es:
+            name: Veterans Tuition Awards (ayudas de matrícula para veteranos)
+            category: Educación
+            description: |
+              Ayuda económica para estudiar a tiempo parcial o completo destinada a veteranos que estén matriculados en un programa autorizado de una institución de grado o posgrado, o bien en un programa de formación profesional del estado de Nueva York.
+            eligibility: |
+              - Ser residente en el estado de Nueva York y haber vivido en él durante 12 meses continuados antes del inicio del semestre.
+              - Estar matriculado/a en un programa autorizado de una institución de grado o posgrado, o bien en un programa de formación profesional del estado de Nueva York.
+              - Haber sido relevado/a con honores de las Fuerzas Armadas de Estados Unidos y ser veterano/a de Vietnam (con servicio en Indochina entre el 28 de febrero de 1961 y el 7 de mayo de 1975), del Golfo Pérsico (con servicio a partir del 2 de agosto de 1990) o de Afganistán (durante los conflictos activos del 11 de septiembre del 2001 en adelante). También se incluyen los veteranos que prestaron servicio en las hostilidades que tuvieron lugar después del 28 de febrero de 1961 y que puedan demostrarlos con una medalla expedicionaria de las Fuerzas Armadas, la Armada o el Cuerpo de Marines.
+            instructions:
+            preparation:
+      SOCIAL_WORKER_LOAN:
+        resources:
+          es:
+            name: Programa Licensed Social Worker Loan Forgiveness (condonación de préstamos para trabajadores sociales con licencia, LSWLF)
+            category: Educación
+            description: |
+              Este programa tiene como objetivo aumentar el número de trabajadores sociales con licencia que se dedican a servicios sociales importantes, como los siguientes: atención domiciliaria, sanidad, salud mental, drogodependencia, tercera edad, VIH/SIDA, protección de menores o comunidades con necesidades multilingües.
+            eligibility:
+            instructions:
+            preparation:
+      MERIT_SCHOLARSHIP:
+        resources:
+          es:
+            name: Beca Military Enhanced Recognition Incentive and Tribute (incentivo y tributo como reconocimiento a la labor militar, MERIT)
+            category: Educación
+            description: |
+              Ayuda financiera para hijos, cónyuges o personas económicamente dependientes de miembros de las Fuerzas Armadas de Estados Unidos o de milicias organizadas por el Estado.
+            eligibility: |
+              - Ser hijo/a, cónyuge o persona económicamente dependiente de miembros de las Fuerzas Armadas de Estados Unidos o de milicias organizadas por el Estado que, siendo residentes del estado de Nueva York, murieron o quedaron grave y permanentemente discapacitados como consecuencia de su deber militar, dentro o fuera de combate, a partir del 2 de agosto de 1990.
+              - Estudiar en una institución de educación superior de estado de Nueva York.
+              - Haber obtenido el título de educación secundaria en Estados Unidos o un diploma equivalente aprobando el examen Test Assessing Secondary Completion (TASC), que formalmente se denomina GED, o haber superado un examen "Ability to Benefit" (ATB) con aprobación federal, tal como define el comisionado Departamento de Educación del estado.
+              - Estar matriculado/a como estudiante a tiempo completo y cursar 12 créditos o más por semestre.
+              - Estar matriculado/a en un programa de estudio autorizado.
+              - Tener un buen rendimiento académico.
+              - No tener pendiente ningún préstamo estatal ni federal para estudiantes ni deber ningún reembolso de ayudas estatales.
+            instructions: |
+              Completa y envía la solicitud online de la beca MERIT. No olvides imprimir la confirmación de la solicitud online, firmarla y enviarla junto con la documentación requerida tal y como se indica en las instrucciones.
+            preparation:
+      STEM:
+        resources:
+          es:
+            name: Programa STEM Incentive (incentivos STEM)
+            category: Educación
+            description: |
+              Becas de matrícula para estudiantes residentes en el estado de Nueva York que asisten a una facultad o universidad pública o privada ubicada en el estado de Nueva York para obtener un grado.
+            eligibility: |
+              - Estar en el 10 % de estudiantes con mejores calificaciones del último curso de un instituto del estado de Nueva York.
+              - Estar matriculado/a en un programa de grado autorizado para obtener un grado en ciencia, tecnología, ingeniería o matemáticas en una facultad pública o privada ubicada en el estado de Nueva York.
+              - Mantener una nota media de 2,5 o superior.
+              - Formalizar un contrato de servicio en el que se acepte vivir y trabajar en el campo de la ciencia, la tecnología, la ingeniería o las matemáticas en el estado de Nueva York durante cinco años. Consultar los términos y condiciones del contrato de servicio.
+              - Ser residente en el estado de Nueva York y haber vivido en él durante 12 meses continuados antes del inicio del primer semestre de la facultad.
+              - Ser ciudadano/a de Estados Unidos o residente que cumpla los requisitos aunque no se tenga la ciudadanía.
+              - Ser estudiante del último curso de instituto o haberse graduado recientemente, y tener la intención de matricularse a tiempo completo en una facultad pública o privada ubicada en el estado de Nueva York para comenzar el primer semestre al terminar el instituto.
+            instructions: |
+              Completa y envía la solicitud del programa STEM Incentive del estado de Nueva York. No olvides imprimir la confirmación de la solicitud web y enviarla, junto con la documentación requerida, tal y como se indica en las instrucciones. También debes enviar la Free Application for Federal Student Aid (solicitud gratuita de ayuda federal para estudiantes, FAFSA) y la NYS Student Aid Payment Application (solicitud de pago de ayuda para estudiantes del estado de Nueva York).
+            preparation:
+      REGENTS:
+        resources:
+          es:
+            name: NYS Regents Awards for Children of Deceased and Disabled Veterans (beca Regents para hijos de veteranos fallecidos o incapacitados del estado de Nueva York)
+            category: Educación
+            description: |
+              Ayuda financiera a los estudiantes cuyos padres sirvieron en las Fuerzas Armadas de Estados Unidos en momentos específicos de emergencia nacional.
+            eligibility: |
+              Students whose parent(s) served in the U.S. Armed Forces during specified periods of war or national emergency and, as a result of service, died, suffered a 40% or more disability, was classified as missing in action, or was a prisoner of war are eligible to apply. The veteran must currently be a New York State resident or have been a New York State resident at the time of death. The applicant must be pursuing an approved undergraduate degree at a college or university located in NYS.
+            instructions: |
+              Completa la solicitud online de la beca para hijos de veteranos. Asegúrate de imprimir la confirmación de la solicitud online, firmarla y enviarla con la documentación necesaria siguiendo las instrucciones.
+              Cuando hayas confirmado que cumples los requisitos, tienes que completar la Free Application for Federal Student Aid (solicitud gratuita de ayuda federal para estudiantes, FAFSA) y solicitar el Tuition Assistance Program (programa de asistencia a la matrícula, TAP), o llamar a la Higher Education Services Corporation (Corporación de Servicios de Educación Superior, HESC) al 1-888-697-4372 para presentar una solicitud de pago de becas y subvenciones antes del 30 de junio del año escolar para el que quieras pedir la beca.
+            preparation:
+      ACADEMIC_EXCELLENCE:
+        resources:
+          es:
+            name: NYS Scholarships for Academic Excellence (becas al mérito por excelencia académica del estado de Nueva York)
+            category: Educación
+            description: |
+              Recibe una beca de hasta 1500 $ para ir a la universidad.
+            eligibility: |
+              - Haber obtenido el título de educación secundaria en el estado de Nueva York.
+              - Estudiar a tiempo completo y estar matriculado/a en uno de los programas de grado autorizados en un centro de estudios superiores en el estado de Nueva York.
+              - Tener un buen rendimiento académico.
+              - No estar en incumplimiento de ningún préstamo estudiantil estatal o federal, o de ningún pago de becas estatales.
+              - Ser ciudadano/a de Estados Unidos o residente que cumpla los requisitos aunque no tenga la ciudadanía.
+              - Ser residente del estado de Nueva York.
+            instructions: |
+              Para solicitarla, ponte en contacto con el orientador académico de tu centro.
+            preparation:
+      EXCELSIOR:
+        resources:
+          es:
+            name: Programa de becas Excelsior
+            category: Educación
+            description: |
+              Las becas Excelsior, junto a otros programas de ayuda financiera a los estudiantes, permite asistir a la Universidad de la Ciudad de Nueva York (CUNY) o la Universidad Estatal de Nueva York (SUNY) sin tener que pagar la matrícula.
+            eligibility: |
+              - Ser residente legal del estado de Nueva York y haber residido en él durante al menos 12 meses continuados antes del inicio del semestre.
+              - Ser ciudadano/a de Estados Unidos o residente que cumpla los requisitos aunque no tenga la ciudadanía.
+              - Haber obtenido el título de educación secundaria en Estados Unidos o un diploma equivalente, o haber aprobado un examen "Ability to Benefit" (ATB) con aprobación federal, tal como lo define el comisionado del Departamento de Educación del estado.
+              - Tener unos ingresos brutos federales ajustados combinados de 125.000 $ como máximo.
+              - Ser estudiante de un grado en la SUNY o CUNY, incluidos los colegios comunitarios y estatuarios de la Universidad de Cornell y la Universidad de Alfred.
+              - Cursar 12 créditos o más por semestre y completar al menos 30 créditos cada año (sucesivamente). Estos créditos tienen que formar parte del programa de titulación, que debe completarse sin interrupción, excepto por ciertas razones que se puedan documentar.
+              - Si se ha asistido a la facultad antes del año académico 2019-20, haber obtenido al menos 30 créditos cada año (sucesivamente) de su programa de grado antes de solicitar una beca Excelsior.
+              - No tener pendiente ningún préstamo para estudiantes de ningún programa de préstamos educativos federal o del estado de Nueva York, ni deber ningún reembolso de ayudas del estado de Nueva York.
+              - Cumplir los términos de las condiciones de servicio impuestas por cualquier ayuda del estado de Nueva York que se haya recibido.
+              - Formalizar un contrato en el que se acepte que residir en el estado de Nueva York durante el tiempo que comprende la beca y, si trabaja durante ese periodo, hacerlo en el estado de Nueva York.
+            instructions: |
+              Para solicitar esta beca, ponte en contacto con el orientador académico de tu centro.
+            preparation:
+      COVID_TEST:
+        resources:
+          es:
+            name: Encuentra un punto de toma de muestras del COVID-19 cerca de ti"
+            category: COVID-19
+            description: |
+              Todos los neoyorquinos pueden hacerse una prueba del COVID-19. El buscador de puntos de toma de muestras
+              del COVID-19 te muestra los puntos que hay cerca de ti.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_QUARANTINE_LEAVE:
+        resources:
+          es:
+            name: Permiso remunerado por el COVID-19
+            category: Salud
+            description: |
+              A algunos empleadores del estado de Nueva York se les exige que den al menos cinco días de baja remunerada por enfermedad a los trabajadores que no puedan ir a trabajar porque se les ha ordenado o recomendado permanecer en cuarentena o aislamiento por el COVID-19.
+            eligibility: |
+              - Si estás en cuarentena.
+              - Si tienes un hijo menor de edad en cuarentena.
+              - Si estás cuidando de un familiar con COVID-19.
+            instructions:
+            preparation:
+      VIOLENCE_HOTLINE:
+        resources:
+          es:
+            name: Línea directa sobre agresión sexual y violencia doméstica del estado de Nueva York
+            category: Seguridad pública
+            description: |
+              La línea directa sobre agresión sexual y violencia doméstica del estado de Nueva York ofrece comunicación privada y segura por SMS, llamadas o chat.
+            eligibility:
+            instructions:
+            preparation:
+      FIND_A_JOB:
+        resources:
+          es:
+            name: Encuentra trabajo
+            category: Empleo
+            description: |
+              Accede a ofertas de empleo locales de empresas privadas. Empieza a buscar tu nueva profesión hoy mismo entre miles de oportunidades laborales locales en el sitio web de Jobs Express.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_HOUSING:
+        resources:
+          es:
+            name: Recursos de alojamiento durante el COVID-19
+            category: Vivienda
+            description: |
+              Consulta información útil para inquilinos, arrendatarios y propietarios afectados por el COVID-19.
+            eligibility:
+            instructions:
+            preparation:
+      FOOD_BANK:
+        resources:
+          es:
+            name: Encuentra un banco de alimentos cerca de ti
+            category: Alimentación
+            description: |
+              Consulta una lista de los bancos de alimentos de cada condado del estado de Nueva York.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_EMOTIONAL_MENTAL_SUPPORT:
+        resources:
+          es:
+            name: Línea de asistencia emocional frente al COVID-19 y otros recursos de salud mental
+            category: Salud
+            description: |
+              Llama al 1-844-863-9314 para obtener asistencia gratuita y confidencial. Además, encuentra recursos sobre cómo gestionar la ansiedad y superar el duelo durante la emergencia sanitaria ocasionada por el coronavirus.
+            eligibility:
+            instructions:
+            preparation:
+      DMV_ONLINE:
+        resources:
+          es:
+            name: Consulta todos los servicios online que ofrece el Departamento de Vehículos Motorizados
+            category: Transportes
+            description: |
+              Consulta más información sobre todas las transacciones del Departamento de Vehículos Motorizados que se pueden hacer online sin tener que acudir a una oficina.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_CHILD_SUPPORT:
+        resources:
+          es:
+            name: Servicios de asistencia para el COVID-19 y el cuidado infantil del estado de Nueva York
+            category: Familia
+            description: |
+              El programa Child Support de Nueva York se compromete a ofrecer sus servicios en la mayor medida posible durante esta crisis de salud pública. Muchas oficinas locales han reducido su personal o escalonado sus horarios.
+            eligibility:
+            instructions:
+            preparation:
+      FIND_A_JOB_OMH:
+        resources:
+          es:
+            name: Encuentra trabajo en la Office of Mental Health (oficina de salud mental, OMH)
+            category: Empleo
+            description: |
+              La OMH ofrece empleos con mucha demanda, como ayudantes de terapeutas de salud mental, psiquiatras y enfermeros certificados.
+            eligibility: |
+              - Resultados de las oposiciones
+              - Certificado o licencia profesional
+              - Formación
+              - Idoneidad para participar totalmente en los programas Medicaid y Medicare
+              - Capacidad para someterse a una verificación de antecedentes
+              - Capacidad para pasar un examen médico o físico
+              - Capacidad para pasar una prueba de detección de drogas
+            instructions:
+            preparation:
+      CHECK_EBC_BALANCE:
+        resources:
+          es:
+            name: Comprueba el saldo de tu Pandemic Electronic Benefits Card (tarjeta electrónica de beneficios durante la pandemia)
+            category: Alimentación
+            description: |
+              Puedes consultar el saldo de tu cuenta en cualquier momento online, llamando al 1-888-328-6399 o pidiéndolo en la caja de las tiendas de alimentos que participan.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_HEALTH_INSURANCE_RIGHTS:
+        resources:
+          es:
+            name: Recursos e información sobre seguros médicos relacionados con el COVID-19
+            category: Salud
+            description: |
+              Consulta tus derechos y los cambios en la cobertura de seguros médicos debidos al COVID-19.
+            eligibility:
+            instructions:
+            preparation:
+      MEALS_FOR_KIDS:
+        resources:
+          es:
+            name: Encuentra comidas para niños mientras las escuelas están cerradas"
+            category: Alimentación
+            description: |
+              Introduce tu dirección para encontrar la ubicación más cercana en la que den comidas a los niños mientras las escuelas están cerradas.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_ADDICTION_SERVICES:
+        resources:
+          es:
+            name: Acceder a los servicios de ayuda a la adicción durante el COVID-19
+            category: COVID-19
+            description: |
+              Los servicios de recuperación y tratamiento de adicciones siguen estando disponibles durante la pandemia del COVID-19. Si necesitas hablar o te preocupa tener síndrome de abstinencia o una posible recaída, puedes contactar con los proveedores certificados o financiados por la Office of Alcoholism and Substance Abuse Services (oficina de servicios y apoyo para las adicciones, OASAS) del estado de Nueva York, ya sea por teléfono, por videollamada o en persona, si se mantiene la distancia de seguridad.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_NEW_AMERICANS:
+        resources:
+          es:
+            name: Recursos contra el COVID-19 dirigidos a nuevos ciudadanos de Estados Unidos
+            category: COVID-19
+            description: |
+              Consulta folletos en varios idiomas que detallan los servicios que ofrece la Office for New Americans (oficina de nuevos ciudadanos de Estados Unidos) y sus colaboradores, donde podrás encontrar, entre otras cosas, información para inmigrantes relacionada con el COVID-19.
+            eligibility:
+            instructions:
+            preparation:
+      DIAPER_ASSISTANCE:
+        resources:
+          es:
+            name: Recibe ayuda para comprar pañales en tu zona
+            category: Familia
+            description: |
+              Consulta si hay alguna agencia en tu zona que dé pañales gratis a familias necesitadas. Un banco de pañales es lo mismo que un banco de alimentos, solo que distribuyen pañales, no comida.
+            eligibility:
+            instructions:
+            preparation:
+      TEMP_ASSISTANCE:
+        resources:
+          es:
+            name: Temporary Assistance (asistencia temporal, TA)
+            category: Ayuda pública
+            description: |
+              La TA es una ayuda temporal para personas necesitadas. Si no puedes trabajar, no encuentras empleo o no ganas lo suficiente, la TA puede ayudarte a cubrir tus gastos básicos. Además, la TA puede ayudarte a resolver una emergencia o una necesidad inmediata, como un desalojo pendiente o la necesidad de combustible para calefacción de las unidades familiares que cumplen los requisitos.
+            eligibility: |
+              Los criterios de participación incluyen, entre otros (consulta la [página de la Temporary Assistance](https://otda.ny.gov/programs/temporary-assistance/) para obtener más información):
+               - Ser ciudadano de Estados Unidos o residente que cumpla los requisitos aunque no tenga la ciudadanía.
+               - Los ingresos mensuales no deben superar los límites de ingresos.
+               - Los recursos computables no deben superar los límites de recursos.
+               - Cumplir las asignaciones de actividades laborales, si procede.
+            instructions: |
+              Envía una solicitud a través de myBenefits.
+            preparation: |
+              - Resguardos de pagos u otro justificante de ingresos de los últimos 30 días
+              - Lista de recursos de tu unidad familiar
+              - Extracto actual de la hipoteca o el alquiler
+              - Factura actual del impuesto sobre bienes inmuebles
+              - Factura actual del seguro de propietario de la vivienda
+              - El número de la Seguridad Social o un justificante de la solicitud del número de la Seguridad Social de cada miembro de la unidad familiar
+              - Es posible que tengas que facilitar otros documentos según tus circunstancias individuales tras la entrevista de elegibilidad
+              Consulta la lista que se incluye en [Temporary Assistance](https://otda.ny.gov/programs/temporary-assistance/) para obtener más información.
+      FILE_TAXES_FREE:
+        resources:
+          es:
+            name: Presenta tu declaración de impuestos online gratis
+            category: Impuestos
+            description: |
+              El software de Free File está disponible hasta el 15 de octubre de 2020 para aquellas personas que aún no hayan presentado o solicitado una extensión después del plazo del 15 de julio.
+            eligibility:
+            instructions: |
+              Si tus ingresos de 2019 son iguales o inferiores a 69.000 $, cumples los requisitos para utilizar el software de Free File.
+            preparation: |
+              - Una cuenta activa de correo electrónico (para consultar el estado de tu devolución)
+              - Una copia de la devolución de impuestos del año pasado o tus ingresos brutos ajustados federales (FAGI) del año anterior
+              - El carné de conducir o un documento de identificación oficial para personas que no tienen carné de conducir (el tuyo y el de tu cónyuge, si presentáis una declaración conjunta)
+              - Tu fecha de nacimiento y tu número de la Seguridad Social, así como las fechas de nacimiento y los números de la Seguridad Social de tu cónyuge y de las personas a tu cargo
+              - Justificante de ingresos (salarios, intereses y dividendos): formularios W-2, 1098, 1099 y otros documentos que demuestren ingresos adicionales
+              - Información de los formularios 1095-A, B o C y del Affordable Healthcare Statement (declaración de cuidado de salud asequible) relacionada con cualquier crédito que solicites
+              - Tu información bancaria (el número de cuenta y el número de ruta de tu banco, que aparece en un cheque en blanco)
+              - Información de la cuenta de ahorro para universidades NY529 (si solicitas que el reembolso se distribuya)
+      VETERANS_PENSION:
+        resources:
+          es:
+            name: Pensión para veteranos por discapacidades no relacionadas con el servicio
+            category: Veteranos
+            description: |
+              Consulta si cumples los requisitos para recibir un subsidio exento de impuestos para veteranos proporcionado por el Departamento de Asuntos de los Veteranos (VA) de Estados Unidos. NOTA: Este servicio NO se aplica a la pensión que se paga a los veteranos retirados.
+            eligibility: |
+              - Debes haber estado en activo durante 24 meses como mínimo (o al menos 90 días si estuviste en activo en servicio militar antes del 7 de septiembre de 1980) y haber estado en activo durante un día como mínimo durante un periodo de guerra.
+              - Tener 65 años o más.
+              - Recibir pagos del Social Security Disability (Seguridad Social por invalidez, SSD).
+              - Recibir pagos por ingresos del Supplemental Security Income (ingreso suplementario de seguridad, SSI).
+              - Ser paciente de una residencia de ancianos.
+              - Un diagnóstico de una condición incapacitante que sea "total y permanente".
+              - Tener bienes a tu nombre con un valor inferior a 129.094 $
+              - Tener unos ingresos anuales inferiores a los límites de renta.
+              - NOTA: Este servicio NO se aplica a la pensión que se paga a los veteranos retirados.
+            instructions:
+            preparation:

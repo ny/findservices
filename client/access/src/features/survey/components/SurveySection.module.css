@@ -1,0 +1,18 @@
+/* stylelint-disable selector-pseudo-class-no-unknown */
+
+:global .ui.form .field {
+  margin-bottom: 1.75em;
+}
+
+.progress {
+  margin-bottom: 1rem;
+  color: #24387e; /* @nysBlue variable in the theme */
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.sectionHeading {
+  outline: none;
+}

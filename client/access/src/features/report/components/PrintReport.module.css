@@ -1,0 +1,12 @@
+.message {
+  margin-bottom: 1em !important;
+  box-shadow: none !important;
+}
+
+.footnoteDefinition {
+  font-size: small;
+}
+
+ol {
+  padding-left: 1em;
+}

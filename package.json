@@ -1,0 +1,76 @@
+{
+  "name": "maslow",
+  "version": "1.2.0",
+  "private": true,
+  "description": "maslow",
+  "repository": "https://github.com/ny/maslow",
+  "license": "GPL-2.0",
+  "workspaces": {
+    "packages": [
+      "client/*"
+    ],
+    "nohoist": [
+      "**/eslint**",
+      "**/eslint**/*"
+    ]
+  },
+  "scripts": {
+    "preinstall": "npx only-allow yarn"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.css": [
+      "yarn workspaces run stylelint --allow-empty-input --fix"
+    ],
+    "*.{js,jsx,ts,tsx,json,yaml,html,css,scss,md,java}": [
+      "prettier --write"
+    ],
+    "client/access/**/*.{js,jsx,ts,tsx}": [
+      "yarn workspace maslow-access run eslint --fix",
+      "yarn workspace maslow-access run test:staged"
+    ],
+    "client/author/**/*.{js,jsx,ts,tsx}": [
+      "yarn workspace maslow-author run eslint --fix",
+      "yarn workspace maslow-author run test:staged"
+    ],
+    "client/shared/**/*.{js,jsx,ts,tsx}": [
+      "yarn workspace maslow-shared run eslint --fix",
+      "yarn workspace maslow-shared run test:staged"
+    ],
+    "public/locales/**/*.json": [
+      "eslint --fix --format node_modules/eslint-plugin-i18n-json/formatter.js"
+    ],
+    "server/access/**/*.java": [
+      "./mvnw --fail-fast --offline --threads 1C --quiet test --projects server/access --also-make"
+    ],
+    "server/author/**/*.java": [
+      "./mvnw --fail-fast --offline --threads 1C --quiet test --projects server/author --also-make"
+    ],
+    "server/shared/**/*.java": [
+      "./mvnw --fail-fast --offline --threads 1C --quiet test --projects server/shared --also-make"
+    ]
+  },
+  "prettier": {
+    "overrides": [
+      {
+        "files": [
+          "*.java"
+        ],
+        "options": {
+          "printWidth": 100
+        }
+      }
+    ]
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1",
+    "prettier-plugin-java": "^0.8.0",
+    "prettier-plugin-packagejson": "^2.2.5"
+  }
+}

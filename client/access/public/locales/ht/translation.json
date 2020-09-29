@@ -1,0 +1,191 @@
+{
+  "checks": {
+    "noErrors": "pa gen erè ki detekte",
+    "services": {
+      "formulas": {
+        "noFormula": "Pa gen fòmil",
+        "title": "Validasyon Fòmil"
+      },
+      "ranking": {
+        "cardTitle": "Klasman Sèvis yo",
+        "missingServices": "Kle sèvis sa yo antre nan diksyonè sèvis yo, men yo pa nan klasman an ",
+        "title": "Validasyon Klasman"
+      },
+      "title": "Validasyon Sèvis yo"
+    },
+    "survey": {
+      "structure": {
+        "missingQuestions": "Kle kesyon sa yo antre nan sondaj la men yo pa nan diksyonè kesyon yo ",
+        "questionCardTitle": "Kesyon Sondaj yo"
+      },
+      "title": " Validasyon Estrikti pou Sondaj"
+    }
+  },
+  "footer": {
+    "accessibility": {
+      "text": "Aksesiblite"
+    },
+    "disclaimer": {
+      "text": "Avi non-responsablite"
+    },
+    "instagram": {
+      "label": "Vizite kont Instagram Eta New York la."
+    },
+    "privacyPolicy": {
+      "text": "Politik Konfidansyalite"
+    },
+    "title": {
+      "label": "Gade tout sèvis Eta New York yo",
+      "text": "Eta New York"
+    },
+    "twitter": {
+      "label": "Vizite kont Twitter Eta New York la."
+    }
+  },
+  "header": {
+    "languageSwitcher": {
+      "label": "Seleksyone lang"
+    },
+    "logo": {
+      "label": "Jwenn Paj Akèy Sèvis Eta New York la"
+    },
+    "skipToContent": "Sote pou al nan kontni prensipal lan"
+  },
+  "htmlTitle": {
+    "default": "Dekouvèt Sèvis",
+    "suffix": "Eta New York"
+  },
+  "http404": {
+    "actions": {
+      "seeAllServices": "Gade tout sèvis yo",
+      "startOver": "Rekòmanse"
+    },
+    "error": {
+      "label": "Nou pa jwenn paj sa a.",
+      "text": "Nou pa jwenn paj w ap chèche a. Rekòmanse oswa gade tout sèvis Eta New York yo.",
+      "title": "Oops!"
+    }
+  },
+  "print": {
+    "htmlTitle": "Enprime Lis Sèvis Ou an"
+  },
+  "report": {
+    "actions": {
+      "email": "Lis imèl",
+      "print": "Lis pou enprime",
+      "share": "Lis pou pataje ",
+      "startOver": "Rekòmanse"
+    },
+    "apply": {
+      "criteria": "Lòt kritè anplis:",
+      "howTo": "Gade kòman pou aplike",
+      "need": "Kèk bagay ou kapab gen bezwen:",
+      "ready": "Lè ou prè pou ou aplike:"
+    },
+    "error": {
+      "htmlTitle": "Sèvis ki Ajou - Rekòmanse",
+      "instructions": "Depi dènye vizit ou an nou te mete sèvis nou yo ajou. Rekòmanse epi nou ap ede ou eksplore sèvis yo ankò ",
+      "title": "Bagay sa yo te chanje depi dènye vizit ou an"
+    },
+    "htmlTitle": "Revize Sèvis yo",
+    "learnMore": "Aprann plis",
+    "message": {
+      "disclaimer": " <p> Rezilta sa yo chita sou sa ou te di nou. Ou dwe aplike pou yon sèvis pou ou konnen si ou elijib. Menm jan, ou kapab elijib pou plis sèvis pase sa yo montre ou yo la a. Gade nan lespri ou, ou gen dwa mande sèvis sa yo nenpòt jan rezilta sa yo ye.</p>",
+      "disclaimerLink": "<p>Vizite li <1>Paj sèvis yo</1> pou gade tout sèvis Eta New York State yo.</p>",
+      "disclaimerLink_print": "<p>Vizite https://ny.gov/services pou gade tout sèvis Eta New York yo.</p>",
+      "servicesRemoved": "Depi dènye vizit ou an yo te retire kèk sèvis nan lis sa a. Ou ka toujou <2><0>rekòmanse</0></2>."
+    },
+    "recommend": "Nou konseye ou pou ou pataje lis sa a konsa w ap kapab retounen nenpòt lè.",
+    "share": {
+      "body": " Lyen sa se pou mwen gade sèvis ki itil yo nan Eta New York selon sitiyasyon mwen epi kòman pou mwen aplike%0D%0A%0D%0A{{reportUrl}} %0D%0A%0D%0ARekòmanse lè ou vizite https://findservices.ny.gov. Vizite https://ny.gov/services pou gade tout sèvis Eta New York ofri yo.",
+      "emailLabel": "Pral louvri yon bouyon imèl",
+      "subject": " Sèvis mwen yo nan Eta NY",
+      "text": "Lyen sa a se pou mwen gade sèvis ki itil yo nan Eta New York selon sitiyasyon mwen epi kòman pou mwen aplike."
+    },
+    "title": "Men sa ou bezwen pou kòmanse"
+  },
+  "review": {
+    "actions": {
+      "edit": "Korije",
+      "next": "Gade sèvis yo",
+      "restart": "Rekòmanse"
+    },
+    "htmlTitle": "Revize Respons Ou yo",
+    "step": "Etap {{step}}",
+    "title": "Men sa ou te di nou"
+  },
+  "services": {
+    "actions": {
+      "addToList": "Ajoute nan lis la",
+      "hideMoreServices": "Kache {{count}} plis sèvis",
+      "hideMoreServices_plural": "Kache {{count}} plis sèvis",
+      "removeFromList": "Retire nan lis la",
+      "seeLess": "Gade mwens",
+      "seeMore": "Gade plis",
+      "seeMoreServices": "Gade {{count}} plis sèvis",
+      "seeMoreServices_plural": "Gade {{count}} plis sèvis",
+      "viewSaved": "Gade lis {{count}} sèvis la",
+      "viewSaved_plural": "Gade lis {{count}} sèvis yo"
+    },
+    "additional": {
+      "label": "Sèvis sa yo gen plis egzijans espesifik. Ajoute yo sou lis ou a pou ou aprann plis sou yo.",
+      "title": "Plis sèvis"
+    },
+    "default": {
+      "label": "Men kèk lòt sèvis nou ap pwopoze. Ajoute yo nan lis ou an pou ou gade si yo aplike pou ou.",
+      "title": "Repons ou yo pa koresponn a kenn sèvis"
+    },
+    "everything": {
+      "instructions": "Vizit <1>ny.gov/services</1> pou gade tout sèvis Eta New York yo.",
+      "title": "Gade tout sèvis yo"
+    },
+    "htmlTitle": "Seleksyone Sèvis",
+    "info": {
+      "category": "Kategori",
+      "criteria": "Kritè anplis"
+    },
+    "recommended": {
+      "title": "Men {{count}} sèvis pou ou eksplore",
+      "title_plural": "Men {{count}} sèvis pou ou eksplore"
+    },
+    "status": {
+      "selectServices": "Seleksyone sèvis ou ta renmen aprann plis sou yo, epi nou ap kreye yon lis ou kapab pataje sou paj ki vini aprè a"
+    }
+  },
+  "survey": {
+    "actions": {
+      "back": "Retounen",
+      "done": "Kontinye",
+      "init": "Eksplore sèvis yo",
+      "next": "Kontinye",
+      "seeAllServices": "Gade tout sèvis yo",
+      "step": "Etap {{step}} nan {{size}}"
+    },
+    "error": {
+      "label": "Te genyen yon erè",
+      "text": "Yon pwoblèm soti bò kote nou. Pandan nou ap travay pou nou repare li, konsilte lis sèvis disponib yo nan Eta New York",
+      "title": "Oops...",
+      "validation": "Tanpri reponn tout kesyon yo pou kontinye."
+    },
+    "intro": {
+      "body": "<p>Reponn kèk kesyon byen vit epi nou pral ede ou eksplore sèvis ki kapab fè yon diferans.</p><p>Nou p ap gade ni nou p ap pataje enfòmasyon ou bay yo. Gade nou <1>Politik Konfidansyalite</1> pou plis enfòmasyon.</p>",
+      "howItWorks": {
+        "stepOne": "Reponn pwochen kesyon sa yo selon tout sa ou konnen. Se pa yon aplikasyon, donk se pa grav si ou dwe devine.",
+        "stepThree": "Seleksyone sèvis ou ta renmen aprann plis sou yo,(ou kapab enprime oswa pataje lis la).",
+        "stepTwo": "Gade sèvis yo ki koresponn avèk repons ou yo.",
+        "title": "Men kòman sa fonksyone:"
+      },
+      "title": "Jwenn sèvis ki kapab ede ou"
+    },
+    "question": {
+      "boolean": {
+        "error": "Tanpri seleksyone 'Wi' oswa 'Non'.",
+        "no": "Non",
+        "yes": "Wi"
+      },
+      "number": {
+        "error": "Tanpri rantre yon nonm antye pi plis pase zewo"
+      }
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "checks": {
+    "noErrors": "Message indicating that no errors exist for the specific service formula.",
+    "services": {
+      "formulas": {
+        "noFormula": "Label indicating that the service does not have a matching formula.",
+        "title": "Title of the page where service formulas are validated."
+      },
+      "ranking": {
+        "cardTitle": "Title of the card indicating whether the ranked list of services is valid.",
+        "missingServices": "Error message indicating services are missing in the ranked list of services.",
+        "title": "Title of the section indicating the validation status of the ranked list of services."
+      },
+      "title": "Title of the area indicating the validation status of the service information."
+    },
+    "survey": {
+      "structure": {
+        "missingQuestions": "Error message indicating a question is missing.",
+        "questionCardTitle": "Title of the section indicating the validation status of the questions."
+      },
+      "title": "Title of the area indicating the validation status of the survey information."
+    }
+  },
+  "footer": {
+    "accessibility": {
+      "text": "Link to a page that describes New York State's accessibility policy. Appears in the footer, ideally a single word but not more than two."
+    },
+    "disclaimer": {
+      "text": "Link to a page that describes New York State's website disclaimer. Appears in the footer, ideally a single word but not more than two."
+    },
+    "instagram": {
+      "label": "Describes a link to New York State's Instagram account. Not shown on the page (represented as an icon)."
+    },
+    "privacyPolicy": {
+      "text": "Link to a page with New York State's privacy policy. Appears in the footer, ideally a single word but not more than two."
+    },
+    "title": {
+      "label": "Describes a link to the New York State social services website. Not shown on the page.",
+      "text": "The footer title, usually the NYS agency name."
+    },
+    "twitter": {
+      "label": "Describes a link to New York State's Twitter account. Not shown on the page (represented as an icon)."
+    }
+  },
+  "header": {
+    "languageSwitcher": {
+      "label": "Label for the dropdown where the user can choose into which language the application should be translated."
+    },
+    "logo": {
+      "label": "Label for going to the New York State Find Services home page. Used by screen readers for accessibility."
+    },
+    "skipToContent": "Link at the top of the page to skip to the main content of the page. Used by screen readers for accessibility."
+  },
+  "htmlTitle": {
+    "default": "Text displayed in the browser tab when the user initially opens the application, or views any page without a custom page title.",
+    "suffix": "A suffix added to every message displayed in the browser tab."
+  },
+  "http404": {
+    "actions": {
+      "seeAllServices": "Button to navigate to the ny.gov/services site to see all eligible services.",
+      "startOver": "Button to start the survey from the beginning."
+    },
+    "error": {
+      "label": "Error message indicating that the user has navigated to an unsupported page.",
+      "text": "Accompanying description indicating that the user has navigated to an unsupported page.",
+      "title": "Title for the page which indicates to the user that they have navigated to an unsupported page."
+    }
+  },
+  "print": {
+    "htmlTitle": "Text displayed in the browser tab when the user views the print page."
+  },
+  "report": {
+    "actions": {
+      "email": "Button to email your service list.",
+      "print": "Button to print your service list.",
+      "share": "Button to share your service list.",
+      "startOver": "Button to start back at the beginning of the survey."
+    },
+    "apply": {
+      "criteria": "Header highlighting information describing additional criteria needed to apply for the service.",
+      "howTo": "Hyperlink to a given service's application.",
+      "need": "Header highlighting what a resident may need for their application.",
+      "ready": "Header highlighting how a user should go about applying."
+    },
+    "error": {
+      "htmlTitle": "Text displayed in the browser tab when the user navigates to a report with invalid service information.",
+      "instructions": "Accompanying text on the error page indicating to the user that they have navigated to a report with invalid service information.",
+      "title": "Title for the error page that indicates to the user that they have navigated to a report with invalid service information."
+    },
+    "htmlTitle": "Text displayed in the browser tab when the user views their list of chosen services.",
+    "learnMore": "Hyperlink to learn more about a given service.",
+    "message": {
+      "disclaimer": "Disclaimer about suggested services not indicating eligibility.",
+      "disclaimerLink": "Message inviting a user to visit ny.gov/services, including a hyperlink to the website.",
+      "disclaimerLink_print": "Message inviting a user to visit ny.gov/services, including the link inline (not as a hyperlink behind text). This is used for the printer-friendly version of the page so that the resident can see the website URL.",
+      "servicesRemoved": "Alert displayed when a user previously saved a service that is no longer available."
+    },
+    "recommend": "Suggestion to resident to share their service list.",
+    "share": {
+      "body": "Body of email message that is created when resident chooses to email their services list. It includes a link back to the service list page and other relevant links.",
+      "emailLabel": "Spoken label for the button to open an email draft, used for accessibility.",
+      "subject": "Subject of the email message that is created when a resident chooses to email their services list.",
+      "text": "Text used when a resident chooses to share their services using the built in share screen."
+    },
+    "title": "Header for the services list page."
+  },
+  "review": {
+    "actions": {
+      "edit": "Button to edit responses to a section of questions. Clicking the edit button navigates to that section of questions in the survey.",
+      "next": "Button to continue from the review page to see suggested services on the next page.",
+      "restart": "Button to start the survey from the beginning. Clicking this button navigates to the first page of the application."
+    },
+    "htmlTitle": "Text displayed in the browser tab when the user completes the survey and is reviewing their responses.",
+    "step": "Label indicating which step in the survey the following section of questions correspond to.",
+    "title": "Title of the review page summarizing what the resident answered."
+  },
+  "services": {
+    "actions": {
+      "addToList": "Button to add a service to the list of selected services",
+      "hideMoreServices": "Button that hides an expanded list containing one service description",
+      "hideMoreServices_plural": "Button that hides an expanded list containing more than one service description",
+      "removeFromList": "Button to remove a service from the list of selected services",
+      "seeLess": "Link to hide additional information in the card that displays information about a service",
+      "seeMore": "Link to see additional information in the card that displays information about a service",
+      "seeMoreServices": "Button that shows a collapsed list containing one service description",
+      "seeMoreServices_plural": "Button that shows a collapsed list containing more than one service description",
+      "viewSaved": "Button to view more information about the list of selected services, when there is only one selected service",
+      "viewSaved_plural": "Button to view more information about the list of selected services, when there are multiple selected services"
+    },
+    "additional": {
+      "label": "Subtitle for the list of services that may apply to the resident",
+      "title": "Title for the list of services that may apply to the resident"
+    },
+    "default": {
+      "label": "Subtitle for the list of services that may apply to the resident in the case when no services matched their responses",
+      "title": "Title for the list of services that may apply to the resident in the case when no services matched their responses"
+    },
+    "everything": {
+      "instructions": "Instructions to the resident on how to view all available services",
+      "title": "Title for instructions to the resident on how to view all available services"
+    },
+    "htmlTitle": "Text displayed in the browser tab when the user is selecting services to explore further.",
+    "info": {
+      "category": "Label for the type of service",
+      "criteria": "Title for the section of information describing additional criteria needed to apply for the service"
+    },
+    "recommended": {
+      "title": "Title of the section of services whose criteria match the user's responses, when there is only a single matched service",
+      "title_plural": "Title of the section of services whose criteria match the user's responses, when there are multiple matched services"
+    },
+    "status": {
+      "selectServices": "Message in the selected services bar, informing the user how to select and save services they're interested in"
+    }
+  },
+  "survey": {
+    "actions": {
+      "back": "Button to go back by one page in the survey.",
+      "done": "Button to complete the survey.",
+      "init": "Button to start the survey.",
+      "next": "Button to go forward by one page in the survey.",
+      "seeAllServices": "Button to navigate to the ny.gov/services site to see all eligible services.",
+      "step": "Label indicating which step in the survey the user is currently on."
+    },
+    "error": {
+      "label": "Label for the page indicating the survey information could not be loaded.",
+      "text": "Accompanying text on the page indicating the survey information could not be loaded.",
+      "title": "Title for the page indicating the survey information could not be loaded.",
+      "validation": "Message displayed when the user tries to view the next group of questions before answering all questions in the current group."
+    },
+    "intro": {
+      "body": "Instructions on the landing page for how to use this application.",
+      "howItWorks": {
+        "stepOne": "Additional information explaining what the user needs to do.",
+        "stepThree": "Additional information explaining the end goal of the application.",
+        "stepTwo": "Additional information explaining the final step at the end of the application.",
+        "title": "Title for the section providing more detail about how the application works."
+      },
+      "title": "Title on the landing page, indicating the purpose of the application."
+    },
+    "question": {
+      "boolean": {
+        "error": "Error message indicating the user has not selected an answer to the boolean question.",
+        "no": "The negative answer to the boolean question.",
+        "yes": "The positive answer to the boolean question."
+      },
+      "number": {
+        "error": "Error message indicating the user has not entered a valid answer to the number question."
+      }
+    }
+  }
+}

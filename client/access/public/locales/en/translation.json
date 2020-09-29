@@ -1,0 +1,191 @@
+{
+  "checks": {
+    "noErrors": "No errors detected",
+    "services": {
+      "formulas": {
+        "noFormula": "No formula",
+        "title": "Formula Validation"
+      },
+      "ranking": {
+        "cardTitle": "Services Ranking",
+        "missingServices": "The following services keys are included in the services dictionary, but not in the ranking",
+        "title": "Ranking Validation"
+      },
+      "title": "Services Validation"
+    },
+    "survey": {
+      "structure": {
+        "missingQuestions": "The following question keys are included in the survey, but not in the questions dictionary",
+        "questionCardTitle": "Survey Questions"
+      },
+      "title": "Survey Structure Validation"
+    }
+  },
+  "footer": {
+    "accessibility": {
+      "text": "Accessibility"
+    },
+    "disclaimer": {
+      "text": "Disclaimer"
+    },
+    "instagram": {
+      "label": "Visit the New York State Instagram account."
+    },
+    "privacyPolicy": {
+      "text": "Privacy Policy"
+    },
+    "title": {
+      "label": "View all New York State services",
+      "text": "New York State"
+    },
+    "twitter": {
+      "label": "Visit the New York State Twitter account."
+    }
+  },
+  "header": {
+    "languageSwitcher": {
+      "label": "Select language"
+    },
+    "logo": {
+      "label": "Find New York State Services Home"
+    },
+    "skipToContent": "Skip to main content"
+  },
+  "htmlTitle": {
+    "default": "Service Discovery",
+    "suffix": "The State of New York"
+  },
+  "http404": {
+    "actions": {
+      "seeAllServices": "See all services",
+      "startOver": "Start over"
+    },
+    "error": {
+      "label": "This page was not found.",
+      "text": "We can't find the page you're looking for. Start over or see all New York State services.",
+      "title": "Oops!"
+    }
+  },
+  "print": {
+    "htmlTitle": "Print Your Services List"
+  },
+  "report": {
+    "actions": {
+      "email": "Email list",
+      "print": "Print list",
+      "share": "Share list",
+      "startOver": "Start over"
+    },
+    "apply": {
+      "criteria": "Additional criteria:",
+      "howTo": "See how to apply",
+      "need": "Some things you may need:",
+      "ready": "When you're ready to apply:"
+    },
+    "error": {
+      "htmlTitle": "Services Updated - Start Over",
+      "instructions": "Since your last visit our services have been updated. Start over and we'll help you explore services again.",
+      "title": "Things have changed since your last visit"
+    },
+    "htmlTitle": "Review Services",
+    "learnMore": "Learn more",
+    "message": {
+      "disclaimer": "<p>These results are based on what you told us. You will need to apply to a service to find out if you're eligible. Likewise, you may be eligible for more services than listed here. Keep in mind that you have the right to apply for these services, regardless of these results.</p>",
+      "disclaimerLink": "<p>Visit the <1>Services page</1> to view all New York State services.</p>",
+      "disclaimerLink_print": "<p>Visit https://ny.gov/services to view all New York State services.</p>",
+      "servicesRemoved": "Since your last visit some services have been removed from this list. You can always <2><0>start over</0></2>."
+    },
+    "recommend": "We recommend sharing this list so you can refer back to it anytime.",
+    "share": {
+      "body": "Here is a link to view helpful New York State services based on my situation and how to apply.%0D%0A%0D%0A{{reportUrl}}%0D%0A%0D%0AStart over by visiting https://findservices.ny.gov. Visit https://ny.gov/services to see all of the services that New York State offers.",
+      "emailLabel": "Will open an email draft",
+      "subject": "My NY State services",
+      "text": "Here is a link to view helpful New York State services based on my situation and how to apply."
+    },
+    "title": "Here's what you need to get started"
+  },
+  "review": {
+    "actions": {
+      "edit": "Edit",
+      "next": "See services",
+      "restart": "Start over"
+    },
+    "htmlTitle": "Review Your Responses",
+    "step": "Step {{step}}",
+    "title": "Here's what you told us"
+  },
+  "services": {
+    "actions": {
+      "addToList": "Add to list",
+      "hideMoreServices": "Hide {{count}} more service",
+      "hideMoreServices_plural": "Hide {{count}} more services",
+      "removeFromList": "Remove from list",
+      "seeLess": "See less",
+      "seeMore": "See more",
+      "seeMoreServices": "See {{count}} more service",
+      "seeMoreServices_plural": "See {{count}} more services",
+      "viewSaved": "See list of {{count}} service",
+      "viewSaved_plural": "See list of {{count}} services"
+    },
+    "additional": {
+      "label": "These services have more specific requirements. Add them to your list to learn more about them.",
+      "title": "More services"
+    },
+    "default": {
+      "label": "Here are some other services that we offer. Add them to your list to see if they apply to you.",
+      "title": "Your answers did not match any services"
+    },
+    "everything": {
+      "instructions": "Visit <1>ny.gov/services</1> to view all New York State services.",
+      "title": "View all services"
+    },
+    "htmlTitle": "Select Services",
+    "info": {
+      "category": "Category",
+      "criteria": "Additional criteria"
+    },
+    "recommended": {
+      "title": "Here is {{count}} service for you to explore",
+      "title_plural": "Here are {{count}} services for you to explore"
+    },
+    "status": {
+      "selectServices": "Select the services that you'd like to learn more about, and we'll create a list for you to share on the next page."
+    }
+  },
+  "survey": {
+    "actions": {
+      "back": "Go back",
+      "done": "Continue",
+      "init": "Explore services",
+      "next": "Continue",
+      "seeAllServices": "See all services",
+      "step": "Step {{step}} of {{size}}"
+    },
+    "error": {
+      "label": "There has been an error.",
+      "text": "Something went wrong on our end. While we work on fixing it, check out the list of available services from New York State.",
+      "title": "Oops...",
+      "validation": "Please answer all questions to continue."
+    },
+    "intro": {
+      "body": "<p>Answer a few quick questions, and we'll help you explore services that may make a difference.</p><p>We won't store or share the info you provide. See our <1>Privacy Policy</1> for more information.</p>",
+      "howItWorks": {
+        "stepOne": "Answer the next few questions as best as you can. This isn't an application, so it's okay if you have to guess.",
+        "stepThree": "Select the services you'd like to learn more about (you'll be able to print or share the list).",
+        "stepTwo": "View the services that match your answers.",
+        "title": "Here's how it works:"
+      },
+      "title": "Find services that can help"
+    },
+    "question": {
+      "boolean": {
+        "error": "Please select 'Yes' or 'No'.",
+        "no": "No",
+        "yes": "Yes"
+      },
+      "number": {
+        "error": "Please enter a whole number greater than zero"
+      }
+    }
+  }
+}

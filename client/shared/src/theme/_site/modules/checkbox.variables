@@ -1,0 +1,63 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@selectedTextColor: @nysTextLinkColor;
+@selectedBorderColor: @nysTextLinkColor;
+@checkboxBorder: 1px solid @nysBorderColor;
+
+/* Radio */
+/* Uses px to avoid rounding issues with circles */
+
+@radioSize: 18px;
+@radioTop: 1.125rem;
+@radioLeft: 1.125rem;
+@radioLabelDistance: 3rem; /* @labelDistance; */
+
+@bulletTop: 1.125rem;
+@bulletLeft: 1.125rem;
+@bulletScale: (12 / 18); /* 7px as unitless value from radio size */
+@bulletColor: @nysBlue;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hover */
+@checkboxHoverBackground: @checkboxBackground;
+@checkboxHoverBorderColor: @nysBorderColor;
+@labelHoverColor: @hoveredTextColor;
+
+/* Pressed */
+@checkboxPressedBackground: @offWhite;
+@checkboxPressedBorderColor: @selectedBorderColor;
+@checkboxPressedColor: @selectedTextColor;
+@labelPressedColor: @textColor;
+
+/* Focus */
+@checkboxFocusBackground: @white;
+@checkboxFocusBorderColor: @focusedFormMutedBorderColor;
+@checkboxFocusCheckColor: @selectedTextColor;
+@labelFocusColor: @textColor;
+
+/* Active */
+@labelActiveColor: @selectedTextColor;
+@checkboxActiveBackground: none;
+@checkboxActiveBorderColor: @selectedBorderColor;
+@checkboxActiveCheckColor: @selectedTextColor;
+@checkboxActiveCheckOpacity: 1;
+
+/* Active Focus */
+@checkboxActiveFocusBackground: @white;
+@checkboxActiveFocusBorderColor: @checkboxFocusBorderColor;
+@checkboxActiveFocusCheckColor: @selectedTextColor;
+
+/* Indeterminate */
+@checkboxIndeterminateBackground: @checkboxActiveBackground;
+@checkboxIndeterminateBorderColor: @checkboxActiveBorderColor;
+@checkboxIndeterminateCheckOpacity: 1;
+@checkboxIndeterminateCheckColor: @checkboxActiveCheckColor;
+
+/* Disabled */
+@disabledCheckboxOpacity: 0.5;
+@disabledCheckboxLabelColor: rgba(0, 0, 0, 1);

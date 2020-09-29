@@ -1,0 +1,9 @@
+.anchor {
+  padding-top: 1em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.divider {
+  border-top: solid 1px #949494 !important;
+}

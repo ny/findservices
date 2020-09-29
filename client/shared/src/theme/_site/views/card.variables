@@ -1,0 +1,9 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/* Header */
+@headerFontSize: @relativeLarge;
+
+/* Paragraph */
+@paragraphDistance: 1rem;

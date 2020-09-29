@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "name": "maslow-access",
+      "path": "client/access"
+    },
+    {
+      "name": "maslow-author",
+      "path": "client/author"
+    },
+    {
+      "name": "maslow-shared",
+      "path": "client/shared"
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "*.overrides": "less",
+      "*.variables": "less"
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "checks": {
+    "noErrors": "未发现错误",
+    "services": {
+      "formulas": {
+        "noFormula": "无公式",
+        "title": "公式验证"
+      },
+      "ranking": {
+        "cardTitle": "服务排名",
+        "missingServices": "以下服务键包含在服务字典中，但未包含在排名中",
+        "title": "排名验证"
+      },
+      "title": "服务验证"
+    },
+    "survey": {
+      "structure": {
+        "missingQuestions": "以下问题键包含在调查问卷中，但未包含在问题字典中",
+        "questionCardTitle": "调查问卷问题"
+      },
+      "title": "调查问卷结构验证"
+    }
+  },
+  "footer": {
+    "accessibility": {
+      "text": "无障碍支持"
+    },
+    "disclaimer": {
+      "text": "免责声明"
+    },
+    "instagram": {
+      "label": "访问纽约州 Instagram 帐号。"
+    },
+    "privacyPolicy": {
+      "text": "隐私权政策"
+    },
+    "title": {
+      "label": "查看纽约州提供的所有服务",
+      "text": "纽约州"
+    },
+    "twitter": {
+      "label": "访问纽约州 Twitter 帐号。"
+    }
+  },
+  "header": {
+    "languageSwitcher": {
+      "label": "选择语言"
+    },
+    "logo": {
+      "label": "查找纽约州服务首页"
+    },
+    "skipToContent": "跳至主要内容"
+  },
+  "htmlTitle": {
+    "default": "服务发现",
+    "suffix": "纽约州"
+  },
+  "http404": {
+    "actions": {
+      "seeAllServices": "查看所有服务",
+      "startOver": "重新开始"
+    },
+    "error": {
+      "label": "找不到此页面。",
+      "text": "找不到您要找的页面。请重新开始，或查看纽约州的所有服务。",
+      "title": "糟糕！"
+    }
+  },
+  "print": {
+    "htmlTitle": "打印您的服务列表"
+  },
+  "report": {
+    "actions": {
+      "email": "电子邮件收件人列表",
+      "print": "打印列表",
+      "share": "分享列表",
+      "startOver": "重新开始"
+    },
+    "apply": {
+      "criteria": "附加条件：",
+      "howTo": "查看申请方式",
+      "need": "您可能需要提供的一些单据和信息：",
+      "ready": "当您做好申请准备时："
+    },
+    "error": {
+      "htmlTitle": "服务已更新 - 重新开始",
+      "instructions": "自您上次访问后，我们的服务已更新。请重新开始，我们将协助您重新探索这些服务。",
+      "title": "自您上次访问后，服务已变更"
+    },
+    "htmlTitle": "查看服务",
+    "learnMore": "了解详情",
+    "message": {
+      "disclaimer": "<p>这些结果是系统根据您向我们提供的内容显示的。您需要申请一项服务，看看自己是否符合条件。此外，除了此处列出的服务，您可能有资格享受更多服务。请注意，无论这里显示的结果是什么，您都有权申请这些服务。</p>",
+      "disclaimerLink": "<p>访问<1>服务页面</1>，查看纽约州的所有服务。</p>",
+      "disclaimerLink_print": "<p>访问 https://ny.gov/services，查看纽约州的所有服务。</p>",
+      "servicesRemoved": "自您上次访问后，有些服务已从此列表中移除。您可以随时<2><0>重新开始</0></2>。"
+    },
+    "recommend": "建议您分享此列表，以便日后随时回头参考。",
+    "share": {
+      "body": "您可以点击以下链接，查看根据我的情况列出的一些有帮助的纽约州服务以及这些服务的申请方式。%0D%0A%0D%0A{{reportUrl}}%0D%0A%0D%0A如需重新开始，请访问 https://findservices.ny.gov。如需查看纽约州提供的所有服务，请访问 https://ny.gov/services。",
+      "emailLabel": "将打开一份电子邮件草稿",
+      "subject": "适合我的纽约州服务",
+      "text": "您可以点击以下链接，查看根据我的情况列出的一些有帮助的纽约州服务以及这些服务的申请方式。"
+    },
+    "title": "申请准备工作和条件"
+  },
+  "review": {
+    "actions": {
+      "edit": "修改",
+      "next": "查看服务",
+      "restart": "重新开始"
+    },
+    "htmlTitle": "查看您的回复",
+    "step": "第 {{step}} 步",
+    "title": "以下是您提供的内容"
+  },
+  "services": {
+    "actions": {
+      "addToList": "添加到列表",
+      "hideMoreServices": "隐藏另外 {{count}} 项服务",
+      "hideMoreServices_plural": "隐藏另外 {{count}} 项服务",
+      "removeFromList": "从列表中移除",
+      "seeLess": "收起",
+      "seeMore": "展开",
+      "seeMoreServices": "查看另外 {{count}} 项服务",
+      "seeMoreServices_plural": "查看另外 {{count}} 项服务",
+      "viewSaved": "查看服务列表（共 {{count}} 项服务）",
+      "viewSaved_plural": "查看服务列表（共 {{count}} 项服务）"
+    },
+    "additional": {
+      "label": "这些服务有更具体的要求。如需详细了解这些服务，请将它们添加到您的列表中。",
+      "title": "更多服务"
+    },
+    "default": {
+      "label": "以下是我们提供的一些其他服务。请将它们添加到您的列表中，看看它们是否适合您。",
+      "title": "没有与您的回答匹配的服务"
+    },
+    "everything": {
+      "instructions": "访问 <1>ny.gov/services</1>，查看纽约州的所有服务。",
+      "title": "查看所有服务"
+    },
+    "htmlTitle": "选择服务",
+    "info": {
+      "category": "类别",
+      "criteria": "附加条件"
+    },
+    "recommended": {
+      "title": "建议您仔细研究下面的 {{count}} 项服务",
+      "title_plural": "建议您仔细研究下面的 {{count}} 项服务"
+    },
+    "status": {
+      "selectServices": "请选择您想要详细了解的服务，我们将在下一页中创建一个可供您分享的列表。"
+    }
+  },
+  "survey": {
+    "actions": {
+      "back": "返回",
+      "done": "继续",
+      "init": "探寻服务",
+      "next": "继续",
+      "seeAllServices": "查看所有服务",
+      "step": "第 {{step}} 步，共 {{size}} 步"
+    },
+    "error": {
+      "label": "出现错误。",
+      "text": "我们遇到了问题。在我们解决问题期间，请查看纽约州现有服务的列表。",
+      "title": "糟糕…",
+      "validation": "若要继续，请回答所有问题。"
+    },
+    "intro": {
+      "body": "<p>请回答几个简单的问题，以便我们协助您探寻可能会给您的生活带来改观的服务。</p><p>我们不会存储或分享您提供的信息。如需了解详情，请参阅我们的<1>隐私权政策</1> 。</p>",
+      "howItWorks": {
+        "stepOne": "请尽量准确地回答接下来的几个问题。这不是申请表，因此即使您需要靠猜测来回答也无妨。",
+        "stepThree": "请选择您想要详细了解的服务（您可以打印或分享列表）。",
+        "stepTwo": "查看与您的回答匹配的服务。",
+        "title": "运作方式如下："
+      },
+      "title": "查找可能对您有帮助的服务"
+    },
+    "question": {
+      "boolean": {
+        "error": "请选择“是”或“否”。",
+        "no": "否",
+        "yes": "是"
+      },
+      "number": {
+        "error": "请输入一个大于零的整数"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.external::after {
+  position: relative;
+  bottom: 0.05em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.3em;
+  margin-left: 0.3em;
+  font-size: 0.75em;
+  font-family: Icons, sans-serif;
+  content: "\f35d";
+}

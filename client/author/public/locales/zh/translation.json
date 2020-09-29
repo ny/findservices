@@ -1,0 +1,20 @@
+{
+  "report": {
+    "apply": {
+      "criteria": "附加条件：",
+      "howTo": "查看申请方式",
+      "need": "您可能需要提供的一些单据和信息：",
+      "ready": "当您做好申请准备时："
+    },
+    "learnMore": "了解详情"
+  },
+  "services": {
+    "actions": {
+      "seeLess": "收起",
+      "seeMore": "展开"
+    },
+    "info": {
+      "category": "类别"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.footer {
+  z-index: 1;
+  flex-shrink: 0;
+  padding: 2em;
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.agencyNameGrid {
+  text-align: center;
+}
+
+.agencyName {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.35em;
+  font-family: "D Sari Bold", Arial, sans-serif;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footerLinksGrid {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.footerLinks {
+  display: inline-block;
+  float: left;
+  font-weight: 700;
+  font-size: 0.9em;
+  font-family: "Proxima Nova Bold", Arial, sans-serif;
+  vertical-align: middle;
+}
+
+.footerLinks a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* TODO: psuedoclasses not currently working*/
+.footer-links a:hover {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+
+.socialLinks {
+  padding-right: 2em;
+}
+
+.agencyName a:hover,
+.agencyName a:active,
+.agencyName a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* stylelint-disable-next-line unit-blacklist */
+@media screen and (max-width: 767px) {
+  .footerLinksGrid {
+    margin-right: -1em !important;
+    margin-left: -1em !important;
+  }
+
+  .agencyNameGrid {
+    text-align: left;
+  }
+
+  .agencyName {
+    font-size: 1em;
+  }
+}

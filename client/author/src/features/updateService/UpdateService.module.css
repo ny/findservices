@@ -1,0 +1,101 @@
+.card {
+  width: 95%;
+}
+
+.segmentSpacing {
+  margin: 0 !important;
+  padding: 0.5em 1em !important;
+}
+
+.saveButtonGrid {
+  padding-right: 0 !important;
+}
+
+.translationPageHeader {
+  display: inline-block;
+  margin-bottom: 0 !important;
+  margin-left: 0.6em !important;
+}
+
+.translationPageTitle {
+  align-items: center !important;
+}
+
+.translationStatusMessage {
+  margin-bottom: 0.1em !important;
+  margin-left: 1em !important;
+}
+
+.translationStatusOutdated {
+  color: #d5820d !important;
+  background-color: rgba(211, 129, 13, 0.08) !important;
+}
+
+.translationStatusUpToDate {
+  color: #007d0f !important;
+  background-color: rgba(0, 128, 15, 0.08) !important;
+}
+
+.translationStatusNotTranslated {
+  color: #b80909 !important;
+  background-color: rgba(185, 9, 9, 0.08) !important;
+}
+
+.translationColumn {
+  padding: 1em;
+}
+
+.translationColumnButton {
+  outline: none;
+  cursor: pointer;
+}
+
+.previewHeader {
+  margin-top: 1em !important;
+}
+
+.preview {
+  background-color: whitesmoke;
+}
+
+.paddingtop {
+  padding-top: 1em !important;
+}
+
+.questionlist {
+  display: block;
+}
+
+.paddingbottom {
+  padding-bottom: 1em !important;
+}
+
+.hiddenTag {
+  display: inline-block;
+  padding: 0.3em 0.5em !important;
+  color: #0e6eb8;
+  font-weight: 550;
+  background-color: rgba(14, 110, 184, 0.12);
+  border-radius: 8px;
+}
+
+.serviceHeader {
+  display: inline-block;
+  margin: 0 !important;
+  vertical-align: middle;
+}
+
+.visibilityToggle {
+  vertical-align: middle !important;
+}
+
+.toggleLabel {
+  display: inline-block;
+  padding-left: 1em !important;
+  vertical-align: middle;
+}
+
+.headerPadding {
+  margin: 0 !important;
+  padding: 0.9em 0 !important;
+}

@@ -1,0 +1,1278 @@
+# IMPORTANT: This file is only used for testing the `server/shared` module.
+#
+# This is NOT the file that will be served by the `server/access` application.
+# Unless you are specifically writing a unit test, this is NOT the file you want
+# to edit. Note that the schema for this file should match the one in
+# `server/access`, but the actual data does not need to match.
+
+spring:
+  application:
+    name: Maslow
+
+maslow:
+  catalog:
+    survey:
+      - SECTION_YOURSELF:
+          - IS_EMPLOYMENT_AFFECTED
+          - IS_WORRIED_HOUSING
+          - IS_WORRIED_FOOD
+      - SECTION_HOUSEHOLD:
+          - HOUSEHOLD_SIZE
+          - HOUSEHOLD_INCOME
+          - ADULTS_60_PLUS
+          - CHILDREN_06_17
+          - CHILDREN_00_05
+      - SECTION_SITUATION:
+          - IS_COVID
+          - IS_PREGNANT
+          - IS_STUDENT
+          - IS_DISABLED
+          - IS_MILITARY
+
+    sections:
+      SECTION_YOURSELF:
+        resources:
+          en:
+            title: Tell us about yourself
+      SECTION_HOUSEHOLD:
+        resources:
+          en:
+            title: Tell us about your living situation
+      SECTION_SITUATION:
+        resources:
+          en:
+            title: Tell us about the people you live with
+
+    questions:
+      HOUSEHOLD_SIZE:
+        type: NUMBER
+        resources:
+          en:
+            text: How many people live with you? Include yourself.
+            hint: Count yourself and any dependents when answering these questions.
+      ADULTS_60_PLUS:
+        type: BOOLEAN
+        resources:
+          en:
+            text: Is anyone over 60 years old?
+      CHILDREN_06_17:
+        type: BOOLEAN
+        resources:
+          en:
+            text: Is anyone 6–17 years old?
+      CHILDREN_00_05:
+        type: BOOLEAN
+        resources:
+          en:
+            text: Is anyone 5 years old or younger?
+      HOUSEHOLD_INCOME:
+        type: CURRENCY
+        resources:
+          en:
+            text: What’s the total amount of money (before taxes) that everyone in your home made in the last 30 days?
+      IS_EMPLOYMENT_AFFECTED:
+        type: BOOLEAN
+        resources:
+          en:
+            text: Are you unemployed, furloughed, or working reduced hours?
+      IS_WORRIED_HOUSING:
+        type: BOOLEAN
+        resources:
+          en:
+            text: Are you worried about making mortgage or rent payments?
+      IS_WORRIED_FOOD:
+        type: BOOLEAN
+        resources:
+          en:
+            text: Are you worried that your food will run out before you have money to buy more?
+      IS_DISABLED:
+        type: BOOLEAN
+        resources:
+          en:
+            text: Is anyone blind or disabled?
+      IS_MILITARY:
+        type: BOOLEAN
+        resources:
+          en:
+            text: Is anyone an active member or honorably discharged veteran of the US Armed Forces?
+      IS_STUDENT:
+        type: BOOLEAN
+        resources:
+          en:
+            text: Is anyone attending or planning to attend vocational school, college, or university either online or in person?
+      IS_PREGNANT:
+        type: BOOLEAN
+        resources:
+          en:
+            text: Is anyone pregnant?
+      IS_COVID:
+        type: BOOLEAN
+        resources:
+          en:
+            text: Has anyone been diagnosed with COVID-19?
+            hint: Count yourself and any dependents when answering these questions.
+    rank:
+      - SNAP
+      - DOL_UA
+      - DOL_PUA
+      - SNA
+      - HEALTH_MARKETPLACE
+      - HEAP
+      - TEMP_ASSISTANCE
+      - CHILDCARE
+      - HOUSING_VOUCHER
+      - PAID_LEAVE_BONDING
+      - MEDICAID
+      - MEDICARE
+      - FIND_A_JOB
+      - FOOD_BANK
+      - MEALS_FOR_KIDS
+      - WIC
+      - DISABILITY_CLAIM
+      - WORKERS_COMP
+      - ACCES_VR
+      - SHARED_WORK
+      - ESNA
+      - EAA
+      - EAF
+      - FAMILY_ASSISTANCE
+      - CHILD_HEALTH_PLUS
+      - CHILDREN_MEDICAID
+      - PAID_LEAVE_FAMILY
+      - PAID_LEAVE_MILITARY
+      - PAID_LEAVE_COVID19
+      - COVID_HOUSING
+      - COVID_CHILD_SUPPORT
+      - FIND_A_JOB_OMH
+      - COVID_HEALTH_INSURANCE_RIGHTS
+      - STAR
+      - COVID_TEST
+      - VIOLENCE_HOTLINE
+      - COVID_EMOTIONAL_SUPPORT
+      - COVID_MENTAL_HEALTH
+      - COVID_ADDICTION_SERVICES
+      - VICTIM_COMP
+      - TAP
+      - VETERANS_BLINDNESS
+      - VETERAN_DISABILITY
+      - COVID_NEW_AMERICANS
+      - DIAPER_ASSISTANCE
+      - EXCELSIOR
+      - MEMORIAL_SCHOLARSHIP
+      - NURSING_SCHOLARSHIP
+      - DMV_ONLINE
+      - CHECK_EBC_BALANCE
+      - PART_TIME_STUDY
+      - HOMES_VETERANS
+      - VETERANS_TUITION
+      - SOCIAL_WORKER_LOAN
+      - MERIT_SCHOLARSHIP
+      - STEM
+      - REGENTS
+      - ACADEMIC_EXCELLENCE
+
+    services:
+      CHILDCARE:
+        enabled: true
+        formula: "=AND(HOUSEHOLD_INCOME * 12 <= 16140 + HOUSEHOLD_SIZE * 8840, OR(CHILDREN_06_17, CHILDREN_00_05))"
+        application-url: https://ocfs.ny.gov/main/localdss.asp
+        information-url: https://ocfs.ny.gov/main/childcare/subsidy_program.asp
+        resources:
+          en:
+            name: Child Care Subsidy Program
+            category: Family
+            description: |
+              Receive assistance paying for some or all of the cost of child care services.
+            eligibility: |
+              You must need child care to work, look for work, or attend employment training.
+            instructions: |
+              To apply contact your local Department of Social Services
+            preparation:
+      DOL_UA:
+        enabled: true
+        formula: "=IS_EMPLOYMENT_AFFECTED"
+        application-url: https://unemployment.labor.ny.gov/
+        information-url: https://www.ny.gov/services/get-unemployment-assistance
+        resources:
+          en:
+            name: Unemployment Assistance
+            category: Employment
+            description: |
+              Receive temporary income if you lose your job through no fault of your own.
+            eligibility:
+            instructions: |
+              Visit ny.gov to create an account and submit the online application.
+            preparation: |
+              - Your Social Security number
+              - Your driver license or Motor Vehicle ID card number (if you have either one)
+              - Your complete mailing address and zip code
+              - A phone number where we can reach you from 8 am - 5 pm, Monday–Friday
+              - Your Alien Registration card number (if you are not a U.S. Citizen and have a card)
+              - Names and addresses of all your employers for the last 18 months, including those in other states
+              - Employer Registration number or Federal Employer Identification Number (FEIN) of your most recent employer (FEIN is on your W-2 forms)
+              - Your copies of forms SF8 and SF50, if you were a federal employee
+              - Your most recent separation form (DD 214), for military service
+      DOL_PUA:
+        enabled: false
+        formula: "=IS_EMPLOYMENT_AFFECTED"
+        application-url: https://unemployment.labor.ny.gov/
+        information-url: https://unemployment.labor.ny.gov/
+        resources:
+          en:
+            name: Pandemic Unemployment Assistance (PUA)
+            category: Employment
+            description: |
+              The program provides support for Americans who are unable to work due to the Coronavirus pandemic, but do not qualify for traditional Unemployment Assistance (UA).
+            eligibility: |
+              - You should apply if you are unable to work as a result of the coronavirus pandemic
+              - You will not be eligible for PUA if you can telework, or if you are receiving paid sick leave or other paid leave
+            instructions: |
+              The best way to apply is online. DOL has a streamlined application that allows you to apply for either traditional UI or PUA, depending on their eligibility. You do not have to complete a separate application for PUA.
+            preparation: |
+              - Your Social Security number
+              - Your driver license or Motor Vehicle ID card number (if you have either one)
+              - Your complete mailing address and zip code
+              - A phone number where we can reach you from 8 am - 5 pm, Monday–Friday
+              - Your Alien Registration card number (if you are not a U.S. Citizen and have a card)
+              - Names and addresses of all your employers for the last 18 months, including those in other states
+              - Employer Registration number or Federal Employer Identification Number (FEIN) of your most recent employer (FEIN is on your W-2 forms)
+              - Your copies of forms SF8 and SF50, if you were a federal employee
+              - Your most recent separation form (DD 214), for military service
+      EAA:
+        enabled: false
+        formula:
+        application-url: https://otda.ny.gov/programs/temporary-assistance/#apply
+        information-url: https://otda.ny.gov/programs/temporary-assistance/
+        resources:
+          en:
+            name: Emergency Assistance to Adults (EAA)
+            category: Cash
+            description: |
+              Emergency cash assistance for individuals and couples who have been determined eligible.
+            eligibility:
+            instructions: |
+              File an application with your county Department of Social Services.
+            preparation:
+      SNAP:
+        enabled: true
+        formula: "=AND(IS_WORRIED_FOOD, HOUSEHOLD_INCOME <= (1345 + HOUSEHOLD_SIZE * 737))"
+        application-url: https://mybenefits.ny.gov/mybenefits/NewAccountCreation!input.nysmybw
+        information-url: https://www.ny.gov/services/apply-snap#overview
+        resources:
+          en:
+            name: Supplemental Nutrition Assistance Program (SNAP)
+            category: Food
+            description: |
+              Receive electronic benefits that can be used to purchase food.
+            eligibility: |
+              - Citizen or qualified non-citizen status, meeting student criteria and compliance with able-bodied adults without dependents/employment requirements, when assigned
+            instructions: |
+              Apply using myBenefits
+            preparation: |
+              - Pay stubs or other proof of income from the last 30 days
+              - List of household resources
+              - Current rent/mortgage statement
+              - Current property tax bill
+              - Current homeowner’s insurance bill
+              - Social Security Number or proof of application for a Social Security Number for each household member applying for SNAP benefits.
+              - You may be required to provide other documentation based on your individual circumstances following your eligibility interview.
+      VICTIM_COMP:
+        enabled: false
+        formula:
+        application-url: https://vsp.ovs.ny.gov/vsp/index.html
+        information-url: https://ovs.ny.gov/victim-compensation
+        resources:
+          en:
+            name: Victim Compensation
+            category: Crime
+            description: |
+              Receive assistance paying for – including but not limited to medical bills, counseling expenses, burial and funeral costs, and lost wages – resulting from being victims of crime.
+            eligibility: |
+              - The victim must be an innocent victim of the crime
+              - Victims of crime who were physically injured as a result of the crime
+              - Victims of crime who are under 18, 60 and over, or disabled, who were not physically injured
+            instructions:
+            preparation: |
+              - Police reports
+              - Medical bills
+              - Correspondence with insurance companies or benefits plan saying if they will cover your loss
+              - Insurance cards
+              - Receipts for essential personal property
+              - Death certificate and funeral contract
+              - Victim’s birth certificate
+              - Proof of age (driver’s license, birth certificate etc.)
+              - Legal guardianship papers
+      SNA:
+        enabled: false
+        formula: "=OR(CHILDREN_06_17, CHILDREN_00_05)"
+        application-url: https://otda.ny.gov/programs/temporary-assistance/#apply
+        information-url: https://otda.ny.gov/programs/temporary-assistance/#apply
+        resources:
+          en:
+            name: Safety Net Assistance (SNA)
+            category: Cash
+            description: |
+              Eligible needy individuals and families receive cash assistance who are not eligible for Family Assistance.
+            eligibility: |
+              - Single adults
+              - Childless couples
+              - Children living apart from any adult relative
+              - Families of persons found to be abusing drugs or alcohol
+              - Families of persons refusing drug/alcohol screening, assessment or treatment
+              - Aliens who are eligible for temporary assistance, but who are not eligible for federal reimbursement
+            instructions: |
+              File an application with your county Department of Social Services.
+            preparation:
+      HEALTH_MARKETPLACE:
+        enabled: true
+        formula:
+        application-url: https://nystateofhealth.ny.gov/individual?lang=en
+        information-url: https://nystateofhealth.ny.gov/individual?lang=en
+        resources:
+          en:
+            name: NY State of Health (Official Healthcare Marketplace)
+            category: Health
+            description: |
+              NY State’s official marketplace for health plans. Anyone who needs health coverage can apply.
+            eligibility:
+            instructions:
+            preparation:
+      HEAP:
+        enabled: true
+        formula: "=IFS(HOUSEHOLD_SIZE = 1, HOUSEHOLD_INCOME < 2494, HOUSEHOLD_SIZE <= 6, HOUSEHOLD_INCOME <= ((HOUSEHOLD_SIZE - 2) * 768 + 3262)), HOUSEHOLD_SIZE <= 10, HOUSEHOLD_INCOME <= ((HOUSEHOLD_SIZE - 7) * 144 + 6476)), HOUSEHOLD_SIZE <= 11, HOUSEHOLD_INCOME <= 7086, HOUSEHOLD_SIZE >= 12, HOUSEHOLD_INCOME <= ((HOUSEHOLD_SIZE - 11) * 553 + 7086))"
+        application-url: https://mybenefits.ny.gov/mybenefits/begin
+        information-url: https://www.ny.gov/services/apply-heating-and-cooling-assistance-heap
+        resources:
+          en:
+            name: Heating and Cooling Assistance (HEAP)
+            category: Heating and Cooling
+            description: |
+              This program helps low-income people pay the cost of heating their homes.
+            eligibility: |
+              - You and the members of your household are U.S. citizens or eligible non-citizens; and
+              - You provide a valid Social Security number for each household member; and
+              - You receive Supplemental Nutrition Assistance Program (SNAP) benefits, Temporary Assistance or Supplemental Security Income; or
+              - Your monthly household income is at or below the HEAP income guidelines.
+              - You may be eligible for HEAP, even if you:
+                - Own your home
+                - Pay for heat as part of your rent
+                - Have money in the bank, stocks, bonds or other resources
+              - See [How to apply](https://otda.ny.gov/programs/apply/#heap)
+              for more information
+            instructions: |
+              Apply using myBenefits or by submitting an application to your local department of social services in person, by mail or by fax, if you live outside of NYC. Individuals that live in NYC may file an application through ACCESS HRA or by sending an application to the NYC Human Resources Administration in person, by mail or by fax.
+            preparation: |
+              Proof of residency with one of the following:
+              - Rent receipt with address
+              - Copy of lease with address
+              - Water, sewer or tax bill
+              - Homeowner’s insurance policy
+              - Mortgage payment receipt
+              - Deed
+              - Utility bill
+              - A current fuel or utility bill, or a statement from your landlord that your heat and/or utilities are included in your rent.
+              - Recent pay stubs to provide proof of total current monthly income for all household members.
+
+              For each person in your household you will need one of the following:
+              - Photo ID
+              - Driver’s license
+              - Birth certificate or baptismal certificate
+              - School records
+              - Passport
+              - Paperwork documenting a disability for anyone in your household
+      HOUSING_VOUCHER:
+        enabled: true
+        formula: "=IS_WORRIED_HOUSING"
+        application-url:
+        information-url: https://hcr.ny.gov/section-8-housing-choice-voucher-hcv-program
+        resources:
+          en:
+            name: Section 8 Housing Choice Voucher Program
+            category: Housing
+            description: |
+              Receive assistance to rent or purchase decent, safe housing in the private housing market by providing rental and homeownership assistance
+            eligibility:
+            instructions: Families interested in applying for the HCV Program must obtain an application from the local Public Housing Authority.
+            preparation:
+      PAID_LEAVE_BONDING:
+        enabled: true
+        formula: "=CHILDREN_00_05"
+        application-url: https://paidfamilyleave.ny.gov/pfl-bonding-leave-form
+        information-url: https://paidfamilyleave.ny.gov/paid-family-leave-bonding
+        resources:
+          en:
+            name: Paid Family Leave for Bonding
+            category: Family
+            description: |
+              Take paid leave to bond with your child within 12 months of your child's birth, adoption or foster placement.
+            eligibility:
+            instructions: |
+              Make a copy of the Request for Paid Family Leave (Form PFL-1) before submitting it to your employer. Send completed forms and supporting documentation to the insurance carrier at the address provided in the PFL-1 Form Part B, Question 13 (the section your employer completed), or send directly to your employer if they are self-insured.
+            preparation:
+      MEDICAID:
+        enabled: true
+        formula:
+        application-url: https://www.health.ny.gov/health_care/medicaid/
+        information-url: https://www.health.ny.gov/health_care/medicaid/
+        resources:
+          en:
+            name: Medicaid
+            category: Health
+            description: |
+              A program for New Yorkers who can’t afford to pay for medical care.
+            eligibility:
+            instructions:
+            preparation:
+      MEDICARE:
+        enabled: true
+        formula: "=OR(ADULTS_60_PLUS, IS_DISABLED)"
+        application-url: https://www.ssa.gov/benefits/medicare/
+        information-url: https://www.health.ny.gov/health_care/medicaid/ohip-0112/
+        resources:
+          en:
+            name: Medicare
+            category: Health
+            description: |
+              A federal health insurance program for people over 65 and for certain people with disabilities regardless of income.
+            eligibility:
+            instructions:
+            preparation:
+      WIC:
+        enabled: true
+        formula: "=OR(IS_WORRIED_FOOD,CHILDREN_00_05, IS_PREGNANT)"
+        application-url: https://www.health.ny.gov/prevention/nutrition/wic/index.htm
+        information-url: https://www.health.ny.gov/prevention/nutrition/wic/index.htm
+        resources:
+          en:
+            name: Women, Infants, and Children’s Program (WIC)
+            category: Food
+            description: |
+              Receive assistance purchasing nutritious food for moms and kids.
+            eligibility:
+            instructions:
+            preparation: |
+              - Proof of identity for you and your child
+              - Proof of household income
+              - Proof of residency
+              - Immunization record for infants and children
+              - In addition, you may be asked to bring:
+              - A completed New York State Department of Health Medical Referral Form from your healthcare provider (including blood work)
+      DISABILITY_CLAIM:
+        enabled: true
+        formula: "=IS_DISABLED"
+        application-url: https://ww3.nysif.com/-/media/Files/DISABILITY_BENEFITS/PDF/NYSIF-DB-450-10-19.ashx
+        information-url: https://ww3.nysif.com/Home/Claimant/DBClaimant/AboutYourClaim
+        resources:
+          en:
+            name: Disability Benefits Claim
+            category: Disability
+            description: |
+              Receive temporary, weekly cash benefits if you are disabled due to off-the-job injury or illness, and for disabilities arising from pregnancies.
+            eligibility:
+            instructions: |
+              Mail completed NYSIF DB-450 forms to:
+
+              NYSIF Disability Benefits
+              PO Box 66699
+              Albany, NY 12206
+
+              Or fax to: 518-437-5201
+            preparation:
+      WORKERS_COMP:
+        enabled: false
+        formula:
+        application-url: https://www.ny.gov/services/file-new-york-state-workers-compensation-claim#how-to-
+        information-url: https://www.ny.gov/services/file-new-york-state-workers-compensation-claim
+        resources:
+          en:
+            name: New York State Workers' Compensation
+            category: Employment
+            description: |
+              Workers’ compensation is a no-fault system that provides wage replacement benefits and lifetime medical care for work-related injuries and illnesses.
+            eligibility: |
+              - All employees in a for-profit business
+              - Employees of most not-for-profit employers
+              - Employees working in New York state are covered
+              - There is no residency requirement
+            instructions:
+            preparation: |
+              - Your contact information
+              - Basic employment information such as employer name and address, your job title and duties, and your gross pay rate
+              - How the injury happened, where you were and what you were doing when it occurred (with as much detail as possible), and if you reported it to your employer
+              - The nature of the injury/illness, the parts of the body affected, whether you received treatment and if you lost time from work
+      ACCES_VR:
+        enabled: true
+        formula: "=IS_DISABLED"
+        application-url: http://www.acces.nysed.gov/vr/apply-vocational-rehabilitation-services#application
+        information-url: http://www.acces.nysed.gov/vr/apply-vocational-rehabilitation-services
+        resources:
+          en:
+            name: Adult Career and Continuing Education Services - Vocational Rehabilitation (ACCES-VR)
+            category: Education
+            description: |
+              These services are for individuals with disabilities that interfere with getting or keeping a job or who have difficulty advancing at their job.
+            eligibility: |
+              - Have a disability that interferes with getting or keeping a job;
+              - Be able to benefit from Vocational Rehabilitation (VR) services; and
+              - Need VR services to get, keep or advance at your job.
+            instructions:
+            preparation:
+      SHARED_WORK:
+        enabled: true
+        formula: "=IS_EMPLOYMENT_AFFECTED"
+        application-url: https://dol.ny.gov/how-file-claim-under-shared-work-program#file-a-claim
+        information-url: https://dol.ny.gov/shared-work-program-0
+        resources:
+          en:
+            name: Shared Work Program
+            category: Employment
+            description: |
+              The program allows employers to keep trained employees and avoid layoffs by allowing staff members to receive partial Unemployment Insurance benefits while working reduced hours.
+            eligibility: |
+              Employees participate in the plan if they qualify to receive regular UI benefits in New York State.
+            instructions:
+            preparation:
+      ESNA:
+        enabled: false
+        formula: "=OR(CHILDREN_06_17, CHILDREN_00_05)"
+        application-url: https://otda.ny.gov/programs/temporary-assistance/#apply
+        information-url: https://otda.ny.gov/programs/temporary-assistance/#apply
+        resources:
+          en:
+            name: Emergency Safety Net Assistance (ESNA)
+            category: Cash
+            description: |
+              Emergency cash assistance for single adults and childless couples who have been determined eligible.
+            eligibility: |
+              To find out if you are eligible to receive Temporary Assistance, including help with an emergency, you need to file an application with your county Department of Social Services.
+            instructions:
+            preparation:
+      EAF:
+        enabled: false
+        formula: "=OR(IS_PREGNANT, CHILDREN_06_17, CHILDREN_00_05)"
+        application-url: https://otda.ny.gov/programs/temporary-assistance/#apply
+        information-url: https://otda.ny.gov/programs/temporary-assistance/#apply
+        resources:
+          en:
+            name: Emergency Safety to Needy Families (EAF)
+            category: Family
+            description: |
+              Emergency cash assistance for pregnant women and families with at least one child under age 18, or under age 19 and regularly attending full time secondary school, who have been determined eligible.
+            eligibility: |
+              To find out if you are eligible to receive Temporary Assistance, including help with an emergency, you need to file an application with your county Department of Social Services.
+            instructions:
+            preparation:
+      FAMILY_ASSISTANCE:
+        enabled: false
+        formula: "=OR(CHILDREN_06_17, CHILDREN_00_05)"
+        application-url: https://otda.ny.gov/programs/temporary-assistance/#apply
+        information-url: https://otda.ny.gov/programs/temporary-assistance/
+        resources:
+          en:
+            name: Family Assistance (FA)
+            category: Family
+            description: |
+              Receive cash assistance to care for a child living with you or a caretaker relative.
+            eligibility: |
+              To find out if you are eligible to receive Temporary Assistance, including help with an emergency, you need to file an application with your county Department of Social Services or, if you live in one of the five boroughs of New York City, with your local Job Center.
+            instructions: |
+              File an application with your county Department of Social Services.
+            preparation:
+      CHILD_HEALTH_PLUS:
+        enabled: true
+        formula: "=OR(CHILDREN_06_17, CHILDREN_00_05)"
+        application-url: https://www.health.ny.gov/health_care/child_health_plus/
+        information-url: https://www.health.ny.gov/health_care/child_health_plus/
+        resources:
+          en:
+            name: Child Health Plus
+            category: Health
+            description: |
+              A health insurance plan for kids available through dozens of providers throughout the state.
+            eligibility:
+            instructions:
+            preparation:
+      CHILDREN_MEDICAID:
+        enabled: true
+        formula: "=OR(CHILDREN_06_17, CHILDREN_00_05)"
+        application-url: https://www.health.ny.gov/health_care/child_health_plus/
+        information-url: https://www.health.ny.gov/health_care/child_health_plus/
+        resources:
+          en:
+            name: Children’s Medicaid
+            category: Health
+            description: |
+              A health insurance plan for kids. Depending on your family's income, your child may be eligible to join either Children's Medicaid or Child Health Plus.
+            eligibility:
+            instructions:
+            preparation:
+      PAID_LEAVE_FAMILY:
+        enabled: true
+        formula:
+        application-url: https://paidfamilyleave.ny.gov/pfl-family-care-leave-form
+        information-url: https://paidfamilyleave.ny.gov/paid-family-leave-family-care
+        resources:
+          en:
+            name: Paid Family Leave for Family Care
+            category: Family
+            description: |
+              Paid leave to care for a close family member with a serious health condition, including family members outside of New York State.
+            eligibility: |
+              - Most employees who are employed in New York State for private employers are covered under Paid Family Leave
+              - Non-represented public employees may be covered if their employer has voluntarily opted in to provide the benefit. Union-represented public employees will only be covered if the benefit has been negotiated through collective bargaining.
+            instructions: |
+              - You can take job-protected paid time off to care for a family member with a serious health condition.
+              - The family members you can take leave to care for are your spouse, parent-in-law, domestic partner, grandparent, child/stepchild, grandchild, parent/stepparent.
+            preparation:
+      PAID_LEAVE_MILITARY:
+        enabled: true
+        formula: "=IS_MILITARY"
+        application-url: https://paidfamilyleave.ny.gov/pfl-military-related-leave-form
+        information-url: https://paidfamilyleave.ny.gov/paid-family-leave-military-families
+        resources:
+          en:
+            name: Paid Family Leave for Military Families
+            category: Military
+            description: |
+              Paid family leave when you need time to assist with family situations arising when your spouse, domestic partner, child, or parent is on active service in a foreign country or has been notified of an impending call or order of active service to a foreign country.
+            eligibility:
+            instructions:
+            preparation: |
+              You will need to verify your family member’s service with one of the following:
+              - Covered active duty orders,
+              - Letter from the military unit documenting impending call or order to covered duty, or
+              - Documentation of military leave signed by the approval authority for the military member’s Rest and Recuperation.
+
+              If leave is requested to meet with a third party, such as a school official, counselor, or attorney, you must provide documentation of the meeting that includes:
+              - The name, address and contact information of the individual or entity with whom you are meeting
+              - A description of the meeting
+      STAR:
+        enabled: true
+        formula:
+        application-url: https://www8.tax.ny.gov/STRP/strpStart
+        information-url: https://www.tax.ny.gov/pit/property/star/default.htm
+        resources:
+          en:
+            name: School Property Tax Relief
+            category: Housing
+            description: |
+              Property tax relief to eligible New York State homeowners.
+            eligibility: |
+              If you’ve recently bought your home or you’ve never applied for the STAR benefit on your current home, you may be able to save hundreds of dollars each year.
+            instructions:
+            preparation: |
+              - Names and Social Security numbers for all owners of the property and their spouses (you may be asked to enter this information more than once to show the relationships between owners)
+              - The primary residence of the owners and their spouses
+              - Approximate date the owners purchased the property and the name of the sellers (this information is not required, but it can help us to smoothly process your registration)
+              - The most recent school tax bill, if the current owners received one (View examples.)
+              - Address of any residential property owned in another state
+              - The legal name of the trust, if applicable
+              - 2018 federal or state income tax returns for all owners (additional information is required if you were not required to file a 2018 income tax return)
+      TAP:
+        enabled: true
+        formula: "=AND(IS_STUDENT, HOUSEHOLD_INCOME < 80,000 / 12)"
+        application-url: https://www.ny.gov/services/apply-new-york-state-tap#how-to-
+        information-url: https://www.ny.gov/services/apply-new-york-state-tap
+        resources:
+          en:
+            name: Tuition Assistance Program (TAP)
+            category: Education
+            description: |
+              This program helps eligible residents pay tuition at approved schools in New York State.
+            eligibility: |
+              - Be a U.S. citizen or eligible non-citizen and a resident of New York State
+              - Have graduated from high school in the United States, or earned a high school equivalency diploma
+              - Study full-time undergraduate (at least 12 credits per semester) at an approved postsecondary institution in New York, be matriculated in an approved program of study and be in good academic standing with at least a cumulative "C" average as of the 4th semester payment
+              - Be charged at least $200 tuition per year
+              - Not be in default on any state or federal student loans and not be in default on any repayment of State awards
+              - Meet income requirements
+            instructions:
+            preparation:
+      VETERANS_BLINDNESS:
+        enabled: true
+        formula: "=AND(IS_MILITARY, IS_DISABLED)"
+        application-url: https://www.ny.gov/services/apply-blind-annuity-0#how-to
+        information-url: https://www.ny.gov/services/apply-blind-annuity-0
+        resources:
+          en:
+            name: Blind Annuity Program
+            category: Veterans
+            description: |
+              Annuity for legally blind wartime Veterans, or surviving un-remarried spouses of legally blind wartime Veterans, who live and are domiciled in New York State.
+            eligibility: |
+              - Must be declared legally blind.
+              - Must be a wartime Veteran who served on active duty during specific wartime periods or received an expeditionary medal for certain conflicts; or the unremarried surviving spouse of a qualified, legally blind Veteran who was receiving the benefit at the time of his or her death, or was eligible to be receiving it at the time of death.
+              - Must have served at least 90 days active duty for other than training purposes. Fewer than 90 days active duty is acceptable if the Veteran was discharged for a service-connected disability.
+              - Must be a resident of and domiciled in New York State
+            instructions:
+            preparation: |
+              - Proof that you are a resident of New York State.
+              - A discharge or statement of service showing both enlistment and discharge dates.
+              - Marriage & Death Certificates (if you are a spouse that is applying).
+              - Documentation of legal blindness
+      MEMORIAL_SCHOLARSHIP:
+        enabled: false
+        formula: "=IS_STUDENT"
+        application-url: https://webapps.hesc.ny.gov/questionnaire/page.hesc?questionnaireId=27&versionNumber=1
+        information-url: https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/nys-memorial-scholarship.html
+        resources:
+          en:
+            name: NYS Memorial Scholarship
+            category: Education
+            description: |
+              This program provides financial aid to children, spouses and financial dependents of deceased firefighters, volunteer firefighters, police officers, peace officers (including NYS Correction Officers), and emergency medical service workers who have died as the result of injuries sustained in the line of duty in service to the State of New York.
+            eligibility: |
+              - Be a U.S. citizen or eligible non-citizen;
+              - Be a child, spouse or financial dependent of deceased firefighter, volunteer firefighter, police officer (including NYS Correction Officers), or emergency medical service worker who have died as the result of injuries sustained in the line of duty in service to the State of New York;
+              - Have graduated from high school in the United States, earned a high school equivalency diploma earned, or passed a federally approved "Ability to Benefit" test as defined by the Commissioner of the State Education Department;
+              - Study at an approved postsecondary institution in New York State;
+              - Be matriculated in an approved undergraduate program of study;
+              - Be enrolled as a full-time student taking 12 or more credits per semester applicable toward the degree program;
+              - Be in good academic standing;
+              - Be in a non-default status on a student loan made under any NYS or federal education loan program or or repayment of any NYS award; and
+              - Be in compliance with the terms of any service condition imposed by a NYS award.
+            instructions: |
+              Complete and submit the NYS Memorial Scholarship Web Supplement. Be sure to print the Web Supplement Confirmation, sign, date and submit it, along with the required documentation, according to the instructions.
+
+              If more than one member of a family applies for a Memorial Scholarships award, each family member must submit a separate supplement.
+            preparation:
+      NURSING_SCHOLARSHIP:
+        enabled: false
+        formula: "=IS_STUDENT"
+        application-url: https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/senator-patricia-k-mcgee-nursing-faculty-scholarship-program.html
+        information-url: https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/senator-patricia-k-mcgee-nursing-faculty-scholarship-program.html
+        resources:
+          en:
+            name: Senator Patricia K. McGee Nursing Faculty Scholarship Program
+            category: Education
+            description: |
+              A scholarship offered to increase the number of nursing teachers and adjunct clinical faculty in New York State.
+            eligibility: |
+              - Be a NYS resident and have resided in NYS for 12 continuous months prior to the beginning of the term;
+              - Be U.S. citizens or eligible non-citizens;
+              - Be a registered nurse licensed to practice in NYS;
+              - Enroll at an accredited school in NYS in a master’s or doctoral level program in nursing or related program that qualifies the applicant to work as nursing faculty or adjunct clinical faculty in NYS;
+              - Have a grade point average (GPA) of 3.0 or higher if the applicant has already completed a semester in a graduate program that will qualify him or her as nursing faculty or adjunct clinical faculty;
+              - Be in a non-default status on a student loan made under any NYS or federal education loan program or repayment of any NYS award;
+              - Be in compliance with the terms of any service condition imposed by a NYS award, and
+              - Execute a Service Contract agreeing to work as nursing faculty or adjunct clinical faculty in New York State for four years.
+            instructions:
+            preparation:
+      VETERAN_DISABILITY:
+        enabled: true
+        formula: "=AND(IS_MILITARY, IS_DISABLED)"
+        application-url: https://veterans.ny.gov/map?field_county_field_tid=All&distance%5Bpostal_code%5D=&distance%5Bsearch_distance%5D=10&distance%5Bsearch_units%5D=mile
+        information-url: https://veterans.ny.gov/content/starting-claim
+        resources:
+          en:
+            name: Veteran Disability Compensation
+            category: Veterans
+            description: |
+              Tax-free monthly disability compensation payments from the United States Department of Veterans Affairs.
+            eligibility: |
+              Were you injured during your active duty military service? Did your active duty service worsen a pre-existing disability? If the answer to either of these questions is “yes,” then you may be eligible.
+            instructions: |
+              Veterans Benefits Advisors, all Veterans themselves, will gladly prepare and file your claim for disability compensation.
+            preparation:
+      HOMES_VETERANS:
+        enabled: false
+        formula: "=AND(IS_WORRIED_HOUSING, IS_MILITARY)"
+        application-url: https://hcr.ny.gov/how-apply#how-to-apply
+        information-url: https://veterans.ny.gov/content/homes-veterans-program
+        resources:
+          en:
+            name: Homes for Veterans Program
+            category: Housing
+            description: |
+              Fixed-rate mortgages with interest rates 0.375% below the already low interest rates from the State of New York Mortgage Agency.
+            eligibility: |
+              Must have served in the active military and discharged under conditions other than dishonorable.
+
+              In addition, any active duty service members, honorably discharged National Guardsmen, or honorably discharged Reservist, who are first time homebuyers may take advantage of the program benefits if they are:
+              - A U.S. military personnel (including those currently serving in the reserves) stationed in New York State, regardless of discharge status)
+              - An active or honorably discharged National Guardsman
+              - An active or honorably discharged Reservist
+            instructions:
+            preparation: |
+              - A two-year history of continuing, reliable, and verifiable income
+              - A credit history that shows a willingness to make your payments on time
+              - Sufficient income to cover the costs of homeownership while still meeting other debt obligations
+              - Enough money in the bank to pay your down payment and closing costs.
+      PART_TIME_STUDY:
+        enabled: true
+        formula: "=AND(IS_STUDENT, HOUSEHOLD_INCOME * 12 < 50550)"
+        application-url:
+        information-url: https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/aid-for-part-time-study.html
+        resources:
+          en:
+            name: Aid for Part-time Study
+            category: Education
+            description: |
+              Grant assistance for eligible part-time students enrolled in approved undergraduate studies.
+            eligibility: |
+              - Be a legal resident of New York State and have resided in NYS for at least 12 continuous months prior to the start of the term;
+              - Be a U.S. citizen or eligible noncitizen;
+              - Have graduated from a high school in the United States, earned a high school equivalency diploma by passing a Test Assessing Secondary Completion (TASC) formally known as a GED, or passed a federally approved "Ability to Benefit" test as defined by the Commissioner of the State Education Department
+              - Be enrolled as a part-time student;
+              - Be matriculated in an approved program of study in a participating New York State postsecondary institution;
+              - Be in good academic standing;
+              - Be charged at least $100 tuition per year;
+              - Meet income eligibility limitations;
+              - Not have exhausted Tuition Assistance Program (TAP) eligibility;
+              - Not be in default on a student loan made under any NYS or federal education loan program or repayment of any NYS award and,
+              - Be in compliance with the terms of any
+            instructions: |
+              To apply, students should obtain an APTS application from the college the student will be attending.
+            preparation:
+      VETERANS_TUITION:
+        enabled: false
+        formula: "=AND(IS_MILITARY, IS_STUDENT)"
+        application-url: https://webapps.hesc.ny.gov/questionnaire/page.hesc?questionnaireId=14&versionNumber=4
+        information-url: https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/veterans-tuition-awards.html
+        resources:
+          en:
+            name: Veterans Tuition Awards
+            category: Education
+            description: |
+              Financial award for full-time and part-time study for eligible veterans matriculated in an approved program at an undergraduate or graduate degree-granting institution or in an approved vocational training program in New York State.
+            eligibility: |
+              - Must be a legal resident of NYS and have resided in NYS for 12 continuous months prior to the beginning of the term
+              - Must be matriculated full or part- time at an undergraduate or graduate degree-granting institution in New York State or in an approved vocational training program in New York State
+              - Must be discharged under honorable conditions from the U.S. Armed Forces and either a Vietnam Veteran who served in Indochina between February 28, 1961 and May 7, 1975; or a Persian Gulf Veteran who served in the Persian Gulf on or after August 2, 1990; or an Afghanistan Veteran who served in Afghanistan during hostilities on or after September 11, 2001; or a Veteran of the United States Armed Forces who served in hostilities that occurred after February 28, 1961, as evidenced by receipt of an Armed Forces Expeditionary Medal, Navy Expeditionary Medal or a Marine Corps Expeditionary Medal.
+            instructions:
+            preparation:
+      SOCIAL_WORKER_LOAN:
+        enabled: false
+        formula:
+        application-url: https://www.hesc.ny.gov/repay-your-loans/repayment-options-assistance/loan-forgiveness-cancellation-and-discharge/nys-licensed-social-worker-loan-forgiveness-program.html
+        information-url: https://www.hesc.ny.gov/repay-your-loans/repayment-options-assistance/loan-forgiveness-cancellation-and-discharge/nys-licensed-social-worker-loan-forgiveness-program.html
+        resources:
+          en:
+            name: Licensed Social Worker Loan Forgiveness Program (LSWLF)
+            category: Education
+            description: |
+              This program is offered to increase the number of licensed social workers working in critical human service areas, including but not limited to the following fields: home care, health, mental health, substance abuse, aging, HIV/AIDS and child welfare or communities with multilingual needs.
+            eligibility:
+            instructions:
+            preparation:
+      MERIT_SCHOLARSHIP:
+        enabled: false
+        formula: "=AND(IS_MILITARY, IS_STUDENT)"
+        application-url: https://webapps.hesc.ny.gov/questionnaire/page.hesc?questionnaireId=37&versionNumber=1
+        information-url: https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/msrs-scholarship.html
+        resources:
+          en:
+            name: Military Enhanced Recognition Incentive and Tribute (MERIT) Scholarship
+            category: Education
+            description: |
+              Financial aid for an eligible child, spouse or financial dependent of members of the United States Armed Forces or state organized militia.
+            eligibility: |
+              - You are a child, spouse or financial dependent of members of the United States Armed Forces or state organized militia who, at any time on or after August 2, 1990, while New York State residents, died or became severely and permanently disabled while performing their military duties, whether in combat or not.
+              - Study at an approved postsecondary institution in New York State.
+              - Have graduated from high school in the United States, or have a high school equivalency diploma earned through passing the Test Assessing Secondary Completion (TASC), formally known as the GED, or passed a federally approved "Ability to Benefit" test as defined by the Commissioner of the State Education Department.
+              - Be enrolled as a full-time student taking 12 or more credits per semester.
+              - Be matriculated in an approved program of study.
+              - Be in good academic standing.
+              - Not be in default on any State or federal student loan or on any repayment of state awards.
+            instructions: |
+              Complete and submit the Military Enhanced Recognition Incentive and Tribute (MERIT) Scholarships Web Supplement. Be sure to print the Web Supplement confirmation, sign it, and submit it, along with the required documentation, according to the instructions.
+            preparation:
+      STEM:
+        enabled: false
+        formula: "=AND(IS_STUDENT)"
+        application-url: https://webapps.hesc.ny.gov/questionnaire/page.hesc?questionnaireId=55&versionNumber=4
+        information-url: https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/nys-science-technology-engineering-and-mathematics-stem-incentive-program.html
+        resources:
+          en:
+            name: STEM Incentive Program
+            category: Education
+            description: |
+              Tuition awards to students who are New York State residents attending a public or private degree-granting college or university located in New York State.
+            eligibility: |
+              - Be ranked in the top 10 percent of his/her high school graduating class at a NYS high school;
+              - Be matriculated in an approved undergraduate program leading to a degree in Science, Technology, Engineering or Mathematics at a public or private college located in NYS;
+              - Maintain a cumulative grade point average (GPA) of 2.5 or higher;
+              - Execute a Service Contract agreeing to reside and work in the field of Science, Technology, Engineering or Mathematics in NYS for five years.  View the terms and conditions of the service contract.
+              - Be a NYS resident and have resided in NYS for 12 continuous months prior to the beginning of the fall college term;
+              - Be a U.S. citizen or eligible non-citizen;
+              - Be a high school senior/recent high school graduate who will be enrolled full time at a public or private college located in NYS, beginning in the fall term following his or her high school graduation
+            instructions: |
+              Complete and submit the NYS Science, Technology, Engineering and Mathematics (STEM) Incentive Program Application. Be sure to print the Application Confirmation, sign and submit it, along with the required documentation, according to the instructions. You must also submit the FAFSA and the NYS Student Aid Payment Application.
+            preparation:
+      REGENTS:
+        enabled: false
+        formula: "=AND(IS_MILITARY, IS_STUDENT)"
+        application-url:
+        information-url: https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/nys-regents-awards-for-children-of-deceased-and-disabled-veterans.html
+        resources:
+          en:
+            name: NYS Regents Awards for Children of Deceased and Disabled Veterans
+            category: Education
+            description: |
+              Financial aid to students whose parent(s) served in the U.S. Armed Forces during specified times of national emergency.
+            eligibility: |
+              Students whose parent(s) served in the U.S. Armed Forces during specified periods of war or national emergency and, as a result of service, died, suffered a 40% or more disability, was classified as missing in action, or was a prisoner of war are eligible to apply. The veteran must currently be a New York State resident or have been a New York State resident at the time of death. The applicant must be pursuing an approved undergraduate degree at a college or university located in NYS.
+            instructions: |
+              Complete the Children of Veterans' Award Web Supplement. Be sure to print the Web Supplement Confirmation, sign and return it along with the required documentation according to the instructions.
+
+              Once you have established your eligibility you must complete the Free Application for Federal Student Aid (FAFSA) and apply for the Tuition Assistance Program (TAP), or call HESC at 1-888-697-4372 to request a Scholarship & Grant Payment Application by June 30 of each academic year you seek payment.
+            preparation:
+      ACADEMIC_EXCELLENCE:
+        enabled: false
+        formula: "=AND(IS_STUDENT)"
+        application-url:
+        information-url: https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/nys-scholarships-for-academic-excellence.html
+        resources:
+          en:
+            name: NYS Scholarships for Academic Excellence
+            category: Education
+            description: |
+              Receive up to $1,500 in scholarship money to attend college.
+            eligibility: |
+              - Have graduated from a New York State high school
+              - Study full time and be matriculated in an approved undergraduate program of study in a New York State post secondary institution
+              - Be in good academic standing
+              - Not be in default on any State or federal student loan or on any repayment of state awards
+              - Be U.S. citizens or eligible non-citizens
+              - Be New York State residents
+            instructions: |
+              To apply, see your high school guidance counselor.
+            preparation:
+      EXCELSIOR:
+        enabled: false
+        formula: "=AND(IS_STUDENT, HOUSEHOLD_INCOME <= (125000 / 12))"
+        application-url: https://webapps.hesc.ny.gov/questionnaire/page.hesc?questionnaireId=58&versionNumber=4
+        information-url: https://www.hesc.ny.gov/pay-for-college/financial-aid/types-of-financial-aid/nys-grants-scholarships-awards/the-excelsior-scholarship.html
+        resources:
+          en:
+            name: Excelsior Scholarship Program
+            category: Education
+            description: |
+              The Excelsior Scholarship, in combination with other student financial aid programs, allows students to attend a SUNY or CUNY college tuition-free.
+            eligibility: |
+              - Be a resident of NYS and have resided in NYS for 12 continuous months prior to the beginning of the term;
+              - Be a U.S. citizen or eligible non-citizen;
+              - Have either graduated from high school in the United States, earned a high school equivalency diploma, or passed a federally approved "Ability to Benefit" test, as defined by the Commissioner of the State Education Department;
+              - Have a combined federal adjusted gross income of $125,000 or less;
+              - Be pursuing an undergraduate degree at a SUNY or CUNY college, including community colleges and the statutory colleges at Cornell University and Alfred University;
+              - Be enrolled in at least 12 credits per term and complete at least 30 credits each year (successively), applicable toward his or her degree program through continuous study with no break in enrollment except for certain reasons that can be documented;
+              - If attended college prior to the 2019-20 academic year, have earned at least 30 credits each year (successively), applicable toward his or her degree program prior to applying for an Excelsior Scholarship;
+              - Be in a non-default status on a student loan made under any NYS or federal education loan program or on the repayment of any NYS award;
+              - Be in compliance with the terms of the service condition(s) imposed by any NYS award that you have previously received; and
+              - Execute a Contract agreeing to reside in NYS for the length of time the award was received, and, if employed during such time, be employed in NYS.
+            instructions: |
+              To apply, see your high school guidance counselor.
+            preparation:
+      COVID_TEST:
+        enabled: true
+        formula: "=IS_COVID"
+        application-url:
+        information-url: https://coronavirus.health.ny.gov/find-test-site-near-you
+        resources:
+          en:
+            name: Find a COVID-19 Testing Site Near You
+            category: COVID-19
+            description: |
+              Any New Yorker is eligible to get a COVID-19 test. The COVID-19
+              Test Site Finder provides coronavirus testing near you.
+            eligibility:
+            instructions:
+            preparation:
+      PAID_LEAVE_COVID19:
+        enabled: true
+        formula: "=IS_COVID"
+        application-url:
+        information-url: https://paidfamilyleave.ny.gov/covid19
+        resources:
+          en:
+            name: Paid Leave for COVID-19
+            category: Health
+            description: |
+              Some employers in New York State are required to provide at least
+              five days of job protected, paid sick leave to employees who need
+              to take leave because they are under a mandatory or precautionary
+              order of quarantine or isolation due to COVID-19.
+            eligibility: |
+              - If you are quarantined yourself
+              - If your minor dependent child is quarantined
+              - If you are caring for a family member with COVID-19
+            instructions:
+            preparation:
+      VIOLENCE_HOTLINE:
+        enabled: true
+        formula:
+        application-url:
+        information-url: https://opdv.ny.gov/
+        resources:
+          en:
+            name: New York State Domestic Violence and Sexual Violence Hotline
+            category: Public Safety
+            description: |
+              The New York State Domestic and Sexual Violence Hotline provides
+              private and secure communication over text, call or chat.
+            eligibility:
+            instructions:
+            preparation:
+      FIND_A_JOB:
+        enabled: true
+        formula: "=IS_EMPLOYMENT_AFFECTED"
+        application-url: https://labor.ny.gov/jobs/regional.shtm
+        information-url: https://www.ny.gov/services/find-job
+        resources:
+          en:
+            name: Find a Job
+            category: Employment
+            description: |
+              Get connected to local, private sector jobs. Start searching for
+              your new career today by browsing thousands of local job
+              opportunities on the Jobs Express website.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_HOUSING:
+        enabled: true
+        formula: "=IS_COVID"
+        application-url:
+        information-url: https://hcr.ny.gov/covid-19-helpful-links-and-faqs
+        resources:
+          en:
+            name: COVID-19 Housing Resources
+            category: Housing
+            description: |
+              Find helpful information for tenants, landlords, and homeowners
+              impacted by COVID-19.
+            eligibility:
+            instructions:
+            preparation:
+      FOOD_BANK:
+        enabled: true
+        formula: "=IS_WORRIED_FOOD"
+        application-url:
+        information-url: https://coronavirus.health.ny.gov/food-pantries
+        resources:
+          en:
+            name: Find a Food Bank Near You
+            category: Food
+            description: |
+              Find a listing of food banks and pantries for every county in New
+              York State.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_EMOTIONAL_SUPPORT:
+        enabled: true
+        formula: "=IS_COVID"
+        application-url:
+        information-url: https://omh.ny.gov/omhweb/covid-19-resources.html
+        resources:
+          en:
+            name: COVID-19 Emotional Support Helpline
+            category: Health
+            description: |
+              Call 1-844-863-9314. Provides free and confidential support. The
+              Helpline is staffed by volunteers, including mental health
+              professionals, who have received training in crisis counseling.
+            eligibility:
+            instructions:
+            preparation:
+      DMV_ONLINE:
+        enabled: false
+        formula:
+        application-url:
+        information-url: https://dmv.ny.gov/more-info/all-online-transactions
+        resources:
+          en:
+            name: View All DMV Online Services
+            category: Transportation
+            description: |
+              Learn more about the many DMV transactions that can be done
+              online without having to go to an office.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_MENTAL_HEALTH:
+        enabled: true
+        formula: "=IS_COVID"
+        application-url:
+        information-url: https://omh.ny.gov/omhweb/covid-19-resources.html
+        resources:
+          en:
+            name: COVID-19 Mental Health Support Services
+            category: Health
+            description: |
+              Find resources on how to manage anxiety and cope with grief
+              during the coronavirus health emergency.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_CHILD_SUPPORT:
+        enabled: true
+        formula: "=AND(IS_COVID, OR(CHILDREN_06_17, CHILDREN_00_05))"
+        application-url:
+        information-url: https://www.childsupport.ny.gov/dcse/covid19_services.html
+        resources:
+          en:
+            name: COVID-19 and Child Support Services in New York State
+            category: Family
+            description: |
+              The New York Child Support Program is committed to delivering
+              services to the greatest extent possible through this public
+              health crisis. Many local offices have limited staff or staggered
+              schedules.
+            eligibility:
+            instructions:
+            preparation:
+      FIND_A_JOB_OMH:
+        enabled: true
+        formula: "=IS_EMPLOYMENT_AFFECTED"
+        application-url: https://www.ny.gov/services/find-job-office-mental-health
+        information-url: https://www.ny.gov/services/find-job-office-mental-health
+        resources:
+          en:
+            name: Find a Job with the Office of Mental Health (OMH)
+            category: Employment
+            description: |
+              Opportunities for employment with OMH include high-demand jobs
+              such as psychiatrists, registered nurses, and mental health
+              therapy aides.
+            eligibility: |
+              - Civil Service Exam Results
+              - Professional License or Certification
+              - Education
+              - Eligibility for unconditional participation in Medicaid and
+              Medicare programs
+              - Ability to pass background check
+              - Ability to pass physical and/or medical examination
+              - Ability to pass drug screening
+            instructions:
+            preparation:
+      CHECK_EBC_BALANCE:
+        enabled: false
+        formula: "=IS_WORRIED_FOOD"
+        application-url:
+        information-url: http://www.connectebt.com/
+        resources:
+          en:
+            name: Check the Balance of Your Pandemic Electronic Benefits Card
+            category: Food
+            description: |
+              You can check your account balance at any time by calling
+              1-888-328-6399, by having the cashier check your balance at the
+              register at any participating food store or online.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_HEALTH_INSURANCE_RIGHTS:
+        enabled: true
+        formula: "=IS_COVID"
+        application-url:
+        information-url: https://dfs.ny.gov/consumers/coronavirus/health_insurance_faqs
+        resources:
+          en:
+            name: COVID-Related Health Insurance Information and Resources
+            category: Health
+            description: |
+              Know your rights and the changes to health insurance coverage due
+              to COVID-19.
+            eligibility:
+            instructions:
+            preparation:
+      MEALS_FOR_KIDS:
+        enabled: true
+        formula: "=AND(IS_WORRIED_FOOD, CHILDREN_06_17)"
+        application-url:
+        information-url: https://www.fns.usda.gov/meals4kids
+        resources:
+          en:
+            name: Find Meals for Kids When Schools are Closed
+            category: Food
+            description: |
+              Enter your address to find the nearest location that provides
+              meals to children while schools are closed.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_ADDICTION_SERVICES:
+        enabled: true
+        formula: "=IS_COVID"
+        application-url:
+        information-url: https://oasas.ny.gov/covid19
+        resources:
+          en:
+            name: Accessing Addiction Services During COVID
+            category: COVID-19
+            description: |
+              Addiction treatment and recovery services continue to be
+              available during the COVID-19 pandemic. Whether you need to talk
+              or are worried that you will go into withdrawal or relapse,
+              OASAS-certified or funded providers across New York State are
+              available via phone/video or from a safe distance in person.
+            eligibility:
+            instructions:
+            preparation:
+      COVID_NEW_AMERICANS:
+        enabled: true
+        formula: "=IS_COVID"
+        application-url:
+        information-url: https://newamericans.ny.gov/opportunity/ona-resources.html
+        resources:
+          en:
+            name: COVID-19 resources for New Americans
+            category: COVID-19
+            description: |
+              Get access to multilingual flyers detailing the services provided
+              by the Office for New Americans and its partners, including
+              information for immigrants related to COVID-19.
+            eligibility:
+            instructions:
+            preparation:
+      DIAPER_ASSISTANCE:
+        enabled: true
+        formula: "=OR(IS_PREGNANT, CHILDREN_00_05)"
+        application-url: https://www.211.org/
+        information-url: https://ocfs.ny.gov/main/news/COVID-19/#t1-Other-Resources
+        resources:
+          en:
+            name: Find Diaper Assistance in Your Area
+            category: Family
+            description: |
+              Find out if an agency in your area provides families in need with
+              free diapers. A diaper bank is similar to a food bank with the
+              difference that diapers are distributed and not food.
+            eligibility:
+            instructions:
+            preparation:
+      TEMP_ASSISTANCE:
+        enabled: true
+        formula:
+        application-url: https://otda.ny.gov/programs/apply/#ta
+        information-url: https://otda.ny.gov/programs/temporary-assistance/
+        resources:
+          en:
+            name: Temporary Assistance
+            category: Public Assistance
+            description: |
+              TA is temporary help for needy men, women and children. If you
+              are unable to work, can’t find a job or your job does not pay
+              enough, TA may be able to help you pay for your basic expenses.
+              TA may also provide help to resolve an emergency or immediate
+              need, such as a pending eviction or low/no heating fuel for
+              eligible households.
+            eligibility: |
+              To find out if you are eligible to receive Temporary Assistance,
+              including help with an emergency, you need to file an application
+              with your county Department of Social Services or, if you live in
+              one of the five boroughs of New York City, with your local Job
+              Center.
+            instructions: |
+              Apply using
+              [myBenefits](http://mybenefits.ny.gov/mybenefits/begin) or by
+              submitting an application to your local department of social
+              services in person, by mail or by fax, if you live outside of
+              NYC. Individuals that live in NYC may file an application through
+              [ACCESS HRA](https://a069-access.nyc.gov/accesshra/) or by sending an application to the
+              [NYC Human Resources Administration](https://www1.nyc.gov/site/hra/locations/locations.page) in person, by mail or by fax.
+            preparation: |
+              The documentation may vary based on household circumstances.
+              Please see the list provided at [Temporary Assistance](https://otda.ny.gov/programs/temporary-assistance/) for more
+              information.

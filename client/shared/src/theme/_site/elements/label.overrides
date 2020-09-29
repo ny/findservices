@@ -1,0 +1,11 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.label {
+  color: @nysBlue;
+  font-family: @altFontName, @pageFont;
+  letter-spacing: @1px;
+  background-color: rgba(36, 56, 126, 0.1);
+  border-radius: 1em;
+}

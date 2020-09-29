@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "target": "es2019",
+    "checkJs": true,
+    "jsx": "preserve",
+    "moduleResolution": "node"
+  },
+  "include": ["src"]
+}

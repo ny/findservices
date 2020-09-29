@@ -1,0 +1,17 @@
+.divider {
+  margin-top: 0 !important;
+  margin-bottom: 1.5em !important;
+  background-color: #f5a81c;
+  border: solid 2px #f5a81c !important;
+}
+
+.header {
+  height: 2.75em;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.logo {
+  width: auto;
+  height: 3em;
+}

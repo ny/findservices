@@ -1,0 +1,7 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@backgroundColor: fade(@nysTextLinkColor, 36%);
+@color: @textColor;
+@textTransform: uppercase;

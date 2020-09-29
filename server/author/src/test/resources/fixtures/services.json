@@ -1,0 +1,67 @@
+{
+  "modified": "2020-08-28T22:05:31.138+00:00",
+  "services": {
+    "ONE": {
+      "key": "ONE",
+      "rank": 1,
+      "modified": "2020-08-28T22:05:31.137+00:00",
+      "enabled": true,
+      "formula": "=TRUE",
+      "applicationUrl": "https://www.example.com/one/apply",
+      "informationUrl": "https://www.example.com/one/learn",
+      "resources": {
+        "en": {
+          "name": "Program One",
+          "category": "Test",
+          "description": "Program One",
+          "instructions": "Instructions",
+          "eligibility": "Eligibility",
+          "preparation": "Preparation"
+        },
+        "es": {
+          "name": "Programa uno",
+          "category": "Prueba",
+          "description": "Programa uno",
+          "instructions": "Instrucciones",
+          "eligibility": "Elegibilidad",
+          "preparation": "Preparación"
+        }
+      },
+      "resourceVersions": {
+        "en": "662db27a",
+        "es": "662db27a"
+      }
+    },
+    "TWO": {
+      "key": "TWO",
+      "rank": 2,
+      "modified": "2020-08-28T22:05:31.138+00:00",
+      "enabled": false,
+      "formula": "=FALSE",
+      "applicationUrl": "https://www.example.com/two/apply",
+      "informationUrl": "https://www.example.com/two/learn",
+      "resources": {
+        "en": {
+          "name": "Program Two",
+          "category": "Test",
+          "description": "Program Two",
+          "instructions": "Instructions",
+          "eligibility": "Eligibility",
+          "preparation": "Preparation"
+        },
+        "es": {
+          "name": "Programa two",
+          "category": "Prueba",
+          "description": "Programa two",
+          "instructions": "Instrucciones",
+          "eligibility": "Elegibilidad",
+          "preparation": "Preparación"
+        }
+      },
+      "resourceVersions": {
+        "en": "922f748e",
+        "es": "922f748e"
+      }
+    }
+  }
+}

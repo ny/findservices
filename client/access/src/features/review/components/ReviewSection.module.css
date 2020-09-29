@@ -1,0 +1,34 @@
+.compact {
+  padding-inline-start: 0;
+  margin-block-end: 1rem;
+}
+
+.compact li {
+  padding-block-end: 0.5rem;
+}
+
+.edit {
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
+.header {
+  color: #000000 !important;
+  font-size: 1.125rem !important;
+  margin-block-start: 0 !important;
+}
+
+.question {
+  color: #5c5551;
+  font-weight: 400;
+}
+
+.response {
+  color: black;
+}
+
+.step {
+  color: #24387e;
+  font-size: 1em;
+  text-transform: uppercase;
+}

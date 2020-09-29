@@ -1,0 +1,37 @@
+{
+  "rank": ["ONE", "TWO"],
+  "services": {
+    "ONE": {
+      "enabled": true,
+      "formula": "=TRUE",
+      "applicationUrl": "https://www.example.com/one/apply",
+      "informationUrl": "https://www.example.com/one/learn",
+      "resources": {
+        "en": {
+          "name": "Program One",
+          "category": "Test",
+          "description": "Description of Program One",
+          "eligibility": "Eligibility of Program One",
+          "instructions": "Instructions of Program One",
+          "preparation": "Preparation of Program One"
+        }
+      }
+    },
+    "TWO": {
+      "enabled": false,
+      "formula": "=FALSE",
+      "applicationUrl": "https://www.example.com/two/apply",
+      "informationUrl": "https://www.example.com/two/learn",
+      "resources": {
+        "en": {
+          "name": "Program Two",
+          "category": "Test",
+          "description": "Description of Program Two",
+          "eligibility": null,
+          "instructions": "Instructions of Program Two",
+          "preparation": null
+        }
+      }
+    }
+  }
+}

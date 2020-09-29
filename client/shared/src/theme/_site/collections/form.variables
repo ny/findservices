@@ -1,0 +1,7 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@labelFontSize: @relativeMedium;
+@labelFontWeight: @normal;
+@inputPadding: @inputVerticalPadding @inputHorizontalPadding;

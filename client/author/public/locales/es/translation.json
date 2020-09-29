@@ -1,0 +1,20 @@
+{
+  "report": {
+    "apply": {
+      "criteria": "Criterios adicionales:",
+      "howTo": "Consulta cómo enviar una solicitud",
+      "need": "Estas son algunas de las cosas que puedes necesitar:",
+      "ready": "Cuando lo tengas todo listo para enviar la solicitud:"
+    },
+    "learnMore": "Más información"
+  },
+  "services": {
+    "actions": {
+      "seeLess": "Ver menos",
+      "seeMore": "Ver más"
+    },
+    "info": {
+      "category": "Categoría"
+    }
+  }
+}

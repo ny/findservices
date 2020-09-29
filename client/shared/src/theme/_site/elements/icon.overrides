@@ -1,0 +1,16 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+i.icon.currency {
+  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+}
+i.icon.currency:before {
+  content: "$";
+}
+
+i.icon.circular.orange {
+  box-shadow: 0 0 0 0.1em @orange inset;
+}

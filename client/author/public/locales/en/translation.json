@@ -1,0 +1,174 @@
+{
+  "footer": {
+    "accessibility": {
+      "text": "Accessibility"
+    },
+    "disclaimer": {
+      "text": "Disclaimer"
+    },
+    "instagram": {
+      "label": "Visit the New York State Instagram account."
+    },
+    "privacyPolicy": {
+      "text": "Privacy Policy"
+    },
+    "title": {
+      "label": "View all New York State services",
+      "text": "New York State"
+    },
+    "twitter": {
+      "label": "Visit the New York State Twitter account."
+    }
+  },
+  "header": {
+    "languageSwitcher": {
+      "label": "Select language"
+    },
+    "logo": {
+      "label": "New York State"
+    }
+  },
+  "httpError": {
+    "actions": {
+      "startOver": "Back to Manage Services"
+    },
+    "concurrentEdit": "This service has been changed since you started editing it. Please refresh the page and make your edits again.",
+    "duplicateID": "This service could not be saved because of a duplicate ID. Choose a service ID that has not been used before and then save your edits again.",
+    "generic": "Something went wrong on our end. Please try to go back to Manage Services.",
+    "generic404": "We can't find the page you're looking for. Please try to go back to Manage Services.",
+    "label": "There has been an error.",
+    "missingLocale": "The locale ({{locale}}) you're looking for is not supported. Please try to go back to Manage Services.",
+    "missingService": "We can't find information about the service you're looking for ({{service}}). Please try to go back to Manage Services.",
+    "missingServiceForLocale": "We can't find information about the service ({{service}}) whose locale ({{locale}}) you're looking for. Please try to go back to Manage Services.",
+    "saveFailed": "We were unable to save your changes. Please refresh the page and make your edits again.",
+    "title": "Oops...",
+    "validationFailed": "This service could not be saved because one or more fields were reported as invalid by the server."
+  },
+  "authentication": {
+    "authFailedRedirect": "You will be redirected to the home screen after 10 seconds.",
+    "notLoggedIn": "You need to log in.",
+    "loading": "Loading..."
+  },
+  "manageServices": {
+    "addService": "Add Service",
+    "dismiss": "Dismiss",
+    "display": "Services are displayed in ranked order. Use the arrows to change the ranking of services.",
+    "hidden": "Hidden",
+    "modified": "Last modified",
+    "moveDown": "Rank lower",
+    "moveToBottom": "Rank lowest",
+    "moveToTop": "Rank highest",
+    "moveUp": "Rank higher",
+    "name": "Name",
+    "notTranslated": "Not translated",
+    "outdated": "Outdated",
+    "rank": "Rank",
+    "saveMessage": "Your changes to {{service}} have been saved.",
+    "title": "All Services ({{count}})",
+    "translated": "Up to date",
+    "translations": "Translations",
+    "visibility": "Visibility",
+    "visible": "Visible"
+  },
+  "missingFieldError": "This field is required and cannot be blank.",
+  "report": {
+    "apply": {
+      "criteria": "Additional criteria:",
+      "howTo": "See how to apply",
+      "need": "Some things you may need:",
+      "ready": "When you're ready to apply:"
+    },
+    "learnMore": "Learn more"
+  },
+  "services": {
+    "actions": {
+      "seeLess": "See less",
+      "seeMore": "See more"
+    },
+    "info": {
+      "category": "Category"
+    }
+  },
+  "updateLocale": {
+    "previewLanguage": "Preview in {{language}}",
+    "save": "Save translation",
+    "title": "Edit {{language}} Translation",
+    "viewEnglish": "View English Text",
+    "viewLanguage": "View in {{language}}"
+  },
+  "updateService": {
+    "addDetails": "Add details to see a preview of your service",
+    "allServices": "All services",
+    "appURL": {
+      "description": "Enter the URL of the site where residents can apply for the service. If provided, it must be a full URL that begins with 'http' or 'https'",
+      "error": "If an application URL is provided, it must be a valid URL",
+      "title": "Application URL"
+    },
+    "category": {
+      "title": "Category"
+    },
+    "confirmChanges": "Confirm your changes",
+    "description": {
+      "description": "Describe the benefits that the resident may receive from this.",
+      "title": "Short description"
+    },
+    "eligibility": {
+      "description": "List the additional criteria the resident should see before applying. Use <1>Markdown</1>, if desired, to include paragraphs, italics, bold, links, or lists in this field.",
+      "title": "Additional criteria"
+    },
+    "formula": {
+      "description": "Enter the formula to calculate whether we should recommend this service to a resident. Leave the formula blank to display the service lower in the list under 'More services'.",
+      "guidelines": {
+        "booleanRequirement": "The formula must evaluate to TRUE or FALSE.",
+        "equalSignRequirement": "The formula must begin with an ' = ' sign.",
+        "functionRequirement": "The formula must only use <2><0>supported functions</0></2>.",
+        "introduction": "Formulas are defined using a narrow set of functions, with custom variables that correspond to a resident's responses to survey questions. You can optionally use the 'Validate' button to confirm that your formula is formatted properly.",
+        "title": "See formula guidelines"
+      },
+      "success": "Formula is valid",
+      "title": "Criteria formula",
+      "validate": "Validate",
+      "variables": "Here are the variables you can use in the formula:"
+    },
+    "hidden": "Hidden",
+    "infoURL": {
+      "description": "Enter the URL of the site where residents can learn more about this service. It must be a full URL that begins with 'http' or 'https'",
+      "error": "A valid information URL must be provided",
+      "title": "URL to learn more"
+    },
+    "instructions": {
+      "description": "Describe how the resident should apply for this service. Use <1>Markdown</1>, if desired, to include paragraphs, italics, bold, links, or lists in this field.",
+      "title": "Instructions on how to apply when ready"
+    },
+    "markAllUpToDate": "Mark all outdated languages as up to date",
+    "name": {
+      "title": "Name"
+    },
+    "new": "Add New Service",
+    "no": "No",
+    "preparation": {
+      "description": "List documents or resources the resident will need when applying for this service. Use <1>Markdown</1>, if desired, to include paragraphs, italics, bold, links, or lists in this field.",
+      "title": "Things needed to apply"
+    },
+    "preview": "Preview",
+    "save": "Save Changes",
+    "saveMessage": "Your changes to the {{language}} translation have been saved.",
+    "serviceKey": {
+      "createDescription": "Enter an ID that will be used in URLs to reference the service. It must begin with a capital letter, be 2 or more characters long, and may contain only capital letters, numbers, and underscores. Once saved, this ID cannot be changed.",
+      "error": "A service ID with only capital letters, numbers, and/or underscores must be provided.",
+      "title": "Service ID",
+      "updateDescription": "Enter an ID that is used in URLs to reference the service. This ID cannot be updated."
+    },
+    "submissionWarning": "This service is visible to residents. Changes saved here will be reflected in the resident-facing application in a few minutes. Are you sure you would like to save your changes?",
+    "translationMessage": "Save your service details in English before returning to add translations.",
+    "translations": {
+      "title": "Translations"
+    },
+    "visibility": {
+      "description": "Services can be visible or hidden from the resident. Ensure a service is up to date (including translations) and ready to be shown to residents before marking it as visible.",
+      "title": "Visibility"
+    },
+    "yes": "Yes"
+  },
+  "validationError": "Changes could not be saved. Please fix the errors below and try again."
+}

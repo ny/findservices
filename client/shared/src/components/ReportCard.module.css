@@ -1,0 +1,14 @@
+.srOnly {
+  position: absolute;
+  top: auto;
+  left: -100em;
+  width: 0.001em;
+  height: 0.001em;
+  overflow: hidden;
+}
+
+.anchor {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}

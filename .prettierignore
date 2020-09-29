@@ -1,0 +1,7 @@
+# Ignore artifacts:
+.mvn
+build
+coverage
+node_modules
+target
+theme

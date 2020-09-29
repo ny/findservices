@@ -1,0 +1,8 @@
+/*******************************
+        Site Overrides
+*******************************/
+
+.ui.error.message {
+  padding: 0;
+  box-shadow: none;
+}

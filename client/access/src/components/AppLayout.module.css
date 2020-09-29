@@ -1,0 +1,24 @@
+.content {
+  flex: 1 0 auto;
+  outline: none;
+}
+
+/* Placing off screen so this will only become visible when used by tabs or a screen reader. */
+.srOnly {
+  position: absolute;
+  top: auto;
+  left: -100em;
+  width: 0.001em;
+  height: 0.001em;
+  overflow: hidden;
+}
+
+.srOnly:focus,
+.srOnly:active {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  text-decoration: underline;
+  clip: auto;
+}

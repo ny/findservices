@@ -1,0 +1,54 @@
+{
+  "footer": {
+    "accessibility": {
+      "text": "Link to a page that describes New York State's accessibility policy. Appears in the footer, ideally a single word but not more than two."
+    },
+    "disclaimer": {
+      "text": "Link to a page that describes New York State's website disclaimer. Appears in the footer, ideally a single word but not more than two."
+    },
+    "instagram": {
+      "label": "Describes a link to New York State's Instagram account. Not shown on the page (represented as an icon)."
+    },
+    "privacyPolicy": {
+      "text": "Link to a page with New York State's privacy policy. Appears in the footer, ideally a single word but not more than two."
+    },
+    "title": {
+      "label": "Describes a link to the New York State social services website. Not shown on the page.",
+      "text": "The footer title, usually the NYS agency name."
+    },
+    "twitter": {
+      "label": "Describes a link to New York State's Twitter account. Not shown on the page (represented as an icon)."
+    }
+  },
+  "header": {
+    "languageSwitcher": {
+      "label": ""
+    },
+    "logo": {
+      "label": ""
+    }
+  },
+  "authentication": {
+    "authFailedRedirect": "Notifies the user why authentication failed and notifies of a redirect to home screen. Appears if authentication failed.",
+    "notLoggedIn": "Notifies the user they need to login. Appears if the user refreshes on the callback redirect page.",
+    "loading": "A simple loading placeholder text while user is being authenticated. Appears while authentication is occurring for the first time on the current session."
+  },
+  "report": {
+    "apply": {
+      "criteria": "Header highlighting information describing additional criteria needed to apply for the service. This and the others in the report section should be the same as the equivalent keys in Maslow Access.",
+      "howTo": "Hyperlink to a given service's application.",
+      "need": "Header highlighting what a resident may need for their application.",
+      "ready": "Header highlighting how a user should go about applying."
+    },
+    "learnMore": "Hyperlink to learn more about a given service."
+  },
+  "services": {
+    "actions": {
+      "seeLess": "Link to hide additional information in the card that displays information about a service. This and the others in the services section should be the same as the equivalent keys in Maslow Access.",
+      "seeMore": "Link to see additional information in the card that displays information about a service"
+    },
+    "info": {
+      "category": "Label for the type of service"
+    }
+  }
+}

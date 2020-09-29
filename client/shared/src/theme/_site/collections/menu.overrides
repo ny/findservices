@@ -1,0 +1,17 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+header.ui.menu .item {
+  padding: 0.5em @itemHorizontalPadding;
+}
+
+header.ui.menu:first-child {
+  margin-top: 1rem;
+}
+
+.ui.menu .nys-blue.active.item,
+.ui.nys-blue.menu .active.item {
+  border-color: @nysBlue !important;
+  color: @nysBlue !important;
+}

@@ -1,0 +1,191 @@
+{
+  "checks": {
+    "noErrors": "No se han detectado errores",
+    "services": {
+      "formulas": {
+        "noFormula": "Sin fórmula",
+        "title": "Validación de la fórmula"
+      },
+      "ranking": {
+        "cardTitle": "Clasificación de los servicios",
+        "missingServices": "Las siguientes claves de servicios están incluidas en el diccionario de servicios, pero no en la clasificación",
+        "title": "Validación de la clasificación"
+      },
+      "title": "Validación de los servicios"
+    },
+    "survey": {
+      "structure": {
+        "missingQuestions": "Las siguientes claves de preguntas están incluidas en el cuestionario, pero no en el diccionario de preguntas",
+        "questionCardTitle": "Preguntas del cuestionario"
+      },
+      "title": "Validación de la estructura del cuestionario"
+    }
+  },
+  "footer": {
+    "accessibility": {
+      "text": "Accesibilidad"
+    },
+    "disclaimer": {
+      "text": "Renuncia de responsabilidad"
+    },
+    "instagram": {
+      "label": "Visita la cuenta de Instagram del estado de Nueva York."
+    },
+    "privacyPolicy": {
+      "text": "Política de privacidad"
+    },
+    "title": {
+      "label": "Consulta todos los servicios del estado de Nueva York",
+      "text": "Estado de Nueva York"
+    },
+    "twitter": {
+      "label": "Visita la cuenta de Twitter del estado de Nueva York."
+    }
+  },
+  "header": {
+    "languageSwitcher": {
+      "label": "Selecciona un idioma"
+    },
+    "logo": {
+      "label": "Consulta la página principal de servicios del estado de Nueva York"
+    },
+    "skipToContent": "Ir al contenido principal"
+  },
+  "htmlTitle": {
+    "default": "Descubrimiento de servicios",
+    "suffix": "Estado de Nueva York"
+  },
+  "http404": {
+    "actions": {
+      "seeAllServices": "Consultar todos los servicios",
+      "startOver": "Volver a empezar"
+    },
+    "error": {
+      "label": "No se ha encontrado esta página.",
+      "text": "No hemos podido encontrar la página que estás buscando. Vuelve a empezar o consulta todos los servicios del estado de Nueva York.",
+      "title": "¡Vaya!"
+    }
+  },
+  "print": {
+    "htmlTitle": "Imprime la lista de servicios"
+  },
+  "report": {
+    "actions": {
+      "email": "Enviar lista por correo electrónico",
+      "print": "Imprimir lista",
+      "share": "Compartir lista",
+      "startOver": "Volver a empezar"
+    },
+    "apply": {
+      "criteria": "Criterios adicionales:",
+      "howTo": "Consulta cómo enviar una solicitud",
+      "need": "Estas son algunas de las cosas que puedes necesitar:",
+      "ready": "Cuando lo tengas todo listo para enviar la solicitud:"
+    },
+    "error": {
+      "htmlTitle": "Servicios actualizados: volver a empezar",
+      "instructions": "Nuestros servicios se han actualizado desde tu última visita. Vuelve a empezar y te ayudaremos a volver a consultarlos.",
+      "title": "Hay cosas que han cambiado desde tu última visita"
+    },
+    "htmlTitle": "Revisa los servicios",
+    "learnMore": "Más información",
+    "message": {
+      "disclaimer": "<p>Estos resultados se basan en lo que nos has contado. Tendrás que solicitar un servicio para saber si cumples los requisitos. Del mismo modo, puedes cumplir los requisitos para más servicios de los que aparecen aquí. Ten en cuenta que tienes derecho a solicitar estos servicios, independientemente de estos resultados.</p>",
+      "disclaimerLink": "<p>Accede a la <1>página Servicios</1> para consultar todos los servicios del estado de Nueva York.</p>",
+      "disclaimerLink_print": "<p>Accede a https://ny.gov/services para consultar todos los servicios del estado de Nueva York.</p>",
+      "servicesRemoved": "Algunos servicios se han eliminado de esta lista desde tu última visita. Siempre puedes <2><0>volver a empezar</0></2>."
+    },
+    "recommend": "Te recomendamos que compartas esta lista para que puedas volver a consultarla en cualquier momento.",
+    "share": {
+      "body": "Este es un enlace para consultar los servicios útiles del estado de Nueva York basados en mi situación personal y cómo enviar una solicitud.%0D%0A%0D%0A{{reportUrl}}%0D%0A%0D%0AAccede a https://findservices.ny.gov para volver a empezar. Accede a https://ny.gov/services para consultar todos los servicios que ofrece el estado de Nueva York.",
+      "emailLabel": "Se abrirá un borrador de correo electrónico",
+      "subject": "Mis servicios del estado de Nueva York",
+      "text": "Este es un enlace para consultar los servicios útiles del estado de Nueva York basados en mi situación personal y cómo enviar una solicitud."
+    },
+    "title": "Esto es lo que necesitas para empezar"
+  },
+  "review": {
+    "actions": {
+      "edit": "Editar",
+      "next": "Consultar los servicios",
+      "restart": "Volver a empezar"
+    },
+    "htmlTitle": "Revisa tus respuestas",
+    "step": "Paso {{step}}",
+    "title": "Esto es lo que nos has contado"
+  },
+  "services": {
+    "actions": {
+      "addToList": "Añadir a la lista",
+      "hideMoreServices": "Ocultar {{count}} servicio más",
+      "hideMoreServices_plural": "Ocultar {{count}} servicios más",
+      "removeFromList": "Quitar de la lista",
+      "seeLess": "Ver menos",
+      "seeMore": "Ver más",
+      "seeMoreServices": "Consultar {{count}} servicio más",
+      "seeMoreServices_plural": "Consultar {{count}} servicios más",
+      "viewSaved": "Consultar lista de {{count}} servicio",
+      "viewSaved_plural": "Consultar lista de {{count}} servicios"
+    },
+    "additional": {
+      "label": "Estos servicios tienen requisitos más específicos. Añádelos a tu lista para obtener más información sobre ellos.",
+      "title": "Más servicios"
+    },
+    "default": {
+      "label": "Estos son otros servicios que ofrecemos. Añádelos a tu lista para saber si cumples los requisitos para solicitarlos.",
+      "title": "Tus respuestas no son compatibles con ninguno de nuestros servicios"
+    },
+    "everything": {
+      "instructions": "Accede a <1>ny.gov/services</1> para consultar todos los servicios del estado de Nueva York.",
+      "title": "Consultar todos los servicios"
+    },
+    "htmlTitle": "Selecciona los servicios",
+    "info": {
+      "category": "Categoría",
+      "criteria": "Criterios adicionales"
+    },
+    "recommended": {
+      "title": "Aquí tienes {{count}} servicio para que puedas consultarlo",
+      "title_plural": "Aquí tienes {{count}} servicios para que puedas consultarlos"
+    },
+    "status": {
+      "selectServices": "Selecciona los servicios sobre los que te gustaría obtener más información y te crearemos una lista para que puedas compartirla en la siguiente página."
+    }
+  },
+  "survey": {
+    "actions": {
+      "back": "Volver",
+      "done": "Continuar",
+      "init": "Consultar servicios",
+      "next": "Continuar",
+      "seeAllServices": "Consultar todos los servicios",
+      "step": "Paso {{step}} de {{size}}"
+    },
+    "error": {
+      "label": "Se ha producido un error.",
+      "text": "Parece que hemos tenido un problema. Mientras lo resolvemos, consulta la lista de los servicios disponibles en el estado de Nueva York.",
+      "title": "¡Vaya!",
+      "validation": "Responde a todas las preguntas para continuar."
+    },
+    "intro": {
+      "body": "<p>Responde a unas preguntas rápidas y te ayudaremos a consultar los servicios más relevantes para ti.</p><p>No almacenaremos ni compartiremos la información que nos proporciones. Consulta nuestra <1>política de privacidad</1> para obtener más información.</p>",
+      "howItWorks": {
+        "stepOne": "Responde a las siguientes preguntas lo mejor que puedas. Esto no es una solicitud, por lo que no pasa nada si tienes que hacer suposiciones.",
+        "stepThree": "Selecciona los servicios sobre los que te gustaría obtener más información (podrás imprimir o compartir la lista).",
+        "stepTwo": "Consulta los servicios que mejor se adaptan a tus respuestas.",
+        "title": "El funcionamiento es el siguiente:"
+      },
+      "title": "Encuentra servicios que pueden ayudarte"
+    },
+    "question": {
+      "boolean": {
+        "error": "Selecciona 'Sí' o 'No'.",
+        "no": "No",
+        "yes": "Sí"
+      },
+      "number": {
+        "error": "Introduce un número mayor que 0"
+      }
+    }
+  }
+}

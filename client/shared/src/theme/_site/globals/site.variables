@@ -1,0 +1,205 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+/*-------------------
+       Fonts
+--------------------*/
+
+@siteFontPath: "@{siteFolder}/assets/fonts";
+
+@fontName: "Proxima Nova";
+@altFontName: "Oswald";
+@importGoogleFonts: false;
+
+@headerFont: @fontName, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+@pageFont: @fontName, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+
+@bold: 700;
+@normal: normal;
+
+/*-------------------
+      Base Sizes
+--------------------*/
+
+/* This is the single variable that controls them all */
+@emSize: 16px;
+
+/* The size of page text  */
+@fontSize: 16px;
+
+/*-------------------
+    Border Radius
+--------------------*/
+
+/* See Power-user section below
+   for explanation of @px variables
+*/
+@relativeBorderRadius: 0.6em;
+@absoluteBorderRadius: 0.6em;
+
+/*--------------
+  Page Heading
+---------------*/
+
+@headerFontWeight: @bold;
+@headerLineHeight: unit((20 / 16), em);
+
+@h1: unit((24 / 16), rem);
+@h2: unit((20 / 16), rem);
+@h3: unit((18 / 16), rem);
+@h4: unit((16 / 16), rem);
+@h5: unit((16 / 16), rem);
+
+/*--------------
+   Form Input
+---------------*/
+
+/* This adjusts the default form input across all elements */
+@inputBackground: @white;
+@inputVerticalPadding: 1rem;
+@inputHorizontalPadding: @relative14px;
+@inputPadding: @inputVerticalPadding @inputHorizontalPadding;
+
+/* Input Text Color */
+@inputColor: @textColor;
+@inputPlaceholderColor: lighten(@inputColor, 75);
+@inputPlaceholderFocusColor: lighten(@inputColor, 45);
+
+/* Line Height Default For Inputs in Browser (Descenders are 17px at 14px base em) */
+@inputLineHeight: 1.5rem;
+
+/*-------------------
+    Focused Input
+--------------------*/
+
+/* Used on inputs, textarea etc */
+@focusedFormBorderColor: @nysTextLinkColor;
+
+/* Used on dropdowns, other larger blocks */
+@focusedFormMutedBorderColor: @nysTextLinkColor;
+
+/*-------------------
+        Sizes
+--------------------*/
+
+/*
+  Sizes are all expressed in terms of 14px/em (default em)
+  This ensures these "ratios" remain constant despite changes in EM
+*/
+
+@miniSize: (10 / 16);
+@tinySize: (12 / 16);
+@smallSize: (14 / 16);
+@mediumSize: (16 / 16);
+@largeSize: (18 / 16);
+@bigSize: (20 / 16);
+@hugeSize: (24 / 16);
+@massiveSize: (28 / 16);
+
+/*-------------------
+     Neutral Text
+--------------------*/
+
+@darkTextColor: rgba(0, 0, 0, 0.85);
+@mutedTextColor: rgba(0, 0, 0, 0.6);
+@lightTextColor: rgba(0, 0, 0, 0.4);
+
+@unselectedTextColor: rgba(0, 0, 0, 0.4);
+@hoveredTextColor: rgba(0, 0, 0, 1);
+@pressedTextColor: rgba(0, 0, 0, 0.9);
+@selectedTextColor: rgba(0, 0, 0, 0.95);
+@disabledTextColor: rgba(0, 0, 0, 0.2);
+
+@invertedTextColor: rgba(255, 255, 255, 0.9);
+@invertedMutedTextColor: rgba(255, 255, 255, 0.8);
+@invertedLightTextColor: rgba(255, 255, 255, 0.7);
+@invertedUnselectedTextColor: rgba(255, 255, 255, 0.5);
+@invertedHoveredTextColor: rgba(255, 255, 255, 1);
+@invertedPressedTextColor: rgba(255, 255, 255, 1);
+@invertedSelectedTextColor: rgba(255, 255, 255, 1);
+@invertedDisabledTextColor: rgba(255, 255, 255, 0.2);
+
+/*-------------------
+        Page
+--------------------*/
+
+@pageBackground: #ffffff;
+@pageOverflowX: hidden;
+
+@lineHeight: 1.375em;
+@textColor: rgba(0, 0, 0, 1);
+
+/*-------------------
+       Links
+--------------------*/
+
+@linkColor: @nysTextLinkColor;
+
+/*-------------------
+        Grid
+--------------------*/
+
+@columnCount: 16;
+
+/*-------------------
+    Brand Colors
+--------------------*/
+
+@nysMonoBlack: #000000;
+@nysMonoDark: #62666a;
+@nysMonoMid: #d0d0ce;
+@nysMonoLight: #f6f8f8;
+@nysMonoWhite: #ffffff;
+@nysBlue: #24387e;
+@nysBlueAccent: #1b2a5e;
+@nysOrange: #d5820d;
+@nysOrangeAccent: #dc9719;
+@nysLightBlue: #128ec3;
+@nysLightBlueAccent: #0386be;
+@nysRed: #b52c2c;
+@nysRedAccent: #8c1c1c;
+@nysTextLinkColor: #0f739d;
+@nysDarkGray: #92dbe4;
+@nysCardStrokeOutline: #f6f8f8;
+@nysCardActionArea: #f6f8f8;
+@nysLogoBackground: #fcfcfc;
+@nysBorderColor: #949494;
+@primaryColor: @nysBlue;
+@secondaryColor: @black;
+@lightPrimaryColor: @nysLightBlue;
+@lightSecondaryColor: @nysDarkGray;
+
+/*-------------------
+      Borders
+--------------------*/
+
+@borderColor: @nysBorderColor;
+@strongBorderColor: rgba(34, 36, 38, 0.22);
+@internalBorderColor: rgba(34, 36, 38, 0.1);
+@selectedBorderColor: #0f739d;
+@strongSelectedBorderColor: rgba(34, 36, 38, 0.5);
+@disabledBorderColor: @nysBorderColor;
+
+@solidInternalBorderColor: #fafafa;
+@solidBorderColor: #d4d4d5;
+@solidSelectedBorderColor: #bcbdbd;
+
+@whiteBorderColor: rgba(255, 255, 255, 0.1);
+@selectedWhiteBorderColor: rgba(255, 255, 255, 0.8);
+
+@solidWhiteBorderColor: #555555;
+@selectedSolidWhiteBorderColor: #999999;
+
+/*******************************
+             States
+*******************************/
+
+/*---  Colors  ---*/
+@primaryColorHover: @nysBlueAccent;
+@secondaryColorHover: @nysOrangeAccent;
+@lightPrimaryColorHover: @nysLightBlueAccent;

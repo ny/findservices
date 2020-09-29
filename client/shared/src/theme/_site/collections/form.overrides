@@ -1,0 +1,89 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.form .field small,
+.ui.form .grouped.fields small {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #5f5854;
+  font-size: @relativeSmall;
+}
+
+.ui.form .field > label {
+  margin-bottom: 0.5rem;
+}
+
+.ui.form .field,
+.ui.form .grouped.fields .field,
+.ui.form .grouped.inline.fields .field {
+  margin-bottom: 1rem;
+}
+
+.ui.form .grouped.fields,
+.ui.form .grouped.inline.fields {
+  margin-bottom: 0.5rem;
+}
+
+.ui[class*="left icon"].input > input {
+  padding-right: 1rem !important;
+  padding-left: 2.5rem !important;
+}
+
+/*--------------------
+        Hover
+---------------------*/
+
+.ui.form input:not([type]):hover,
+.ui.form input[type="date"]:hover,
+.ui.form input[type="datetime-local"]:hover,
+.ui.form input[type="email"]:hover,
+.ui.form input[type="number"]:hover,
+.ui.form input[type="password"]:hover,
+.ui.form input[type="search"]:hover,
+.ui.form input[type="tel"]:hover,
+.ui.form input[type="time"]:hover,
+.ui.form input[type="text"]:hover,
+.ui.form input[type="file"]:hover,
+.ui.form input[type="url"]:hover {
+  background-color: #f6f8f8;
+}
+.ui.form textarea:hover {
+  background-color: #f6f8f8;
+}
+
+/*--------------------
+        Focus
+---------------------*/
+
+.ui.form input:not([type]):focus,
+.ui.form input[type="date"]:focus,
+.ui.form input[type="datetime-local"]:focus,
+.ui.form input[type="email"]:focus,
+.ui.form input[type="number"]:focus,
+.ui.form input[type="password"]:focus,
+.ui.form input[type="search"]:focus,
+.ui.form input[type="tel"]:focus,
+.ui.form input[type="time"]:focus,
+.ui.form input[type="text"]:focus,
+.ui.form input[type="file"]:focus,
+.ui.form input[type="url"]:focus {
+  box-shadow: 0 0 0 1px @inputFocusBorderColor;
+}
+.ui.form textarea:focus {
+  box-shadow: 0 0 0 1px @inputFocusBorderColor;
+}
+
+/*--------------------
+        Error
+---------------------*/
+
+/* On Field(s) */
+.ui.form .fields.error .field label,
+.ui.form .field.error label {
+  color: inherit;
+}
+
+.ui.form .fields.error .field .checkbox {
+  border-color: @formErrorBorder;
+}

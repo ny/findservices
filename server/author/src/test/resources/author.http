@@ -1,0 +1,150 @@
+# Test cases for use with the REST Client extension for Visual Studio Code (see
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client).
+
+@hostname = localhost
+@port = 8081
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+
+### selectServices
+# @name services
+GET http://{{host}}/api/author/v1/services
+Content-Type: {{contentType}}
+
+### selectServices with eTag
+@etag = {{services.response.headers.ETag}}
+GET http://{{host}}/api/author/v1/services
+Content-Type: {{contentType}}
+If-None-Match: {{etag}}
+
+### selectServices with lastModified
+@modified = {{services.response.headers.Last-Modified}}
+GET http://{{host}}/api/author/v1/services
+Content-Type: {{contentType}}
+If-Modified-Since: {{modified}}
+
+### selectService
+# @name service
+GET http://{{host}}/api/author/v1/services/ONE
+Content-Type: {{contentType}}
+
+### selectServiceLocale
+# @name serviceLocale
+GET http://{{host}}/api/author/v1/services/ONE/locales/ES
+Content-Type: {{contentType}}
+
+### insertService
+POST http://{{host}}/api/author/v1/services
+Content-Type: {{contentType}}
+
+{
+  "key": "ONE",
+  "rank": 3,
+  "modified": "{{$datetime iso8601}}",
+  "enabled": true,
+  "formula": "=TRUE",
+  "applicationUrl": "https://www.example.com/three/apply",
+  "informationUrl": "https://www.example.com/three/learn",
+  "resources": {
+    "EN": {
+      "name": "Program Three",
+      "category": "Test",
+      "description": "Program Three",
+      "instructions": "Instructions",
+      "eligibility": "Eligibility",
+      "preparation": "Preparation"
+    },
+    "ES": {
+      "name": "Programa tres",
+      "category": "Prueba",
+      "description": "Programa tres",
+      "instructions": "Instrucciones",
+      "eligibility": "Elegibilidad",
+      "preparation": "Preparación"
+    }
+  }
+}
+
+### updateService
+PUT http://{{host}}/api/author/v1/services/ONE
+Content-Type: {{contentType}}
+
+{
+  "key": "ONE",
+  "rank": 3,
+  "modified": "{{$datetime iso8601}}",
+  "enabled": false,
+  "formula": "=FALSE",
+  "applicationUrl": "https://www.example.com/one/apply",
+  "informationUrl": "https://www.example.com/one/learn",
+  "resources": {
+    "EN": {
+      "name": "Program Three -- it's been changed",
+      "category": "Test",
+      "description": "Program Three",
+      "instructions": "Instructions",
+      "eligibility": "Eligibility",
+      "preparation": "Preparation"
+    },
+    "ES": {
+      "name": "Programa tres",
+      "category": "Prueba",
+      "description": "Programa tres",
+      "instructions": "Instrucciones",
+      "eligibility": "Elegibilidad",
+      "preparation": "Preparación"
+    }
+  },
+  "resourceVersions": {}
+}
+
+### upsertServiceResource EN
+PUT http://{{host}}/api/author/v1/services/DOL_UA/locales/EN
+Content-Type: {{contentType}}
+
+{
+  "name": "Program One",
+  "category": "{{$guid}}",
+  "description": "Program One",
+  "instructions": "Instructions",
+  "eligibility": "Eligibility",
+  "preparation": "Preparation"
+}
+
+### upsertServiceResource ES
+PUT http://{{host}}/api/author/v1/services/ONE/locales/ES
+Content-Type: {{contentType}}
+If-Match: {{serviceLocale.response.headers.ETag}}
+
+{
+  "name": "Programa tres",
+  "category": "{{$guid}}",
+  "description": "Programa tres",
+  "instructions": "Instrucciones",
+  "eligibility": "Elegibilidad",
+  "preparation": "Preparación"
+}
+
+### rankServices
+POST http://{{host}}/api/author/v1/services:rank
+Content-Type: {{contentType}}
+
+[
+  {
+    "key": "ONE",
+    "rank": 2
+  },
+  {
+    "key": "TWO",
+    "rank": 1
+  }
+]
+
+### selectQuestionKeys
+GET http://{{host}}/api/author/v1/lookup/questions
+
+### selectLatestSnapshot
+GET http://{{host}}/api/author/v1/snapshots/latest
+
+### updateServiceResourceVersions
+POST http://{{host}}/api/author/v1/services/DOL_UA/locales:update
