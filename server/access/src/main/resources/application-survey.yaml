@@ -1,0 +1,21 @@
+maslow:
+  catalog:
+    survey:
+      - SECTION_YOURSELF:
+          - IS_EMPLOYMENT_AFFECTED
+          - IS_WORRIED_HOUSING
+          - IS_WORRIED_FOOD
+      - SECTION_HOUSEHOLD:
+          - HOUSEHOLD_SIZE
+          - HOUSEHOLD_EMPLOYED
+          - HOUSEHOLD_INCOME
+          - ADULTS_60_PLUS
+          - CHILDREN_06_17
+          - CHILDREN_00_05
+      - SECTION_SITUATION:
+          - IS_COVID
+          - IS_PAY_FOR_DEPENDENT_CARE
+          - IS_PREGNANT
+          - IS_DISABLED
+          - IS_MILITARY
+          - IS_STUDENT
