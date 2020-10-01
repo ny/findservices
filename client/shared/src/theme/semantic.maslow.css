@@ -1131,7 +1131,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 /*!
  * # Semantic UI - Site
@@ -2269,7 +2269,7 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   background: #ffffff;
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   line-height: 1.375em;
   color: #000000;
@@ -2283,7 +2283,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 1.25em;
   margin: calc(2rem -  0.125em ) 0em 1rem;
   font-weight: 700;
@@ -2427,78 +2427,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-}
-@font-face {
-  font-weight: 400;
-  font-family: "Oswald";
-  font-style: normal;
-  font-display: swap;
-  src: url("_site/assets/fonts/oswald-regular.eot") format("eot"), url("_site/assets/fonts/oswald-regular.svg") format("svg"), url("_site/assets/fonts/oswald-regular.ttf") format("ttf"), url("_site/assets/fonts/oswald-regular.woff") format("woff");
-}
-@font-face {
-  font-weight: 400;
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-display: swap;
-  src: url("_site/assets/fonts/proximanova-regular.eot") format("eot"), url("_site/assets/fonts/proximanova-regular.ttf") format("ttf"), url("_site/assets/fonts/proximanova-regular.woff") format("woff"), url("_site/assets/fonts/proximanova-regular.woff2") format("woff2");
-}
-@font-face {
-  font-weight: 700;
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-display: swap;
-  src: url("_site/assets/fonts/proximanova-bold.eot") format("eot"), url("_site/assets/fonts/proximanova-bold.ttf") format("ttf"), url("_site/assets/fonts/proximanova-bold.woff") format("woff"), url("_site/assets/fonts/proximanova-bold.woff2") format("woff2");
-}
-@font-face {
-  font-weight: 400;
-  font-family: "Proxima Nova";
-  font-style: italic;
-  font-display: swap;
-  src: url("_site/assets/fonts/proximanova-italic.eot") format("eot"), url("_site/assets/fonts/proximanova-italic.ttf") format("ttf"), url("_site/assets/fonts/proximanova-italic.woff") format("woff"), url("_site/assets/fonts/proximanova-italic.woff2") format("woff2");
-}
-@font-face {
-  font-weight: 700;
-  font-family: "Proxima Nova";
-  font-style: italic;
-  font-display: swap;
-  src: url("_site/assets/fonts/proximanova-bolditalic.eot") format("eot"), url("_site/assets/fonts/proximanova-bolditalic.ttf") format("ttf"), url("_site/assets/fonts/proximanova-bolditalic.woff") format("woff"), url("_site/assets/fonts/proximanova-bolditalic.woff2") format("woff2");
-}
-@font-face {
-  font-weight: 300;
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-display: swap;
-  src: url("_site/assets/fonts/proximanova-light.eot") format("eot"), url("_site/assets/fonts/proximanova-light.ttf") format("ttf"), url("_site/assets/fonts/proximanova-light.woff") format("woff"), url("_site/assets/fonts/proximanova-light.woff2") format("woff2");
-}
-@font-face {
-  font-weight: 300;
-  font-family: "Proxima Nova";
-  font-style: italic;
-  font-display: swap;
-  src: url("_site/assets/fonts/proximanova-lightitalic.eot") format("eot"), url("_site/assets/fonts/proximanova-lightitalic.ttf") format("ttf"), url("_site/assets/fonts/proximanova-lightitalic.woff") format("woff"), url("_site/assets/fonts/proximanova-lightitalic.woff2") format("woff2");
-}
-@font-face {
-  font-weight: 600;
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-display: swap;
-  src: url("_site/assets/fonts/proximanova-semibold.eot") format("eot"), url("_site/assets/fonts/proximanova-semibold.ttf") format("ttf"), url("_site/assets/fonts/proximanova-semibold.woff") format("woff"), url("_site/assets/fonts/proximanova-semibold.woff2") format("woff2");
-}
-@font-face {
-  font-weight: 800;
-  font-family: "Proxima Nova";
-  font-style: normal;
-  font-display: swap;
-  src: url("_site/assets/fonts/proximanova-extrabold.eot") format("eot"), url("_site/assets/fonts/proximanova-extrabold.ttf") format("ttf"), url("_site/assets/fonts/proximanova-extrabold.woff") format("woff"), url("_site/assets/fonts/proximanova-extrabold.woff2") format("woff2");
-}
-@font-face {
-  font-weight: normal;
-  font-family: "D Sari Bold";
-  font-style: normal;
-  src: url("/fonts/dsari/DSari_Bold-webfont.eot");
-  src: url("/fonts/dsari/DSari_Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/dsari/DSari_Bold-webfont.woff2") format("woff2"), url("/fonts/dsari/DSari_Bold-webfont.woff") format("woff"), url("/fonts/dsari/DSari_Bold-webfont.ttf") format("truetype");
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 main {
   padding-block-end: 5rem;
@@ -3336,7 +3264,7 @@ main {
   vertical-align: baseline;
   background: rgba(15, 115, 157, 0.12) none;
   color: #000000;
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   margin: 0em 0.25em 0em 0em;
   padding: 1.375rem 1.25rem 1.375rem;
   text-transform: uppercase;
@@ -7513,7 +7441,7 @@ main {
 *******************************/
 /* Text Container */
 .ui.text.container {
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   max-width: 700px !important;
   line-height: 1.5;
 }
@@ -10950,7 +10878,7 @@ i.flag.zimbabwe:before {
   border: none;
   margin: calc(2rem -  0.125em ) 0em 1rem;
   padding: 0em 0em;
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   line-height: 1.25em;
   text-transform: none;
@@ -18735,7 +18663,7 @@ img.ui.bordered.image {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   text-align: left;
   line-height: 1.5rem;
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   padding: 0.75rem 0.875em;
   background: #FFFFFF;
   border: 1px solid #949494;
@@ -21033,7 +20961,7 @@ a.ui.basic.label:hover {
 *******************************/
 .ui.label {
   color: #24387e;
-  font-family: "Oswald", "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   letter-spacing: 0.0625rem;
   background-color: rgba(36, 56, 126, 0.1);
   border-radius: 1em;
@@ -21961,7 +21889,7 @@ ol.ui.list ol li,
 .ui.list > .item .header {
   display: block;
   margin: 0em;
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   color: #000000;
 }
@@ -28629,7 +28557,7 @@ ol.ui.horizontal.list li:before,
 *******************************/
 /* Title */
 .ui.steps .step .title {
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 1.125em;
   font-weight: 700;
 }
@@ -30690,7 +30618,7 @@ ol.ui.horizontal.list li:before,
 .ui.form input[type="text"],
 .ui.form input[type="file"],
 .ui.form input[type="url"] {
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   margin: 0em;
   outline: none;
   -webkit-appearance: none;
@@ -34972,7 +34900,7 @@ ol.ui.horizontal.list li:before,
 .ui.menu {
   display: flex;
   margin: 1rem 0em;
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   background: #FFFFFF;
   font-weight: normal;
   border: 1px solid #949494;
@@ -37442,7 +37370,7 @@ header.ui.menu:first-child {
 /* Header */
 .ui.message .header {
   display: block;
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   margin: -0.125em 0em 0rem 0em;
 }
@@ -41373,7 +41301,7 @@ header.ui.menu:first-child {
 .ui.card > .content > .header {
   display: block;
   margin: '';
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: rgba(0, 0, 0, 0.85);
 }
 /* Default Header Size */
@@ -44895,7 +44823,7 @@ a.ui.card:hover,
 .ui.items > .item > .content > .header {
   display: inline-block;
   margin: -0.1875em 0em 0em;
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.85);
 }
@@ -45974,7 +45902,7 @@ a.ui.card:hover,
 ---------------*/
 .ui.statistics .statistic > .value,
 .ui.statistic > .value {
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 4rem;
   font-weight: normal;
   line-height: 1em;
@@ -45987,7 +45915,7 @@ a.ui.card:hover,
 ---------------*/
 .ui.statistics .statistic > .label,
 .ui.statistic > .label {
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 1em;
   font-weight: 700;
   color: #000000;
@@ -47143,7 +47071,7 @@ a.ui.card:hover,
 /* Default Styling */
 .ui.accordion .title:not(.ui) {
   padding: 0.5em 0em;
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 1em;
   color: #000000;
 }
@@ -53269,7 +53197,7 @@ select.ui.dropdown {
 ---------------*/
 .ui.modal > .header {
   display: block;
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   background: #FFFFFF;
   margin: 0em;
   padding: 1.25rem 1.5rem;
@@ -55356,7 +55284,7 @@ a.ui.nag {
 }
 .ui.popup > .header {
   padding: 0em;
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 1.125em;
   line-height: 1.2;
   font-weight: 700;
@@ -58863,7 +58791,7 @@ a.ui.nag {
 }
 .ui.search > .results .result .title {
   margin: -0.125em 0em 0em;
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   font-size: 1em;
   color: rgba(0, 0, 0, 0.85);
@@ -58884,7 +58812,7 @@ a.ui.nag {
   padding: 1em 1em;
 }
 .ui.search > .results > .message .header {
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   color: #000000;
@@ -59053,7 +58981,7 @@ a.ui.nag {
   width: 100px;
   white-space: nowrap;
   background: transparent;
-  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 1em;
   padding: 0.4em 1em;
   font-weight: 700;

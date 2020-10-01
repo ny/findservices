@@ -43,8 +43,3 @@ customizations of the default theme. All customizations should appear under the
 `_site` folder. Do not edit any file under the `theme` folder. All edits should
 appear in the appropriate `*.variables` (for defining or overriding the value of
 Less variables) or `*.overrides` (for defining or overriding CSS styles).
-
-## Fonts
-
-The fonts under `_site/assets/fonts` are encrypted and must be decrypted before
-use. See the README in the `_site/assets/fonts` folder for more informatoin.

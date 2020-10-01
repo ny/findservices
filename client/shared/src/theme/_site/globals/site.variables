@@ -6,10 +6,6 @@
        Fonts
 --------------------*/
 
-@siteFontPath: "@{siteFolder}/assets/fonts";
-
-@fontName: "Proxima Nova";
-@altFontName: "Oswald";
 @importGoogleFonts: false;
 
 @headerFont: @fontName, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
