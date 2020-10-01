@@ -14,6 +14,7 @@ spring:
 
 server:
   forward-headers-strategy: native
+  port: 8081
   tomcat:
     accesslog:
       buffered: false
@@ -32,12 +33,3 @@ jasypt:
 maslow:
   access:
     services-location: /tmp/maslow/services.json
-
-    
-### OKTA Spring Security Config ######
-okta:
-  oauth2:
-    issuer: https://login-qa.ny.gov/oauth2/default
-    clientId: 0oa4q3u5qr7BWh8yU297
-    groupsClaim: nyfindservicesauthor
-### OKTA Spring Security Config ######

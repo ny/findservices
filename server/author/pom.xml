@@ -39,14 +39,7 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-validation</artifactId>
-    </dependency>
-    
-    <dependency>
-	    <groupId>com.okta.spring</groupId>
-	    <artifactId>okta-spring-boot-starter</artifactId>
-	    <version>1.4.0</version>
-	</dependency>
-	
+    </dependency>	
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
@@ -203,27 +196,6 @@
       <properties>
         <spring.profiles.active>dev</spring.profiles.active>
       </properties>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>com.github.eirslett</groupId>
-            <artifactId>frontend-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>yarn-build</id>
-                <configuration>
-                  <environmentVariables>
-                    <REACT_APP_CLIENT_ID>0oa4q3u5qr7BWh8yU297</REACT_APP_CLIENT_ID>
-                    <REACT_APP_ISSUER>https://login-qa.ny.gov/oauth2/default</REACT_APP_ISSUER>
-                    <REACT_APP_REDIRECTURI>https://findservices-admin-dev.ny.gov/callback</REACT_APP_REDIRECTURI>
-                    <REACT_APP_LOGOUTURI>https://findservices-admin-dev.ny.gov/</REACT_APP_LOGOUTURI>
-                  </environmentVariables>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
     </profile>
 
     <profile>
@@ -231,27 +203,6 @@
       <properties>
         <spring.profiles.active>staging</spring.profiles.active>
       </properties>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>com.github.eirslett</groupId>
-            <artifactId>frontend-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>yarn-build</id>
-                <configuration>
-                  <environmentVariables>
-                    <REACT_APP_CLIENT_ID>0oa4q3u5qr7BWh8yU297</REACT_APP_CLIENT_ID>
-                    <REACT_APP_ISSUER>https://login-qa.ny.gov/oauth2/default</REACT_APP_ISSUER>
-                    <REACT_APP_REDIRECTURI>https://findservices-admin-qa.ny.gov/callback</REACT_APP_REDIRECTURI>
-                    <REACT_APP_LOGOUTURI>https://findservices-admin-qa.ny.gov/</REACT_APP_LOGOUTURI>
-                  </environmentVariables>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
     </profile>
 
     <profile>
@@ -259,27 +210,6 @@
       <properties>
         <spring.profiles.active>production</spring.profiles.active>
       </properties>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>com.github.eirslett</groupId>
-            <artifactId>frontend-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>yarn-build</id>
-                <configuration>
-                  <environmentVariables>
-                    <REACT_APP_CLIENT_ID>0oa4zig5s9fjpCKp3297</REACT_APP_CLIENT_ID>
-                    <REACT_APP_ISSUER>https://login.ny.gov/oauth2/default</REACT_APP_ISSUER>
-                    <REACT_APP_REDIRECTURI>https://findservices-admin.ny.gov/callback</REACT_APP_REDIRECTURI>
-                    <REACT_APP_LOGOUTURI>https://findservices-admin.ny.gov/</REACT_APP_LOGOUTURI>
-                  </environmentVariables>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
     </profile>
 
     <profile>

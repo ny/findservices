@@ -11,12 +11,6 @@ import routeData from "react-router-dom";
 
 const mockHistoryPush = jest.fn();
 
-jest.mock("@okta/okta-react", () => ({
-  useOktaAuth: () => ({
-    authState: { isAuthenticated: true },
-    authService: { handleAuthentication: jest.fn() },
-  }),
-}));
 jest.mock("axios");
 jest.mock("react-router-dom", () => ({
   ...jest.requireActual("react-router-dom"),
@@ -61,10 +55,10 @@ const DOL_UA = {
 };
 expect.extend(toHaveNoViolations);
 
-describe.skip("UpdateServiceLocale", () => {
+describe("UpdateServiceLocale", () => {
   let container = null;
 
-  describe.skip("with successful axios get calls", () => {
+  describe("with successful axios get calls", () => {
     beforeEach(async () => {
       axios.get.mockImplementation((url) => {
         switch (url) {
@@ -300,7 +294,7 @@ describe.skip("UpdateServiceLocale", () => {
     });
   });
 
-  describe.skip("with empty spanish translations", () => {
+  describe("with empty spanish translations", () => {
     beforeEach(async () => {
       const noSpanishData = {
         // Remove spanish translations from simulated server response
@@ -430,7 +424,7 @@ describe.skip("UpdateServiceLocale", () => {
     });
   });
 
-  describe.skip("with generic unsuccessful axios call for get service", () => {
+  describe("with generic unsuccessful axios call for get service", () => {
     beforeEach(async () => {
       // @ts-ignore
       axios.get.mockImplementation(() => {
@@ -462,7 +456,7 @@ describe.skip("UpdateServiceLocale", () => {
     });
   });
 
-  describe.skip("with 404 unsuccessful axios call for get service", () => {
+  describe("with 404 unsuccessful axios call for get service", () => {
     beforeEach(async () => {
       // @ts-ignore
       axios.get.mockImplementation(() => {
@@ -499,7 +493,7 @@ describe.skip("UpdateServiceLocale", () => {
     });
   });
 
-  describe.skip("with 404 because language doesn't exist", () => {
+  describe("with 404 because language doesn't exist", () => {
     beforeEach(async () => {
       // @ts-ignore
       axios.get.mockImplementation((url) => {

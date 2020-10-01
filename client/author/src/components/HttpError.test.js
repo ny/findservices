@@ -7,7 +7,7 @@ import { renderWith } from "maslow-shared/src/util/testing";
 
 expect.extend(toHaveNoViolations);
 
-describe.skip("The 404 page", () => {
+describe("The 404 page", () => {
   let container;
 
   beforeEach(() => {

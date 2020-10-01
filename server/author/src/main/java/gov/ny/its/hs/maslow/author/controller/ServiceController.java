@@ -19,8 +19,6 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import org.springframework.security.access.prepost.PreAuthorize;
-
 /**
  * Defines the REST controller for the Maslow Author Services API.
  *
@@ -39,9 +37,6 @@ import org.springframework.security.access.prepost.PreAuthorize;
  */
 @RestController
 @RequestMapping("api/author/v1")
-@PreAuthorize(
-		"hasAuthority('FindServicesAuthor')"
-)
 public class ServiceController {
   private final ServiceService impl;
 

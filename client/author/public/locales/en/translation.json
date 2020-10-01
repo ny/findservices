@@ -44,11 +44,6 @@
     "title": "Oops...",
     "validationFailed": "This service could not be saved because one or more fields were reported as invalid by the server."
   },
-  "authentication": {
-    "authFailedRedirect": "You will be redirected to the home screen after 10 seconds.",
-    "notLoggedIn": "You need to log in.",
-    "loading": "Loading..."
-  },
   "manageServices": {
     "addService": "Add Service",
     "dismiss": "Dismiss",

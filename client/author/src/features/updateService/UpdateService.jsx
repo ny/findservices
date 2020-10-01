@@ -18,8 +18,6 @@ import PropTypes from "prop-types";
 import HttpError from "components/HttpError";
 import { httpErrorStatusToMessageKey, renderMessage } from "utils/inputUtils";
 import SubmissionModal from "features/updateService/SubmissionModal";
-import { useOktaAuth } from "@okta/okta-react";
-import { setAuthToken } from "auth/setAuthToken";
 
 /**
  * UpdateService is a component for creating a new service, or updating an
@@ -32,7 +30,6 @@ function UpdateService({ isNew }) {
   const location = useLocation();
   const params = useParams();
 
-  const { authState } = useOktaAuth();
   // These two regular expressions must match those on the server.
   const urlRegexp = /^(https?:\/\/[^\s$.?#].[^\s]*)?$/;
   const serviceKeyRegexp = /^[A-Z][A-Z0-9_]+$/;
@@ -85,9 +82,6 @@ function UpdateService({ isNew }) {
     }
 
     try {
-      // set default http requests to have Bearer accessToken in Authorization Header
-      const accessToken = authState.accessToken;
-      setAuthToken(accessToken);
       const serviceResp = await axios.get(`/api/author/v1/services/${key}`);
       setServiceETag(_.get(serviceResp, "headers.etag", ""));
 
@@ -127,7 +121,6 @@ function UpdateService({ isNew }) {
     setServiceDetails,
     setApiErrorOnGetMessage,
     key,
-    authState,
   ]);
 
   // Retrieves question key data from API.

@@ -10,12 +10,6 @@ import userEvent from "@testing-library/user-event";
 
 const mockHistoryPush = jest.fn();
 
-jest.mock("@okta/okta-react", () => ({
-  useOktaAuth: () => ({
-    authState: { isAuthenticated: true },
-    authService: { handleAuthentication: jest.fn() },
-  }),
-}));
 jest.mock("axios");
 jest.mock("react-router-dom", () => ({
   ...jest.requireActual("react-router-dom"),
@@ -61,11 +55,11 @@ const DOL_UA = {
 
 expect.extend(toHaveNoViolations);
 
-describe.skip("UpdateService", () => {
+describe("UpdateService", () => {
   let container = null;
 
-  describe.skip("for existing service", () => {
-    describe.skip("with successful axios get calls", () => {
+  describe("for existing service", () => {
+    describe("with successful axios get calls", () => {
       beforeEach(async () => {
         // @ts-ignore
         axios.get.mockImplementation((url) => {
@@ -571,7 +565,7 @@ describe.skip("UpdateService", () => {
       });
     });
 
-    describe.skip("with generic unsuccessful axios call for get service", () => {
+    describe("with generic unsuccessful axios call for get service", () => {
       beforeEach(async () => {
         // @ts-ignore
         axios.get.mockImplementation((url) => {
@@ -610,7 +604,7 @@ describe.skip("UpdateService", () => {
       });
     });
 
-    describe.skip("with 404 unsuccessful axios call for get service", () => {
+    describe("with 404 unsuccessful axios call for get service", () => {
       beforeEach(async () => {
         // @ts-ignore
         axios.get.mockImplementation((url) => {
@@ -654,7 +648,7 @@ describe.skip("UpdateService", () => {
       });
     });
 
-    describe.skip("with generic unsuccessful axios call for get questions", () => {
+    describe("with generic unsuccessful axios call for get questions", () => {
       beforeEach(async () => {
         // @ts-ignore
         axios.get.mockImplementation((url) => {
@@ -691,8 +685,8 @@ describe.skip("UpdateService", () => {
     });
   });
 
-  describe.skip("for new service", () => {
-    describe.skip("with successful axios calls", () => {
+  describe("for new service", () => {
+    describe("with successful axios calls", () => {
       beforeEach(async () => {
         // @ts-ignore
         axios.get.mockImplementation((url) => {
@@ -1121,7 +1115,7 @@ describe.skip("UpdateService", () => {
       });
     });
 
-    describe.skip("with unsuccessful axios calls", () => {
+    describe("with unsuccessful axios calls", () => {
       beforeEach(async () => {
         // @ts-ignore
         axios.get.mockImplementation(() => {

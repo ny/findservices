@@ -7,12 +7,6 @@ import ManageServices from "features/manageServices/ManageServices";
 import { screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
-jest.mock("@okta/okta-react", () => ({
-  useOktaAuth: () => ({
-    authState: { isAuthenticated: true },
-    authService: { handleAuthentication: jest.fn() },
-  }),
-}));
 jest.mock("axios");
 jest.mock("react-router-dom", () => ({
   ...jest.requireActual("react-router-dom"),
@@ -23,10 +17,10 @@ jest.mock("react-router-dom", () => ({
 
 expect.extend(toHaveNoViolations);
 
-describe.skip("ManageServices", () => {
+describe("ManageServices", () => {
   let container = null;
 
-  describe.skip("with successful axios calls", () => {
+  describe("with successful axios calls", () => {
     beforeEach(() => {
       // @ts-ignore
       axios.get.mockResolvedValue({
@@ -95,7 +89,7 @@ describe.skip("ManageServices", () => {
       jest.clearAllMocks();
     });
 
-    describe.skip("without message", () => {
+    describe("without message", () => {
       beforeEach(async () => {
         ({ container } = renderWith(<ManageServices />));
         await waitFor(() =>
@@ -269,7 +263,7 @@ describe.skip("ManageServices", () => {
     });
   });
 
-  describe.skip("with failed axios call", () => {
+  describe("with failed axios call", () => {
     afterEach(() => {
       jest.clearAllMocks();
     });

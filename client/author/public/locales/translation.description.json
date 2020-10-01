@@ -28,11 +28,6 @@
       "label": ""
     }
   },
-  "authentication": {
-    "authFailedRedirect": "Notifies the user why authentication failed and notifies of a redirect to home screen. Appears if authentication failed.",
-    "notLoggedIn": "Notifies the user they need to login. Appears if the user refreshes on the callback redirect page.",
-    "loading": "A simple loading placeholder text while user is being authenticated. Appears while authentication is occurring for the first time on the current session."
-  },
   "report": {
     "apply": {
       "criteria": "Header highlighting information describing additional criteria needed to apply for the service. This and the others in the report section should be the same as the equivalent keys in Maslow Access.",

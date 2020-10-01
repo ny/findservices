@@ -5,12 +5,6 @@ import { renderWith } from "maslow-shared/src/util/testing";
 import Routes from "Routes";
 import axios from "axios";
 
-jest.mock("@okta/okta-react", () => ({
-  useOktaAuth: () => ({
-    authState: { isAuthenticated: true },
-    authService: { handleAuthentication: jest.fn() },
-  }),
-}));
 jest.mock("react-router-dom", () => ({
   ...jest.requireActual("react-router-dom"),
   useParams: () => ({ id: "DOL_UA", lng: "es" }),
@@ -52,7 +46,7 @@ const services = {
   DOL_UA: DOL_UA,
 };
 
-describe.skip("Routes", () => {
+describe("Routes", () => {
   afterEach(() => jest.clearAllMocks);
   it("routes / to ManageServices", async () => {
     // @ts-ignore

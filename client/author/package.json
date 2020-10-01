@@ -82,7 +82,6 @@
     ]
   },
   "dependencies": {
-    "@okta/okta-react": "^3.0.7",
     "@reduxjs/toolkit": "^1.1.0",
     "@types/react-redux": "^7.1.9",
     "axios": "^0.20.0",

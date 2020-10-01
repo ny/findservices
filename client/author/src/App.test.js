@@ -4,12 +4,6 @@ import React from "react";
 import { renderWith } from "maslow-shared/src/util/testing";
 import axios from "axios";
 
-jest.mock("@okta/okta-react", () => ({
-  useOktaAuth: () => ({
-    authState: { isAuthenticated: true },
-    authService: { handleAuthentication: jest.fn() },
-  }),
-}));
 jest.mock("axios");
 // @ts-ignore
 axios.get.mockResolvedValue({
@@ -32,7 +26,7 @@ axios.get.mockResolvedValue({
   },
 });
 
-describe.skip("App entrypoint", () => {
+describe("App entrypoint", () => {
   beforeEach(async () => {
     const options = {
       routerOptions: {

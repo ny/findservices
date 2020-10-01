@@ -24,8 +24,6 @@ import {
   httpErrorStatusToMessageKey,
 } from "utils/inputUtils";
 import HttpError from "components/HttpError";
-import { useOktaAuth } from "@okta/okta-react";
-import { setAuthToken } from "auth/setAuthToken";
 import { ReportCard } from "maslow-shared";
 
 /**
@@ -39,7 +37,6 @@ function UpdateServiceLocale() {
   const params = useParams();
   const serviceKey = params.id;
   const locale = params.lng;
-  const { authState } = useOktaAuth();
   // Gets the full language name, such as "Spanish" for "es".
   const languageName = getLanguageForLocale(locale);
 
@@ -89,9 +86,6 @@ function UpdateServiceLocale() {
     let englishData = {};
 
     try {
-      const accessToken = authState.accessToken;
-      // set default http requests to have Bearer accessToken in Authorization header
-      setAuthToken(accessToken);
       // Get information about the service.
       const serviceResponse = await axios.get(
         `/api/author/v1/services/${serviceKey}`
@@ -200,7 +194,6 @@ function UpdateServiceLocale() {
     setEligibilityError,
     setInstructionsError,
     setPreparationError,
-    authState,
   ]);
 
   // Determines the status (up to date, outdated, missing translations) of the

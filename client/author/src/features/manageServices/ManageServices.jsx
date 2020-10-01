@@ -8,8 +8,6 @@ import _ from "lodash";
 import HttpError from "components/HttpError";
 import { renderMessage, visibilityMapper } from "utils/inputUtils";
 import { TranslationStatus } from "./TranslationStatus";
-import { useOktaAuth } from "@okta/okta-react";
-import { setAuthToken } from "auth/setAuthToken";
 
 /**
  * ManageServices is a component for seeing all services in the Author UI.
@@ -22,8 +20,6 @@ function ManageServices() {
   const [updateMessage] = useState(_.get(location, "state.updateMessage", ""));
   const [dismissed, setDismissed] = useState(false);
 
-  const { authState } = useOktaAuth();
-
   const [services, setServices] = useState({});
   const [order, setOrder] = useState([]);
   const [loadingError, setLoadingError] = useState(false);
@@ -31,9 +27,6 @@ function ManageServices() {
   // Retrieves catalog data from API.
   const fetchData = useCallback(async () => {
     try {
-      const accessToken = authState.accessToken;
-      // set default http requests to have Bearer accessToken in Authorization header
-      setAuthToken(accessToken);
       const response = await axios.get("/api/author/v1/services");
       const data = response.data;
       const services = data.services;
@@ -49,7 +42,7 @@ function ManageServices() {
     } catch (err) {
       setLoadingError(true);
     }
-  }, [setServices, setOrder, setLoadingError, authState]);
+  }, [setServices, setOrder, setLoadingError]);
 
   // Fetch data from the API upon page load.
   useEffect(() => {
