@@ -3,7 +3,7 @@
   "version": "1.2.0",
   "private": true,
   "description": "maslow",
-  "repository": "https://github.com/ny/maslow",
+  "repository": "https://github.com/ny/findservices",
   "license": "GPL-2.0",
   "workspaces": {
     "packages": [

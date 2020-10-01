@@ -84,7 +84,7 @@ For development, we also recommend:
 To get the source code:
 
 ```sh
-git clone https://github.com/ny/maslow.git
+git clone https://github.com/ny/findservices.git
 ```
 
 ### Production
@@ -309,13 +309,13 @@ It's worth noting that the `maslow-shared` workspace would be an _excellent_
 candidate for [Storybook].
 
 [maven modules]: https://maven.apache.org/guides/mini/guide-multiple-modules.html
-[project maslow]: https://github.com/ny/maslow
+[project maslow]: https://github.com/ny/findservices
 [storybook]: https://storybook.js.org/
 [yarn workspaces]: https://classic.yarnpkg.com/en/docs/workspaces/
 
 ## Support
 
-Please use our issue tracker at https://github.com/ny/maslow/issues.
+Please use our issue tracker at https://github.com/ny/findservices/issues.
 
 ## License
 

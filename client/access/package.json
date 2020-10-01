@@ -4,10 +4,10 @@
   "private": true,
   "description": "A concierge experience for New York residents seeking lifeline social services.",
   "homepage": "/",
-  "bugs": "https://github.com/ny/maslow/issues",
+  "bugs": "https://github.com/ny/findservices/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ny/maslow.git",
+    "url": "https://github.com/ny/findservices.git",
     "directory": "client/access"
   },
   "license": "GPL-2.0",
